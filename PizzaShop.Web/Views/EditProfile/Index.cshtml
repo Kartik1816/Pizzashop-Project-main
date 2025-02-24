@@ -1,0 +1,115 @@
+ @model PizzaShop.Domain.ViewModels.EditProfileViewModel
+ <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true">
+ <div class="add-user-back">
+                <div class="mt-3 me-3 ms-4 d-flex flex-column ">
+                    <div class="d-flex justify-content-between">
+                        <h2 class="page-title">My Profile</h2>
+                    </div>
+
+                    <div class="col-12 user-form-back my-2 shadow-lg">
+                        <div>
+                            <img src="./images/profile_div_bg.jpg" alt="" class="w-100 cover-image">
+
+                            <div class="d-flex  mx-5">
+                                <img src=@Model.Url alt="" class="default-pfp mx-4">
+                                <div class="d-flex justify-content-between w-100">
+                                    <div class="d-flex  flex-column mt-3">
+                                        <h3>@Model.UserName</h3>
+                                        <p>@Model.Role</p>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p>@Model.Email</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <form class=" px-5">
+                            <div class="row mb-3 px-4">
+
+
+                                <div class="col-xl-6 px-3 col-lg-6 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating ">
+                                        <input disabled type="text" class="form-control" id="fname" placeholder="Kartik" value=@Model.FirstName>
+                                        <label for="fname">FirstName</label>
+                                    </div>
+                                </div>
+                                <div class=" col-xl-6 col-lg-6 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating">
+                                        <input disabled type="text" class="form-control" id="lname" placeholder="kumar" value=@Model.LastName>
+                                        <label for="lname">LastName</label>
+                                    </div>
+                                </div>
+                                <div class=" col-xl-6 col-lg-6 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating">
+                                        <input disabled type="text" class="form-control" id="uname" placeholder="Kartik18" value=@Model.UserName>
+                                        <label for="uname">UserName</label>
+                                    </div>
+                                </div>
+
+                                <div class=" col-xl-6 col-lg-6 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating ">
+                                        <input disabled type="tel" class="form-control" id="phone" placeholder="Kartik" value=@Model.Phone>
+                                        <label for="phone">Phone</label>
+                                    </div>
+                                </div>
+
+                                <div class=" col-xl-4 col-lg-4 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating">
+                                        <select disabled class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>@ViewBag.Country</option>
+                                            
+                                        </select>
+                                        <label class="" for="floatingSelect">Country</label>
+                                    </div>
+                                </div>
+                                <div class=" col-xl-4 col-lg-4 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating">
+                                        <select disabled class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>@ViewBag.State</option>
+                                          
+                                        </select>
+                                        <label class="" for="floatingSelect">State</label>
+                                    </div>
+                                </div>
+                                <div class=" col-xl-4 col-lg-4 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating">
+                                        <select disabled class="form-select" id="floatingSelect"
+                                            aria-label="Floating label select example">
+                                            <option selected>@ViewBag.City</option>
+                                            
+                                        </select>
+                                        <label class="" for="floatingSelect">City</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-xl-8 col-lg-8 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating ">
+                                        <textarea disabled class="form-control" placeholder="Leave a comment here"
+                                            id="floatingTextarea" asp-for="@Model.Address"></textarea>
+                                        <label for="floatingTextarea" class="ms-3">Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-4 px-3 col-md-12 col-sm-12 mt-3 ">
+                                    <div class="form-floating ">
+                                        <input disabled type="number" class="form-control" id="zcode" placeholder="Kartik" asp-for="@Model.ZipCode">
+                                        <label for="zcode">Zipcode</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-end px-3 mt-3">
+                                    <button type="submit" class="btn btn-primary"><a asp-controller="EditProfile" class="text-decoration-none text-white" asp-action="Edit">Edit Profile</a></button>
+                                    <a  class="text-decoration-none" asp-controller="Dashboard" asp-action="Index"><button type="button"
+                                            class="btn cancle-back mx-4"> Cancel</button></a>
+                                </div>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    

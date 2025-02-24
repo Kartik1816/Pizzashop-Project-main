@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body-background{
+    background-color: #d8eff7;
+}
+.pizzashop-heading{
+    color:#59849b;
+}
+.no-padding{
+    padding: 0px;
+}
+.form-container{
+    width: 50%;
+}
+
+.tiny-svg{
+    width:20px;
+    position:absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+}
+.forgot-password{
+    text-decoration: none;
+}
+
+input::-ms-reveal{
+    display: none;
+}
+.marginLeft{
+    margin-left: 25%;
+}
+
+.marginLeft-forgot{
+    margin-left: 40%;
+}
+@media screen and (max-width:768px){
+    .body-background{
+        background: url('../images/dominos_background.jpg') center center/cover !important;
+    }
+    
+} 
+
+/* Navbar CSS */
+.navbar{
+    background-color: #0066a7;
+    height: 80px;
+}
+
+/* SideBar CSS */
+
+.sidebar-active{
+    background-color: #e9eaeb !important;
+}
+.sidebar-font{
+    color: #7474e9 !important;
+}
+
+
+.sidebar-svg{
+    height: 25px;
+    width: 25px;
+}
+.sidebar-span{
+    color: #938c8c;
+    font-size: larger;
+    font-weight: bold;
+}
+.profile-bg{
+    background-image: url('../images/profile_div_bg.jpg') center center/cover !important;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    right: 10px;
+    top: 10px !important;
+    right: 25px !important;
+}
+.userButton-size{
+    width: 200px;
+}
+.userButton-size-md{
+    width: 100px;
+}
+
+
+/* User List pagination */
+
+td{
+    word-break:break;
+    
+  }
+
+  .back-btn{
+    border-color: mediumblue;
+    background-color: white;
+    color: mediumblue;
+  }
+  .add-user-back{
+    background-color: #FAFAFA;
+  }
+.user-form-back{
+    background-color: #FFFFFF
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  .form-group label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    font-size: 14px;
+    color: #777;
+    transition: top 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+  }
+  .form-group input:focus {
+    border-color: #CCC;
+    outline: none;
+  }
+  .form-group input:focus + label,
+  .form-group input:not(:placeholder-shown) + label {
+    top: -6px;
+    font-size: 12px;
+    color: #777 ;
+    background-color: #ffffff;
+    padding: 0 10px;
+    border-radius: 4px;
+    left: 16px;
+  }
+
+
+  .status-badge {
+    background-color: #c3e6cb;
+    color: #155724;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+.mailTo{
+    text-decoration: none; color: black;
+}
+
+
+.cancle-back{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue !important;
+}
+.full-height{
+    height: 100vh !important;
+}
+
+.tinysvg{
+    width:20px;
+    position:absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+}
+
+.delete-icon{
+    color: black;
+}
+
+.delete-icon-border{
+    border: none;
+}
+
+.modal-header{
+    border-bottom: none !important;
+}
+.modal-footer{
+    border-top: none !important;
+}
+
+.popup-svg{
+    height: 50px;
+    width: 50px;
+}
+
+
+.form-switch .form-check-input {
+    width: 3em !important;
+    height: 1.5em !important;
+}
+
+.menu-page-svg{
+    height: 30px;
+    width: 30px;
+}
+
+.category-class{
+    font-size: large;
+    color: #aba5a5;
+    font-weight: bold;
+}
+.addCategory-btn{
+    border: 1px solid #007bff !important;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch !important;
+    }
+}
+
+.offcanvas{
+    max-width: 70% !important;
+}
+
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 60px;
+    height: 40px;
+    margin: 0 50px;
+    background-color: #fff;
+    border-radius: 6px;
+    transition: all 0.5s ease-in-out;
+  }
+  .input-box.open {
+    max-width: 350px;
+  }
+  .input-box input {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    padding: 0 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.5s ease-in-out;
+  }
+  .input-box.open input {
+    padding: 0 15px 0 65px;
+  }
+  
+  .input-box .search {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .input-box.open .search {
+    border-radius: 6px 0 0 6px;
+  }
+  .search .search-icon {
+    font-size: 30px;
+    color: #1c1c1c;
+  }
+  .input-box .close-icon {
+    position: absolute;
+    top: 50%;
+    right: -45px;
+    font-size: 30px;
+    color: #1c1c1c;
+    padding: 5px;
+    transform: translateY(-50%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+  }
+  .input-box.open .close-icon {
+    transform: translateY(-50%) rotate(180deg);
+    pointer-events: auto;
+    opacity: 1;
+  }
+
+.active-category{
+    color: #0066a7;
+}
+.category-items{
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.sandwichClass:hover{ 
+    .hide{
+    display: flex !important;
+
+}
+}
+
+.pastaClass:hover{ 
+    .hide{
+    display: flex !important;
+
+}
+}
+
+
+.sideClass:hover{ 
+    .hide{
+    display: flex !important;
+
+}
+}
+
+.saladClass:hover{ 
+    .hide{
+    display: block !important;
+
+}
+}
+
+.dipClass:hover{ 
+    .hide{
+    display: block !important;
+
+}
+}
+
+.pizzaClass:hover{ 
+    .hide{
+    display: block !important;
+
+}
+}
+
+.dessertClass:hover{ 
+    .hide{
+    display: block !important;
+
+}
+}
+
+.burgerClass:hover{ 
+    .hide{
+    display: block !important;
+
+}
+}
+
+.div-h{
+    height: 31px !important;
+}
+
+
+.page-title{
+    color:#0066a7;
+}
+
+.cover-image{
+    height: 80px;
+}
+.default-pfp {
+    width: 140px;
+    position: relative;
+    top: -35px;
+    border-radius: 50%;
+}
+
+.profile-image{
+    height: 50px;
+    width: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.profile-btn{
+    border: none !important;
+}
+

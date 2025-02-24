@@ -1,0 +1,89 @@
+@model PizzaShop.Domain.ViewModels.ChangePasswordViewModel
+
+<link rel="stylesheet" href="~/css/changePassword.css" asp-append-version="true" />
+
+ <div class="add-user-back container-fluid ">
+            <div class="d-flex justify-content-between m-4">
+                <div>
+                    <h2>Change Password</h2>
+                </div>
+
+            </div>
+            <div class="row flex-column">
+                <p class="col-10 mx-auto mx-sm-5" style="padding: 8px;">Enter a new password to update your account
+                    credentials</p>
+                <form action="" id="change-password-form" class="row flex-column">
+                    <!-- current password -->
+                    <div class="col-10 col-sm-6 col-lg-3 mx-auto mx-sm-5 p-2 form-floating">
+
+                        <input type="password" asp-for="OldPassword" autocomplete='off' class="form-control"
+                            name="current-password" id="current-password" placeholder="current-password">
+                        <label for="current-password" class="mx-2 mt-2">Current Password</label>
+                        <img src="./images/show-password.svg" onclick="showPassword()" class="change-password-icon "
+                            id="showpassword" />
+                        <img src="./images/hide-password.svg" onclick="showPassword()"
+                            class="change-password-icon d-none" id="hidepassword" />
+                    </div>
+                    <!-- new password -->
+                    <div class="col-10 col-sm-6 col-lg-3 mx-auto mx-sm-5 p-2 form-floating">
+
+                        <input type="password" asp-for="NewPassword" autocomplete='off' class="form-control"
+                            name="new-password" id="new-password" placeholder="new-password">
+                        <label for="current-password" class="mx-2 mt-2">New Password</label>
+                        <img src="./images/show-password.svg" onclick="confirmPassword()" class="change-password-icon "
+                            id="showpassword1" />
+                        <img src="./images/hide-password.svg" onclick="confirmPassword()"
+                            class="change-password-icon d-none" id="hidepassword1" />
+                    </div>
+                    <!-- confirm password -->
+                    <div class="col-10 col-sm-6 col-lg-3 mx-auto mx-sm-5 p-2 form-floating">
+
+                        <input type="password" asp-for="ConfirmPassword" autocomplete='off' class="form-control"
+                            name="confirm-password" id="confirm-password" placeholder="confirm-password">
+                        <label for="confirm-password" class="mx-2 mt-2">Confirm Password</label>
+                        <img src="./images/show-password.svg" onclick="newPassword()" class="change-password-icon "
+                            id="showpassword2" />
+                        <img src="./images/hide-password.svg" onclick="newPassword()"
+                            class="change-password-icon d-none" id="hidepassword2" />
+                    </div>
+                    <div class="col-10 col-sm-6 gap-2 col-lg-3 mx-auto mx-sm-5 d-flex justify-content-start"
+                        style="padding: 8px;">
+                        <button type="submit" class="btn btn-primary" id="submit-button">Submit</button>
+                        <button class="btn btn-contrast" id="cancel-button">Cancel</button>
+                    </div>
+                </form>
+                <!-- submit and cancel buttons -->
+
+
+            </div>
+        </div>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        Delete Confirmation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <img src="./images/warning.svg" alt="" class="popup-svg" />
+                        <p>Are you sure you want to delete this user?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        No
+                    </button>
+                    <button type="button" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script src="~/js/changePassword.js" asp-append-version="true"></script>
