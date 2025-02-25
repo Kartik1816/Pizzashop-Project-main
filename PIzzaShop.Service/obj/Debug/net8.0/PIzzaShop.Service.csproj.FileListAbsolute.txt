@@ -17,3 +17,4 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PIzzaShop.Service\obj\Debug\net8.0\refi
 C:\Users\pca158\Desktop\Pizzashop_Folder\PIzzaShop.Service\obj\Debug\net8.0\PIzzaShop.Service.pdb
 C:\Users\pca158\Desktop\Pizzashop_Folder\PIzzaShop.Service\obj\Debug\net8.0\PIzzaShop.Service.genruntimeconfig.cache
 C:\Users\pca158\Desktop\Pizzashop_Folder\PIzzaShop.Service\obj\Debug\net8.0\ref\PIzzaShop.Service.dll
+C:\Users\pca158\Desktop\Pizzashop_Folder\PIzzaShop.Service\obj\Debug\net8.0\PIzzaShop.Service.sourcelink.json

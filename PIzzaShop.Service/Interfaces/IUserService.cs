@@ -8,4 +8,6 @@ public interface IUserService
       public Task<User> validateUserAsync(string email,string password);
 
       public Task<string> getRoleName(int id);
+
+    
 }

@@ -61,7 +61,7 @@
                   <span class="text-danger">Inactive</span>
                 }
               </td>
-              <td><a href="./updateUser.html"><button class="btn btn-light btn-sm">
+              <td><a onclick="editUser(@user.UserId)"><button class="btn btn-light btn-sm">
                     <i class="fas fa-pencil"></i></button></a>
                 <button type="button" class="btn-light btn btn-sm delete-icon-border" data-bs-toggle="modal"
                   data-bs-target="#staticBackdrop">
@@ -130,6 +130,6 @@
     </div>
   </div>
 </div>
-    <script src="~/js/userList.js" asp-append-version="true"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="~/js/userList.js" asp-append-version="true"></script>
+  <script src="~/lib/jquery/dist/jquery.min.js"></script>
+  <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

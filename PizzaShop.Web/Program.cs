@@ -28,6 +28,13 @@ builder.Services.AddScoped<IUserRepository,UserRepository>();
 builder.Services.AddScoped<IGenerateJwt,GenerateJwt>();
 builder.Services.AddScoped<IChangePasswordRepository,ChangePasswordRepository>();
 builder.Services.AddScoped<IChangePasswordService,ChangePasswordService>();
+builder.Services.AddScoped<IEditProfileRepository,EditProfileRepository>();
+builder.Services.AddScoped<IEditProfileService,EditProfileService>();
+builder.Services.AddSingleton<EmailService>();
+builder.Services.AddScoped<IForgotPasswordRepository,ForgotPasswordRepository>();
+builder.Services.AddScoped<IForgotPasswordService,ForgotPasswordService>();
+builder.Services.AddScoped<IUserListRepository,UserListRepository>();
+builder.Services.AddScoped<IUserListService,UserListService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {

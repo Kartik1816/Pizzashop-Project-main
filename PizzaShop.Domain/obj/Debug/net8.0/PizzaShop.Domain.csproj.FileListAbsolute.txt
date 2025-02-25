@@ -12,3 +12,4 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\refin
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.pdb
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.genruntimeconfig.cache
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\ref\PizzaShop.Domain.dll
+C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.sourcelink.json

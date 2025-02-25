@@ -13,3 +13,4 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\P
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\refint\PizzaShop.Repository.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.pdb
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\ref\PizzaShop.Repository.dll
+C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.sourcelink.json

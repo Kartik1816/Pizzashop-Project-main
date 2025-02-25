@@ -1,62 +1,94 @@
 
-// using Microsoft.AspNetCore.Mvc;
-// using Microsoft.EntityFrameworkCore.Metadata.Internal;
-// using PizzaShop.Domain.DBContext;
-// using PizzaShop.Domain.Models;
-// using PizzaShop.Domain.ViewModels;
-// using PIzzaShop.Service.Interfaces;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PizzaShop.Domain.DBContext;
+using PizzaShop.Domain.Models;
+using PizzaShop.Domain.ViewModels;
+using PizzaShop.Repository.Interfaces;
+using PIzzaShop.Service.Interfaces;
 
-// namespace PIzzaShop.Service.Services;
+namespace PIzzaShop.Service.Services;
 
-// public class EditProfileService : IEditProfileService
-// {
-//     private readonly PizzaShopDbContext _pizzaShopDbContext;
+public class EditProfileService : IEditProfileService
+{
+    private readonly IEditProfileRepository _editProfileRepository;
     
 
-//     public EditProfileService(PizzaShopDbContext pizzaShopDbContext)
-//     {
-//         _pizzaShopDbContext=pizzaShopDbContext;
+    public EditProfileService(IEditProfileRepository editProfileRepository)
+    {
+        _editProfileRepository=editProfileRepository;
         
-//     }
-//     public List<Country> getCountries()
-//     {
-//         return _pizzaShopDbContext.Countries.ToList();
-//     }
+    }
+    public List<Country> getCountries()
+    {
+        return  _editProfileRepository.getCountries();
+    }
 
-//     public List<State> getStates(int countryId)
-//     {
-//         return _pizzaShopDbContext.States.Where(s=>s.CountryId==countryId).ToList();
-//     }
+    public List<State> getStates(int countryId)
+    {
+        return  _editProfileRepository.getStates(countryId);
+    }
 
-//     public List<City> getCities(int stateId)
-//     {
-//         return _pizzaShopDbContext.Cities.Where(c=>c.StateId==stateId).ToList();
-//     }
+    public List<City> getCities(int stateId)
+    {
+        return  _editProfileRepository.getCities(stateId);
+    }
 
 
-//     public IActionResult saveProfile( EditProfileViewModel editProfileViewModel,int userId)
-//     {
-//         User? user=_pizzaShopDbContext.Users.FirstOrDefault(u=>u.Id==userId);
+    public async Task<IActionResult> saveProfile( EditProfileViewModel editProfileViewModel,int userId)
+    {
+        return await _editProfileRepository.saveProfile(editProfileViewModel,userId);
+    }
 
+    public async Task<EditProfileViewModel> getCurrentUserViewModel(int id)
+    {
+        User user= await _editProfileRepository.getCurrentUserById(id);
+       
+        var roleName=  _editProfileRepository.getCurrentUserRoleById(user.RoleId);
+        EditProfileViewModel editProfileViewModel=new EditProfileViewModel
+        {
+            FirstName=user.FirstName, 
+            LastName =user.LastName,
+            UserName =user.Username,
+            Phone =user.Phone,
+            CountryId =user.CountryId,
+            StateId =user.StateId,
+            CityId =user.CityId,
+            Address =user.Address,
+            ZipCode =user.ZipCode,
+            Url =user.ProfileImage,
+            Role =roleName,
+            Email =user.Email
+        };
+
+        return editProfileViewModel;
+    }
+
+    public string getCurrentUserCountry(int id)
+    {
+         return  _editProfileRepository.getCurrentUserCountryById(id);
+       
+    }
+     public string getCurrentUserState(int id)
+    {
+         
+        return  _editProfileRepository.getCurrentUserStateById(id);
+       
+    }
+     public string getCurrentUserCity(int id)
+    {
         
-//         if(user!=null  )
-//         {
-//             user.FirstName=editProfileViewModel.FirstName;
-//             user.LastName=editProfileViewModel.LastName;
-//             user.Username=editProfileViewModel.UserName;
-//             user.Phone=editProfileViewModel.Phone;
-//             user.CountryId=editProfileViewModel.CountryId;
-//             user.StateId=editProfileViewModel.StateId;
-//             user.CityId=editProfileViewModel.CityId;
-//             user.Address=editProfileViewModel.Address;
-//             user.ZipCode=editProfileViewModel.ZipCode;
+        return  _editProfileRepository.getCurrentUserCityById(id);
+    }
 
-//              _pizzaShopDbContext.SaveChanges();
-//             return new JsonResult(new{success=true,message="Profile Updated successfully"});
-//         }
-//         else
-//         {
-//             return new JsonResult(new{success=false,message="User not found"});
-//         }
-//     }
-// }
+    public  int getCountryIdByUserId(int id)
+    {
+        return   _editProfileRepository.getCurrentUserCountryId(id);
+    }
+
+    public  int getStateIdByUserId(int id)
+    {
+        return  _editProfileRepository.getCurrentUserStateId(id);
+    }
+}

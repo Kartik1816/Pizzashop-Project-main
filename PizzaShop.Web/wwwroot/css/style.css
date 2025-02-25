@@ -389,3 +389,20 @@ td{
     border: none !important;
 }
 
+.btn-custom {
+    border: 1px solid #9e9696;
+    width: 98%;
+  }
+  .file-input-btn {
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+    opacity: 0;
+    right: 0;
+    top: 0;
+  }
+
+  .small-image {
+    width: 20px;
+    cursor: pointer;
+  }
