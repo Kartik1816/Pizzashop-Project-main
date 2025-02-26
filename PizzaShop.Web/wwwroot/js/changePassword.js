@@ -75,7 +75,7 @@ $(document).ready(function () {
             contentType: "application/json",
             success: function (data) {
                 console.log(data);
-                
+                console.log(data.value.message);
                 if (data.value.success) {
                     toastr.success(data.value.message);
                     // window.location.href = "/home";

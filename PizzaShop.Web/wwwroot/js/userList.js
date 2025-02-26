@@ -28,18 +28,11 @@ document.addEventListener('DOMContentLoaded', function () {
                       `<span class="text-danger">Inactive</span>`
                     }
                   </td>
-                  <td>
-                    <a href="./updateUser.html">
-                      <button class="btn btn-light btn-sm">
-                        <i class="fas fa-pencil"></i>
-                      </button>
-                    </a>
-                    <button type="button" class="btn-light btn btn-sm delete-icon-border" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                      <a href="#" class="delete-icon">
-                        <i class="fas fa-trash"></i>
-                      </a>
-                    </button>
-                  </td>
+                  <td><a onclick="editUser(@user.UserId)"><button class="btn btn-light btn-sm">
+                    <i class="fas fa-pencil"></i></button></a>
+                <button type="button" class="btn-light btn btn-sm delete-icon-border" data-bs-toggle="modal"  data-bs-target="#deleteModel" onclick="openModel(@user.UserId)">
+                                        <a href="#" class="delete-icon">  <i class="fas fa-trash"></i></a></button>
+              </td>
                 </tr>
               `;
               tableBody.innerHTML += row;
@@ -53,4 +46,26 @@ document.addEventListener('DOMContentLoaded', function () {
 function editUser (userId) {
   window.location.href = '/UserList/EditUser/' + userId;
 }
-
+function openModel(id) {
+  console.log(id);
+  $("#deleteButton").click(function () {
+      $.ajax({
+          type: "DELETE",
+          url: "/UserList/DeleteUser/" + id,
+          data: { id: id },
+          success: function (data) {
+              if (data.success) {
+                  toastr.success(data.message);
+                  setTimeout(function () {
+                      location.reload();
+                  }, 1000);
+              } else {
+                  toastr.error(data.message);
+              }
+          },
+          error: function () {
+              toastr.error("Error");
+          }
+      });
+  });
+}

@@ -786,6 +786,9 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.FirstName)
                 .HasMaxLength(20)
                 .HasColumnName("first_name");
+            entity.Property(e => e.IsDeleted)
+                .HasDefaultValue(false)
+                .HasColumnName("is_deleted");
             entity.Property(e => e.LastName)
                 .HasMaxLength(20)
                 .HasColumnName("last_name");
@@ -814,10 +817,6 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.ZipCode)
                 .HasMaxLength(10)
                 .HasColumnName("zip_code");
-
-            entity.HasOne(d => d.Account).WithMany(p => p.Users)
-                .HasForeignKey(d => d.AccountId)
-                .HasConstraintName("users_account_id_fkey");
 
             entity.HasOne(d => d.City).WithMany(p => p.Users)
                 .HasForeignKey(d => d.CityId)

@@ -20,7 +20,7 @@ public class EditProfileViewModel
     [Required]
     public string ZipCode { get; set; }
 
-    public string? Url { get; set; }
+    public string? ProfileImageURL { get; set; }
 
     public string? Role { get; set; }
 

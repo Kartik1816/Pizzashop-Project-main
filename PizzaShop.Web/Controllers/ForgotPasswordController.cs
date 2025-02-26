@@ -39,7 +39,7 @@ namespace PizzaShop.Web.Controllers;
                     HttpContext.Session.SetString("ResetToken", token);
                     HttpContext.Session.SetString("ResetTokenExpiry", expiryDate.ToString());
 
-                    var resetLink = $"http://localhost:5138/resetpassword?token={token}?id={user.Id}";
+                    var resetLink = $"http://localhost:5066/resetpassword?token={token}?id={user.Id}";
                     await _emailService.SendEmailAsync(user.Email, user, resetLink);
 
                     return new JsonResult(new { success = true, message = "Email Sent" });

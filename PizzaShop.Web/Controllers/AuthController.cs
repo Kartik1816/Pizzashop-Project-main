@@ -39,9 +39,7 @@ public class AuthController : Controller
             if (user!=null)
             {
                 
-                // get role from roleid in user table
-                // User? user=_pizzaShopContext.Users.FirstOrDefault(u=>u.Email==model.Email);
-                // string? role = _pizzaShopContext.Roles.FirstOrDefault(r => r.Id == user.RoleId).Name;
+
                 var roleid=user.RoleId;
                 var role = await _userService.getRoleName(roleid);
                 var token = _generateJwt.GenerateJwtToken(user, role);

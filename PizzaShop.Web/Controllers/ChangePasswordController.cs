@@ -9,22 +9,40 @@ public class ChangePasswordController : Controller
 {
     private readonly IGenerateJwt _generateJwt;
     private readonly IChangePasswordService _changePasswordService;
-    public ChangePasswordController(IGenerateJwt generateJwt,IChangePasswordService changePasswordService)
+
+     private readonly IDashboardService _dashboardService;
+
+    public ChangePasswordController(IGenerateJwt generateJwt,IChangePasswordService changePasswordService, IDashboardService dashboardService)
     {
         _generateJwt=generateJwt;
         _changePasswordService=changePasswordService;
+        _dashboardService=dashboardService;
     }
-    public IActionResult Index()
+    public async Task<IActionResult> IndexAsync()
     {
-        return View();
+        var userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
+        var username=await _dashboardService.getUsernameFromId(userId);
+        var ImageUrL=await _dashboardService.getImageUrlFromId(userId);
+
+        ChangePasswordViewModel changePasswordViewModel=new ChangePasswordViewModel
+        {
+            UserName=username,
+            ProfileImageURL=ImageUrL
+        };
+        return View(changePasswordViewModel);
     }
 
     [HttpPost]
     [Route("/user/changepassword")]
-    public IActionResult ChangePassword([FromBody] ChangePasswordViewModel model)
+    public  async Task<IActionResult> ChangePasswordAsync([FromBody] ChangePasswordViewModel model)
     {
+        if(!ModelState.IsValid)
+        {
+            return new JsonResult(new{success=false,message="Validation error"});
+        }
         var userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
-        var result = _changePasswordService.changePasswordService(model.OldPassword, model.NewPassword, userId);
+       
+        var result =await _changePasswordService.changePasswordService(model.OldPassword, model.NewPassword, userId);
         return new JsonResult (result);
     }
 }

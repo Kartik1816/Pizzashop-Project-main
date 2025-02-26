@@ -80,4 +80,28 @@ public class UserListService : IUserListService
      {
         return await _userListRepository.saveEditedUser(userLoggedInId,userViewModel);
      }
+      public async Task<string> getUserNameFromId(int id)
+     {
+        return await _userRepository.getUserNameFromUserId(id);
+     }
+
+    public async Task<string> getImageUrlFromId(int id)
+    {
+        return await _userRepository.getImageUrlFromUserId(id);
+    }
+
+    public async Task<int> getRoleIdFromId(int id)
+    {
+        return await _userRepository.getRoleIdFromUserId(id);
+    }
+
+    public async Task<JsonResult> AddUser(int userLoggedInId, AddUserViewModel addUserViewModel)
+    {
+        return await _userListRepository.addUser(userLoggedInId,addUserViewModel);
+    }
+
+    public async Task<JsonResult> DeleteUser(int userId)
+        {
+            return await _userListRepository.deleteUser(userId);
+        }
 }

@@ -57,7 +57,7 @@ public class EditProfileService : IEditProfileService
             CityId =user.CityId,
             Address =user.Address,
             ZipCode =user.ZipCode,
-            Url =user.ProfileImage,
+            ProfileImageURL =user.ProfileImage,
             Role =roleName,
             Email =user.Email
         };

@@ -45,7 +45,7 @@ public partial class User
 
     public int UpdatedBy { get; set; }
 
-    public virtual Account Account { get; set; } = null!;
+    public bool? IsDeleted { get; set; }
 
     public virtual ICollection<Category> CategoryCreatedByNavigations { get; set; } = new List<Category>();
 

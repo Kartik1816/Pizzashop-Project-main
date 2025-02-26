@@ -14,14 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 var conn=builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<PizzaShopDbContext>(options => options.UseNpgsql(conn));
 // Add services to the container.
-builder.Services.AddSession(
-    options =>
-{
-    options.IdleTimeout = TimeSpan.FromMinutes(30); // Set your timeout
-    options.Cookie.HttpOnly = true;
-    options.Cookie.IsEssential = true;
-}
-);
+builder.Services.AddSession();
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IUserService,UserService>();
 builder.Services.AddScoped<IUserRepository,UserRepository>();
@@ -35,6 +28,7 @@ builder.Services.AddScoped<IForgotPasswordRepository,ForgotPasswordRepository>()
 builder.Services.AddScoped<IForgotPasswordService,ForgotPasswordService>();
 builder.Services.AddScoped<IUserListRepository,UserListRepository>();
 builder.Services.AddScoped<IUserListService,UserListService>();
+builder.Services.AddScoped<IDashboardService,DashboardService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {

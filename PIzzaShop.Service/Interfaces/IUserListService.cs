@@ -14,5 +14,14 @@ public interface IUserListService
     public List<Role> getRoles ();
 
     public Task<JsonResult> editUserDataFromUserId(int userLoggedInId,EditUserViewModel userViewModel);
-  
+
+    public  Task<string> getUserNameFromId(int id);
+
+    public Task<string> getImageUrlFromId(int id);
+
+    public Task<int> getRoleIdFromId(int id);
+
+    public Task<JsonResult> AddUser(int userLoggedInId, AddUserViewModel addUserViewModel);
+    
+     public  Task<JsonResult> DeleteUser(int userId);
 }

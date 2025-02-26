@@ -26,11 +26,11 @@ public class ChangePasswordService : IChangePasswordService
         string pass= await _changePasswordRepository.getPasswordByUser(userId);
         if(user!=null)
         {
-            if(pass==oldPassword)
+            if(BCrypt.Net.BCrypt.Verify(oldPassword,pass))
             {
-                user.Password=newPassword;
+                user.Password=BCrypt.Net.BCrypt.HashPassword(newPassword);
                 _pizzaShopDbContext.SaveChanges();
-                return new JsonResult(new{success=true,message="Password Changed successfully"});
+                return new JsonResult(new{success=true,message="Password Changed successfully!"});
             }
             else{
                 return new JsonResult(new{success=false,message="Current password does not match"});

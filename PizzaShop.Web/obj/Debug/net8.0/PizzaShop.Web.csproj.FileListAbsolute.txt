@@ -143,3 +143,4 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Web\obj\Debug\net8.0\PizzaSho
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Web\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Web\bin\Debug\net8.0\MailKit.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Web\bin\Debug\net8.0\MimeKit.dll
+C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.web\bin\Debug\net8.0\BCrypt.Net-Next.dll

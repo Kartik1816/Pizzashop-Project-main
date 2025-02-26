@@ -16,9 +16,15 @@ public class UserRepository : IUserRepository
     }
     public async Task<User> getUserByEmailAndPasswordAsync(string email, string password)
         {
-            return await _pizzaShopDbContext.Users
-                .Where(u => u.Email == email && u.Password == password)
-                .FirstOrDefaultAsync();
+            var user = await _pizzaShopDbContext.Users
+                .FirstOrDefaultAsync(u => u.Email == email);
+
+            if (user != null && BCrypt.Net.BCrypt.Verify(password, user.Password))
+            {
+                return user;
+            }
+
+            return null!;
         }
 
         public async Task<string> getRoleNameFromRoleId(int id)
