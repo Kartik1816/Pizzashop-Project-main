@@ -9776,11 +9776,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.web\\PizzaShop.Web.csproj",
+      "projectUniqueName": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\Pizzashop.web\\PizzaShop.Web.csproj",
       "projectName": "PizzaShop.Web",
-      "projectPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.web\\PizzaShop.Web.csproj",
+      "projectPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\Pizzashop.web\\PizzaShop.Web.csproj",
       "packagesPath": "C:\\Users\\pca158\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.web\\obj\\",
+      "outputPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\Pizzashop.web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca158\\AppData\\Roaming\\NuGet\\NuGet.Config"

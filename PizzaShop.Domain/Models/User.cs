@@ -47,6 +47,8 @@ public partial class User
 
     public bool? IsDeleted { get; set; }
 
+    public bool? HasLoggedInBefore { get; set; }
+
     public virtual ICollection<Category> CategoryCreatedByNavigations { get; set; } = new List<Category>();
 
     public virtual ICollection<Category> CategoryUpdatedByNavigations { get; set; } = new List<Category>();

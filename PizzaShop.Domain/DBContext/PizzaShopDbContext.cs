@@ -786,6 +786,9 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.FirstName)
                 .HasMaxLength(20)
                 .HasColumnName("first_name");
+            entity.Property(e => e.HasLoggedInBefore)
+                .HasDefaultValue(false)
+                .HasColumnName("has_logged_in_before");
             entity.Property(e => e.IsDeleted)
                 .HasDefaultValue(false)
                 .HasColumnName("is_deleted");

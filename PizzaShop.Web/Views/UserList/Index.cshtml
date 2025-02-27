@@ -1,13 +1,15 @@
 @model PizzaShop.Domain.ViewModels.UserListViewModel
 
+
+
 <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true">
 
 
 <div class="add-user-back">
   <div class="mt-3 me-3 ms-4 d-flex flex-column">
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between m-2">
       <div>
-        <h2>Users</h2>
+          <h2 class="page-title">Users</h2>
       </div>
       <div class="d-flex">
         <div class="input-group rounded d-none d-md-flex">
@@ -33,78 +35,9 @@
           </button></a>
       </div>
     </div>
-    <div class="table-user mt-5 mx-2 shadow-lg p-4 table-responsive">
-      <table class="table table-hover" style="white-space: nowrap">
-        <thead>
-          <tr>
-            <th>Name <i class="fas fa-sort"></i></th>
-            <th>Email</th>
-            <th>Phone</th>
-            <th>Role <i class="fas fa-sort"></i></th>
-            <th>Status</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody id="tableBody">
-          @foreach (var user in ViewBag.model)
-          {
-            <tr>
-              <td>@user.Username</td>
-              <td>@user.Email</td>
-              <td>@user.Phone</td>
-              <td>@user.RoleName</td>
-              <td>
-                @if (user.Status)
-                {
-                  <span class="status-badge">Active</span>
-                }
-                else
-                {
-                  <span class="text-danger">Inactive</span>
-                }
-              </td>
-              <td><a onclick="editUser(@user.UserId)"><button class="btn btn-light btn-sm">
-                    <i class="fas fa-pencil"></i></button></a>
-                <button type="button" class="btn-light btn btn-sm delete-icon-border" data-bs-toggle="modal"  data-bs-target="#deleteModel" onclick="openModel(@user.UserId)">
-                                        <a href="#" class="delete-icon">  <i class="fas fa-trash"></i></a></button>
-              </td>
-            </tr>
-          }
-        </tbody>
-
-      </table>
-      <div class="d-flex justify-content-end align-items-center gap-3">
-        <div>
-          Items Per Page:
-          <select class="form-select form-select-sm d-inline-block" style="width: auto">
-            <option>5</option>
-            <option>10</option>
-            <option>20</option>
-          </select>
-        </div>
-        <nav>
-          <ul class="pagination pagination-sm mb-0 ms-2">
-            <li class="page-item">
-              <a class="page-link" href="#">«</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">1</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">2</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">3</a>
-            </li>
-            <li class="page-item">
-              <a class="page-link" href="#">»</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-  </div>
-</div>
+    <div id="partialView" class="table-user mt-5 mx-2 shadow-lg p-4 table-responsive">
+      
+       <partial name="_UserList" model="Model"/>
 <div class="modal fade" id="deleteModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">

@@ -1,4 +1,10 @@
  @model PizzaShop.Domain.ViewModels.EditProfileViewModel
+
+  @{
+    string profileImagePath = string.IsNullOrEmpty(@Model.ProfileImageURL)
+    ? "/images/default-profile.png"
+    : $"/images/profile-images/{@Model.ProfileImageURL}";
+}
  <link rel="stylesheet" href="~/css/dashboard.css" asp-append-version="true">
  <div class="add-user-back">
                 <div class="mt-3 me-3 ms-4 d-flex flex-column ">
@@ -11,7 +17,7 @@
                             <img src="./images/profile_div_bg.jpg" alt="" class="w-100 cover-image">
 
                             <div class="d-flex  mx-5">
-                                <img src=@Model.ProfileImageURL alt="" class="default-pfp mx-4">
+                                <img src="@profileImagePath" alt="" class="default-pfp mx-4">
                                 <div class="d-flex justify-content-between w-100">
                                     <div class="d-flex  flex-column mt-3">
                                         <h3>@Model.UserName</h3>

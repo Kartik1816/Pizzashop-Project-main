@@ -111,10 +111,11 @@ $(document).ready(function () {
             contentType: 'application/json',
             data: JSON.stringify({ NewPassword: password,Token: token, UserId : userid }),
             success: function (response) {
+              console.log(response);
                 if (response.success) {
                     toastr.success(response.message);
                     setTimeout(function () {
-                        window.location.href = '/login';
+                        window.location.href = '/Auth';
                     }, 2000);
                 } else {
                     toastr.error(response.message);

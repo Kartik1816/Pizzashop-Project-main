@@ -16,24 +16,16 @@ public class UserListRepository : IUserListRepository
         _pizzaShopDbContext=pizzaShopDbContext;
         _userRepository=userRepository;
     }
-    public async Task<List<UserListViewModel>> getUserWithRole()
-    {
-       return  _pizzaShopDbContext.Users
-       .Where(user=>user.IsDeleted == false)
-        .Join(
-            _pizzaShopDbContext.Roles,
-            user => user.RoleId,
-            role => role.Id,
-            (user, role) => new UserListViewModel
-            {
-                UserId=user.Id,
-                Username = user.Username,
-                Email = user.Email,
-                Phone = user.Phone,
-                RoleName = role.Name,
-                Status = user.Status
-            })
-        .ToList();
+    public async Task<List<User>> getUserWithRole(string searchTerm)
+    {   
+       List<User> users=  _pizzaShopDbContext.Users
+       .Where(user=>user.IsDeleted == false).OrderBy(u=>u.FirstName).ToList();
+
+       if(searchTerm!=null)
+       {
+            users=users.Where(u=>u.FirstName.ToLower().Contains(searchTerm.ToLower()) || u.LastName.ToLower().Contains(searchTerm.ToLower())).ToList();
+       }
+       return users;
     }
 
     public async Task<JsonResult> saveEditedUser(int userLoggedInId, EditUserViewModel userViewModel)

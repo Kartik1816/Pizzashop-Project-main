@@ -1,6 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using PizzaShop.Domain.Models;
 using PizzaShop.Domain.ViewModels;
 using PIzzaShop.Service;
 using PIzzaShop.Service.Interfaces;
@@ -27,28 +28,32 @@ public class UserListController : Controller
          _emailService=emailService;
          _dashboardService=dashboardService;
     }
-    public async Task<IActionResult> Index()
+    public async Task<IActionResult> Index(int PageIndex=1,int PageSize=5)
     {
         var userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
-        
-        var username=await _dashboardService.getUsernameFromId(userId);
-        var ImageUrL=await _dashboardService.getImageUrlFromId(userId);
-        UserListViewModel userListViewModel=new UserListViewModel
-        {
-            UserName=username,
-            ProfileImageURL=ImageUrL
-        };
-        List<UserListViewModel> users=await _userListService.getUsers();
-        ViewBag.model=users;
-        return View();
+        UserListViewModel users= await _userListService.getUsers(userId,PageIndex,PageSize);
+        return View(users);
     }
 
 
     [HttpGet]
-    public async Task<JsonResult> SearchUsers(string searchTerm)
+    public async Task<IActionResult> FindUsers(int NextPage,int PageSize,string searchTerm=null)
     { 
-        var userListDetails =await _userListService.getSearchedUserListDetails(searchTerm);
-        return Json(userListDetails);
+       List<User> users= await _userListService.getTotalUsersInTable(searchTerm);
+       int userCount=users.Count();
+
+       List<User> userToReturn = users.Skip((NextPage-1)*PageSize).Take(PageSize).ToList();
+      
+        var totalPages=(int)Math.Ceiling((double)userCount/PageSize);
+        UserListViewModel userListViewModel=new UserListViewModel
+        {
+            users=userToReturn,
+            PageIndex=NextPage,
+            PageSize=PageSize,
+            TotalUsers=userCount,
+            TotalPages=totalPages
+        };
+       return PartialView("_UserList",userListViewModel);
     }
 
     [HttpGet]
@@ -57,11 +62,14 @@ public class UserListController : Controller
     {
         var userLoggedInId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
           EditUserViewModel userViewModel =await _userListService.getUserDataFromUserId(id, userLoggedInId);
+
             var countries =_editProfileService.getCountries();
             var states = _editProfileService.getStates(userViewModel.CountryId);
             var cities = _editProfileService.getCities(userViewModel.StateId);
             var roles = _userListService.getRoles();
             
+
+
             ViewBag.Roles = roles;
             ViewBag.Countries = countries;
             ViewBag.States = states;
@@ -90,7 +98,7 @@ public class UserListController : Controller
 
            AddUserViewModel addUserViewModel = new AddUserViewModel
             {
-                Username = usernameLoggedIn,
+                UserName = usernameLoggedIn,
                 ProfileImageURL = profileImageURL,
                 RoleId = roleId
             };

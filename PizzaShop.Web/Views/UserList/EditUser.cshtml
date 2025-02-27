@@ -1,8 +1,8 @@
 @model PizzaShop.Domain.ViewModels.EditUserViewModel
 
 <div class="add-user-back">
-            <div class="d-flex justify-content-between align-items-center">
-                <h1 class="main-page-heading">Edit User</h1>
+            <div class="d-flex justify-content-between align-items-center m-3">
+                  <h2 class="page-title ">Edit User</h2>
                 <a asp-controller="UserList" asp-action="Index">
                     <button class="btn border-primary text-primary btn-contrast mx-4">
                          Back</button>
@@ -21,7 +21,7 @@
                             <label for="last-name" class="mx-2 mt-2">Last Name</label>
                         </div>
                         <div class="col-12 col-sm-6 p-2 form-floating">
-                            <input type="text" class="form-control" name="UserName" id="user-name" placeholder="user-name" value=@Model.UsernameRequestedUSer>
+                            <input type="text" class="form-control" name="UsernameRequestedUSer" id="user-name" placeholder="user-name" value=@Model.UsernameRequestedUSer>
                             <label for="user-name" class="mx-2 mt-2">User Name</label>
                         </div>
                         <div class="col-12 col-sm-6 p-2 form-floating">
@@ -122,4 +122,31 @@
             </div>
         </div>
 </div>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">
+                        Delete Confirmation
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center justify-content-center">
+                        <img src="./images/warning.svg" alt="" class="popup-svg" />
+                        <p>Are you sure you want to delete this user?</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        No
+                    </button>
+                    <button type="button" class="btn btn-primary">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
         <script src="~/js/editUser.js" asp-append-version="true"></script>

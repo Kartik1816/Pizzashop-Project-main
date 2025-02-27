@@ -1,0 +1,156 @@
+ @model PizzaShop.Domain.ViewModels.UserListViewModel
+ <table class="table table-hover" style="white-space: nowrap">
+        <thead>
+          <tr>
+            <th>Name <i class="fas fa-sort"></i></th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Role <i class="fas fa-sort"></i></th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+ <tbody id="tableBody">
+          @foreach (var user in @Model.users)
+          {
+            <tr>
+              <td><img src="/images/profile-images/@user.ProfileImage" class="profile-image object-fit-cover">@user.FirstName  @user.LastName</td>
+              <td>@user.Email</td>
+              <td>@user.Phone</td>
+              <td>@user.RoleId</td>
+              <td>
+                @if (user.Status ?? false)
+                {
+                  <span class="status-badge">Active</span>
+                }
+                else
+                {
+                  <span class="text-danger">Inactive</span>
+                }
+              </td>
+              <td><a onclick="editUser(@user.Id)"><button class="btn btn-light btn-sm">
+                    <i class="fas fa-pencil"></i></button></a>
+                <button type="button" class="btn-light btn btn-sm delete-icon-border" data-bs-toggle="modal"  data-bs-target="#deleteModel" onclick="openModel(@user.Id)">
+                                        <a href="#" class="delete-icon">  <i class="fas fa-trash"></i></a></button>
+              </td>
+            </tr>
+          }
+        </tbody>
+
+      </table>
+      <div class="d-flex flex-column flex-sm-row align-items-center justify-content-end g-3 me-sm-5">
+    <p>Items per page: </p>
+    <select class="form-select pagination-dropdown text-black" style="width: 100px;" aria-label="Items per page"
+        onchange="changeSize(this.value)">
+        <option value="5" selected="@(Model.PageSize == 5 ? "selected" : null)">5</option>
+        <option value="10" selected="@(Model.PageSize == 10 ? "selected" : null)">10</option>
+        <option value="15" selected="@(Model.PageSize == 15 ? "selected" : null)">15</option>
+    </select>
+    <p class="px-1">
+        Showing @((Model.PageIndex - 1) * Model.PageSize + 1) - 
+        @(Math.Min(Model.PageIndex * Model.PageSize, Model.TotalUsers)) of 
+        @Model.TotalUsers
+    </p>
+
+
+    <div>
+    </div>
+    <button id="leftButton" class="p-1 px-2" @(Model.PageIndex == 1 ? "disabled" : "")>&lt;</button>
+
+    <button id="rightButton" class="p-1 px-2 ms-1 border-1 border-secondary" @(Model.PageIndex == Model.TotalPages ? "disabled" : "")>&gt;</button>
+    </div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  $('#rightButton').click(function(){
+      var nextpage=@Model.PageIndex+1
+      var pagesize = @Model.PageSize
+      console.log('rightButton clicked')
+      
+      $.ajax({
+          url : "/UserList/FindUsers",
+          type: "GET", 
+          data :{
+              NextPage: nextpage,
+              PageSize: pagesize
+          },
+          success:function(data){ 
+            console.log(data)
+            $("#partialView").html(data);
+          }
+      });
+});
+
+$('#leftButton').click(function(){
+      var nextpage=@Model.PageIndex-1
+      var pagesize = @Model.PageSize
+      console.log('rightButton clicked')
+      
+      $.ajax({
+          url : "/UserList/FindUsers",
+          type: "GET", 
+          data :{
+              NextPage: nextpage,
+              PageSize: pagesize
+          },
+          success:function(data){ 
+            console.log(data)
+            $("#partialView").html(data);
+          }
+      });
+});
+
+function changeSize(pageSize) {
+
+      var nextpage=1
+      console.log(' clicked')
+      
+      $.ajax({
+          url : "/UserList/FindUsers",
+          type: "GET", 
+          data :{
+              NextPage: nextpage,
+              PageSize: pageSize
+          },
+          success:function(data){ 
+            console.log(data)
+            $("#partialView").html(data);
+          }
+      });
+}
+
+$('#searchInput').keyup(function(){
+
+  clearTimeout($.data(this,'timer'));
+  var searchTerm=$('#searchInput').val();
+      console.log('rightButton clicked')
+
+  $(this).data('timer',setTimeout(function(){
+    
+var nextpage=1
+      var pagesize = @Model.PageSize
+
+      
+      
+      $.ajax({
+          url : "/UserList/FindUsers",
+          type: "GET", 
+          data :{
+              NextPage: nextpage,
+              PageSize: pagesize,
+              searchTerm:searchTerm
+          },
+          success:function(data){ 
+            console.log(data)
+            $("#partialView").html(data);
+          }
+      });
+
+  },300));
+      
+});
+</script>

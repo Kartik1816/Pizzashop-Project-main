@@ -6,8 +6,8 @@ namespace PIzzaShop.Service.Interfaces;
 
 public interface IUserListService
 {
-    public  Task<List<UserListViewModel>> getUsers();
-    public  Task<List<UserListViewModel>> getSearchedUserListDetails(string searchTerm);
+    public  Task<UserListViewModel> getUsers(int userId,int PageIndex,int PageSize);
+    // public  Task<List<UserListViewModel>> getSearchedUserListDetails(string searchTerm,int userId);
 
     public Task<EditUserViewModel> getUserDataFromUserId(int id,int userLoggedInId);
 
@@ -24,4 +24,6 @@ public interface IUserListService
     public Task<JsonResult> AddUser(int userLoggedInId, AddUserViewModel addUserViewModel);
     
      public  Task<JsonResult> DeleteUser(int userId);
+
+     public Task<List<User>> getTotalUsersInTable(string searchTerm);
 }

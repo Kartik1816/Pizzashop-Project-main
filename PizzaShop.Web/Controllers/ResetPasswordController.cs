@@ -49,11 +49,10 @@ public class ResetPasswordController : Controller
 
                 if (storedToken == model.Token && DateTime.Parse(storedExpiry) > DateTime.UtcNow)
                 {
-                    _context.Database.ExecuteSqlRaw(@"
-                        UPDATE Users
-                        SET Password = {0}
-                        WHERE Id = {1}", model.NewPassword, userId);
-                    await _context.SaveChangesAsync();
+
+                    user.Password=BCrypt.Net.BCrypt.HashPassword(model.NewPassword);
+                    _context.Update(user);
+                    _context.SaveChanges();
 
                     // Clear the session/cache
                     HttpContext.Session.Remove("ResetToken");

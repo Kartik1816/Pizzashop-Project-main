@@ -1,6 +1,6 @@
 
 using Microsoft.AspNetCore.Mvc;
-using PizzaShop.Domain.DBContext;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using PizzaShop.Domain.Models;
 using PizzaShop.Domain.ViewModels;
 using PizzaShop.Repository.Interfaces;
@@ -19,30 +19,34 @@ public class UserListService : IUserListService
        _userListRepository=userListRepository;
        _userRepository=userRepository;
     }
-    public async Task<List<UserListViewModel>> getUsers()
+    public async Task<UserListViewModel> getUsers(int userId,int PageIndex,int PageSize)
     {
-        var usersWithRoles = await _userListRepository.getUserWithRole();
-
-        return  usersWithRoles;
-    }
-
-    public async Task<List<UserListViewModel>> getSearchedUserListDetails(string searchTerm)
-    {
-        var usersWithRoles = await _userListRepository.getUserWithRole();
-
-         if (!string.IsNullOrEmpty(searchTerm))
+        var usernameLoggedIn=await _userRepository.getUserNameFromUserId(userId);
+        var url=await _userRepository.getImageUrlFromUserId(userId);
+        List<User> usersWithRoles = await _userListRepository.getUserWithRole(null);
+        var totalusers=usersWithRoles.Count();
+        var totalPages=(int)Math.Ceiling((double)totalusers/PageSize);
+        usersWithRoles=usersWithRoles.Take(PageSize).ToList();
+        UserListViewModel userListViewModel=new UserListViewModel
         {
-            searchTerm = searchTerm.ToLower();
-            usersWithRoles = usersWithRoles.Where(u =>
-                u.Username.ToLower().Contains(searchTerm) ||
-                u.Email.ToLower().Contains(searchTerm) ||
-                u.Phone.Contains(searchTerm) ||
-                u.RoleName.ToLower().Contains(searchTerm)
-            ).ToList();
-        }
+            users=usersWithRoles,
+            UserName=usernameLoggedIn,
+            ProfileImageURL=url,
+            PageIndex=PageIndex,
+            PageSize=PageSize,
+            TotalUsers=totalusers,
+            TotalPages=totalPages
+        };
 
-        return usersWithRoles.ToList();
+        return  userListViewModel;
     }
+
+    public async Task<List<User>> getTotalUsersInTable(string searchTerm)
+    {
+         return await _userListRepository.getUserWithRole(searchTerm);
+    }
+
+
 
      public async Task<EditUserViewModel> getUserDataFromUserId(int id,int userLoggedInId)
      {
@@ -60,7 +64,7 @@ public class UserListService : IUserListService
                 Address = user.Address,
                 ZipCode = user.ZipCode,
                 Status = (bool)user.Status,
-                Username = usernameLoggedIn,
+                UserName=usernameLoggedIn,
                 RoleId = roleIdLoggedIn,
                 ProfileImageURL = profileImageURLLoggedIn,
                 RoleIdRequestedUser = user.RoleId,
