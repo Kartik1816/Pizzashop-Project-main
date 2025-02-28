@@ -590,6 +590,15 @@ public partial class PizzaShopDbContext : DbContext
 
             entity.Property(e => e.RoleId).HasColumnName("role_id");
             entity.Property(e => e.PermissionId).HasColumnName("permission_id");
+            entity.Property(e => e.CanAddEdit)
+                .HasDefaultValue(false)
+                .HasColumnName("can_add_edit");
+            entity.Property(e => e.CanDelete)
+                .HasDefaultValue(false)
+                .HasColumnName("can_delete");
+            entity.Property(e => e.CanView)
+                .HasDefaultValue(true)
+                .HasColumnName("can_view");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("CURRENT_TIMESTAMP")
                 .HasColumnType("timestamp without time zone")

@@ -57,11 +57,11 @@
         </a>
       </div>
 
-        <div class="">
-        <a href="#" class="text-decoration-none ">
+        <div class="sidebar-element" id="RolesAndPermission">
+        <a asp-controller="RolesAndPermission" asp-action="Index" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
-            <img src="~/images/role-and-permission.svg" alt="" class="sidebar-svg" />
-            <span class="px-3 sidebar-span">Role and Permission</span>
+            <img src="~/images/role-and-permission.svg" alt="" class="sidebar-svg" id="RolesAndPermission-svg"/>
+            <span class="px-3 sidebar-span common-span"  id="RolesAndPermission-title">Role and Permission</span>
           </div>
         </a>
         </div>
@@ -120,7 +120,7 @@
       </div>
         
         <div class="sidebar-element" id="UserList">
-        <a  class="text-decoration-none " asp-controller="UserList">
+        <a  class="text-decoration-none " asp-controller="UserList" asp-action="Index">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/users.svg" alt="" class="sidebar-svg" id="UserList-svg"/>
             <span class="px-3  sidebar-span common-span" id="UserList-title">Users</span>
@@ -202,7 +202,7 @@
                     <h6 class="mx-5 mt-3">@Model.UserName</h6>
                   </div>
                 </li>
-                <li><a class="dropdown-item" asp-controller="EditProfile"><img src="~/images/profile-icon.svg" alt="" class="dashboard-profile-svg">MyProfile</a></li>
+                <li><a class="dropdown-item" asp-controller="EditProfile" asp-action="Index"><img src="~/images/profile-icon.svg" alt="" class="dashboard-profile-svg">MyProfile</a></li>
                 <li><a class="dropdown-item"  asp-controller="ChangePassword" asp-action="Index"><img src="~/images/change-password.svg" alt="" class="dashboard-profile-svg"> ChangePassword</a></li>
                 <li>
                   <a class="dropdown-item"  data-bs-toggle="modal" id="logout"

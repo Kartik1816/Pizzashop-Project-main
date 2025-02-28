@@ -4,7 +4,7 @@ namespace PizzaShop.Domain.ViewModels;
 
 public class ResetPasswordViewModel
 {
-    [Required]
+        [Required]
         public string Token { get; set; }
 
         [Required]

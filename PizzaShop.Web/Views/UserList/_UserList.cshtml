@@ -17,7 +17,18 @@
               <td><img src="/images/profile-images/@user.ProfileImage" class="profile-image object-fit-cover">@user.FirstName  @user.LastName</td>
               <td>@user.Email</td>
               <td>@user.Phone</td>
-              <td>@user.RoleId</td>
+              <td>@if(user.RoleId == 1)
+                                    {
+                                        <span class="">Super Admin</span>
+                                    }
+                                    else if(user.RoleId == 2)
+                                    {
+                                        <span class="">Account Manager</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="">Chef</span>
+                                    }</td>
               <td>
                 @if (user.Status ?? false)
                 {
@@ -25,7 +36,7 @@
                 }
                 else
                 {
-                  <span class="text-danger">Inactive</span>
+                  <span class="status-badge-inactive">Inactive</span>
                 }
               </td>
               <td><a onclick="editUser(@user.Id)"><button class="btn btn-light btn-sm">

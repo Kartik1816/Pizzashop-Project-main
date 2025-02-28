@@ -147,6 +147,14 @@ td{
     border-radius: 12px;
     font-size: 0.9rem;
 }
+
+.status-badge-inactive {
+    background-color: #e6c3c3;
+    color: #571515;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
 .mailTo{
     text-decoration: none; color: black;
 }

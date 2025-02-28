@@ -131,4 +131,54 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('#reset-password-form-first-login').submit(function (e) {
+      console.log('submit');
+
+      e.preventDefault();
+      var password = $('#password').val();
+      var confirmPassword = $('#password1').val();
+      if (password.length <= 0) {
+          toastr.error('Password is required');
+          return;
+      }
+
+      if (confirmPassword.length <= 0) {
+          toastr.error('Confirm Password is required');
+          return;
+      }
+
+      if (password !== confirmPassword) {
+          toastr.error('Password and Confirm Password do not match');
+          return;
+      }
+      console.log("passwordsdfsadfsdaf" + password);
+      
+      $.ajax({
+          url: '/api/resetpasswordatFirstLogin',
+          method: 'POST',
+          contentType: 'application/json',
+          data: JSON.stringify({ NewPassword: password}),
+          success: function (response) {
+
+            console.log(response);
+              if (response.success) {
+                  toastr.success(response.message);
+                  setTimeout(function () {
+                      window.location.href = '/Auth';
+                  }, 2000);
+              } else {
+                  toastr.error(response.message);
+              }
+          },
+          error: function (xhr) {
+              console.log(xhr);
+              if (xhr.responseJSON && xhr.responseJSON.message) {
+                  toastr.error(xhr.responseJSON.message);
+              } else {
+                  toastr.error('An unexpected error occurred.');
+              }
+          }
+      });
+  });
 });

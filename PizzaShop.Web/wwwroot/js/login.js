@@ -139,10 +139,18 @@ $(document).ready(function () {
     success: function (data) {
       console.log(data);
              
-      if (data.success) {
+      if (data.success){
+        toastr.success(data.message)
         console.log(data.token);
+        if(data.hasLoggedInBefore)
+        {
+          document.cookie = `token=${data.token};max-age=${60*60*24*7};path=/;Samesite=Lax`;
+          window.location.href='/Dashboard';
+        }
+       else{
         document.cookie = `token=${data.token};max-age=${60*60*24*7};path=/;Samesite=Lax`;
-        window.location.href='/Dashboard';
+        window.location.href='/ResetPassword/ResetPasswordAtFirstLogin';
+       }
         // localStorage.setItem('token',data.token);
         
         if(rememberMe){
@@ -152,11 +160,11 @@ $(document).ready(function () {
         }
         
       } else {
-        $('#login-error').text(data.message);
+        toastr.error(data.message);
       }
     },
     error: function (err) {
-      $('#login-error').text('An error occurred while processing your request');
+      toastr.error('An error occurred while processing your request');
     }
   });
 

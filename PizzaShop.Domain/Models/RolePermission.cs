@@ -17,6 +17,12 @@ public partial class RolePermission
 
     public int UpdatedBy { get; set; }
 
+    public bool? CanView { get; set; }
+
+    public bool? CanAddEdit { get; set; }
+
+    public bool? CanDelete { get; set; }
+
     public virtual User CreatedByNavigation { get; set; } = null!;
 
     public virtual Permission Permission { get; set; } = null!;

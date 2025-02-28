@@ -5,6 +5,7 @@ namespace PizzaShop.Domain.ViewModels;
 public class AddUserViewModel
 {
         public int Id {get; set; }
+        
         [Required(ErrorMessage ="FirstName is Required")]
         public string FirstName { get; set; }
         public string LastName { get; set; }

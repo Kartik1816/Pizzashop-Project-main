@@ -1,0 +1,99 @@
+ @model PizzaShop.Domain.ViewModels.PermissionViewModel
+ <div class="add-user-back">
+            <div class="mt-3 me-3 ms-4 d-flex flex-column">
+            <div class="d-flex justify-content-between">
+                    <h2>Permissions</h2>
+                    <a href="./Roles.html" class="text-decoration-none"><button type="button" class="btn cancle-back mx-4"> Back</button></a>
+            </div>
+
+            <div class="table-user mt-5 ms-2 me-2 shadow-lg p-4 table-responsive">
+
+                <div class=" col-xl-4 col-lg-12 col-md-12 col-sm-12 mt-3 px-3 mb-3">
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example" disabled>
+                          <option value="accountManager">@Model.role.Name</option>
+                        </select>
+                        <label class="" for="floatingSelect">Role</label>
+                      </div>
+                  </div>
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Permission</th>
+                            <th>Can View</th>
+                            <th>Can Add/Edit</th>
+                            <th>Can Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            @foreach(var permission in @Model.Permissions)
+                            {
+                        <tr>
+                                <td> 
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            @permission.Name
+                                        </label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check form-switch">
+                                        @{
+                                            var canViewId="CanView"+@Model.role.Id+@permission.Id;
+                                        }
+                                        @if(Model.RolePermissions.Any(rp => rp.RoleId == Model.role.Id && rp.PermissionId == permission.Id && rp.CanView.GetValueOrDefault())){ 
+                                        
+                                        <input id="@canViewId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onchange="changePermission(@Model.role.Id,@permission.Id,'CanView')">
+                                        }
+                                        else{
+                                            <input id="@canViewId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="changePermission(@Model.role.Id,@permission.Id,'CanView')">
+                                        }
+                                  </div>  
+                                </td>
+                               
+                                <td>
+                                    <div class="form-check form-switch">
+                                        @{
+                                            var canEditId="CanAddEdit"+@Model.role.Id+@permission.Id;
+                                        }
+                                        @if(Model.RolePermissions.Any(rp => rp.RoleId == Model.role.Id && rp.PermissionId == permission.Id && rp.CanAddEdit.GetValueOrDefault())){ 
+                                        
+                                        <input id="@canEditId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onchange="changePermission(@Model.role.Id,@permission.Id,'CanAddEdit')">
+                                        }
+                                        else{
+                                            <input id="@canEditId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="changePermission(@Model.role.Id,@permission.Id,'CanAddEdit')">
+                                        }
+                                  </div>  
+                                </td>
+
+                                 <td>
+                                    <div class="form-check form-switch">
+                                        @{
+                                            var canDeleteId="CanDelete"+@Model.role.Id+@permission.Id;
+                                        }
+                                        @if(Model.RolePermissions.Any(rp => rp.RoleId == Model.role.Id && rp.PermissionId == permission.Id && rp.CanDelete.GetValueOrDefault())){ 
+                                        
+                                        <input id="@canDeleteId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked onchange="changePermission(@Model.role.Id,@permission.Id,'CanDelete')">
+                                        }
+                                        else{
+                                            <input id="@canDeleteId" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" onchange="changePermission(@Model.role.Id,@permission.Id,'CanDelete')">
+                                        }
+                                  </div>  
+                                </td>
+                                 
+                        </tr>
+                            }
+                    </tbody>
+                </table>
+
+                <div class="d-flex  justify-content-end px-3 mt-3 gap-3">
+                    <button type="submit" class="btn btn-primary" onclick="editPermission()">Save</button>
+                    <a href="./Roles.html" class="text-decoration-none"><button type="button" class="btn cancle-back mx-4"> Cancle</button></a>
+                  </div>
+        </div>
+
+            </div>
+        </div>
+
+          <script src="~/js/permission.js" asp-append-version="true"></script>

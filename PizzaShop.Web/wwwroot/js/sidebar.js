@@ -1,6 +1,6 @@
 
 
-var controllers = ['Dashboard', 'UserList']
+var controllers = ['Dashboard', 'UserList','RolesAndPermission']
 
 
 var url = window.location.pathname;
@@ -29,6 +29,7 @@ $(document).ready(function () {
 
     $('#logout').click(function(){
         document.cookie="token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+        document.cookie="email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
         window.location.href="/Auth";
     })
 });

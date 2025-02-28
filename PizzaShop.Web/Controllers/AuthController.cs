@@ -39,15 +39,25 @@ public class AuthController : Controller
             if (user!=null)
             {
                 
+                if(user.IsDeleted==true)
+                {
+                    return Ok(new { success = false, message = "User is deleted" });
+                }   
+                if(user.Status==false)
+                {
+                    return Ok(new { success = false, message = "User is not active" });
+                }
 
+                
                 var roleid=user.RoleId;
                 var role = await _userService.getRoleName(roleid);
                 var token = _generateJwt.GenerateJwtToken(user, role);
-                // var Username=_pizzaShopContext.Users.FirstOrDefault(u=>u.Email==model.Email).Username;
-                // var ProfileImage=_pizzaShopContext.Users.FirstOrDefault(u=>u.Email==model.Email).ProfileImage;
-                // HttpContext.Session.SetString("UserName", Username);
-                // HttpContext.Session.SetString("ImageURL", ProfileImage);
-                return Ok(new { success = true, message = "Login success",token=token});
+
+                if(user.HasLoggedInBefore==false)
+                {
+                 return Ok(new { success = true, message = "Reset Your Password First Time to Continue",token=token,hasLoggedInBefore=false});
+                }
+                return Ok(new { success = true, message = "Login success",token=token,hasLoggedInBefore=true});
                 
             }
             else

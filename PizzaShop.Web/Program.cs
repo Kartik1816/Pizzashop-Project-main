@@ -29,6 +29,8 @@ builder.Services.AddScoped<IForgotPasswordService,ForgotPasswordService>();
 builder.Services.AddScoped<IUserListRepository,UserListRepository>();
 builder.Services.AddScoped<IUserListService,UserListService>();
 builder.Services.AddScoped<IDashboardService,DashboardService>();
+builder.Services.AddScoped<IRolePermissionRepository,RolePermissionRepository>();
+builder.Services.AddScoped<IRolePermissionService,RolePermissionService>();
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {
