@@ -42,14 +42,14 @@ $(document).ready(function(){
    // submit form
    $('#edit-profile-form').submit(function (e) {
        e.preventDefault();
-       var form = $(this);
-       var data = form.serialize();
-       console.log(data)
-       console.log(JSON.stringify(data));
+       var form = $(this)[0]; 
+       var formData = new FormData(form);
        $.ajax({
            url: '/Profile/saveProfile',
            type: 'POST',
-           data:  data,
+           data: formData,
+           processData: false, 
+           contentType: false, 
            success: function (data) {
                console.log(data);
                if (data.success) {

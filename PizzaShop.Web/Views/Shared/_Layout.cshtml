@@ -1,9 +1,19 @@
-﻿
+﻿@using Newtonsoft.Json;
+@using PizzaShop.Domain.ViewModels;
 
-@* @{
-    var username = "Kartik16" ;
-    var ImageURL =  "https://i.ibb.co/n8K7cKVc/profile-pic.jpg";
-} *@
+@{
+
+
+var roleId = Context.Session.GetInt32("RoleId");
+var userRole=roleId;
+var ProfileImageURL=Context.Session.GetString("ImageURL");
+var username=Context.Session.GetString("UserName");
+var permissions = Context.Session.Get("Permissions");
+var permissionsString = System.Text.Encoding.UTF8.GetString(permissions);
+var permissionsList = JsonConvert.DeserializeObject<List<RolePermissionModel>>(permissionsString);
+ 
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +42,7 @@
     <div class="container-fluid row">
     <div class="sidebar col-lg-2 d-none d-lg-block">
       <div class="d-flex flex-column">
-        <a href="#" class="text-decoration-none ">
+        <a asp-controller="Dashboard" asp-action="Index" class="text-decoration-none ">
           <div class="d-flex align-items-center justify-content-center no-padding ms-2 mt-3 mb-4">
             <img src="~/images/logos/pizzashop_logo.png" alt="" class="h-25 w-25" />
             <h3 class="pizzashop-heading px-3">PIZZASHOP</h3>
@@ -47,8 +57,11 @@
           </div>
         </a>
       </div>
-        
-        <div class="sidebar-element" id="UserList">
+@foreach(var permission in permissionsList)
+{
+  if(permission.CanView==true && permission.PermissionName=="Users")
+  {
+    <div class="sidebar-element" id="UserList">
         <a  class="text-decoration-none " asp-controller="UserList" asp-action="Index">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/users.svg" alt="" class="sidebar-svg" id="UserList-svg"/>
@@ -56,7 +69,9 @@
           </div>
         </a>
       </div>
-
+  }
+    @if(permission.CanView==true && permission.PermissionName=="Roles And Permission" && userRole==1)
+  {
         <div class="sidebar-element" id="RolesAndPermission">
         <a asp-controller="RolesAndPermission" asp-action="Index" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
@@ -65,38 +80,70 @@
           </div>
         </a>
         </div>
-        <a href="#" class="text-decoration-none ">
+
+  }
+  if(permission.CanView==true && permission.PermissionName=="Menu")
+  {
+    <div class="sidebar-element" id="Menu">
+       <a href="#" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/dining-menu.png" alt="" class="sidebar-svg" />
             <span class="px-3 sidebar-span">Menu</span>
           </div>
         </a>
+      </div>
+  }
 
+  if(permission.CanView==true && permission.PermissionName=="Table And Section")
+  {
+    <div class="sidebar-element" id="TableAndSection">
         <a href="#" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/table-and-section.svg" alt="" class="sidebar-svg" />
             <span class="px-3 sidebar-span">Table and Section</span>
           </div>
         </a>
+      </div>
+  }
+
+  if(permission.CanView==true && permission.PermissionName=="Taxes And Fees")
+  {
+    <div class="sidebar-element" id="TaxesAndFees">
         <a href="#" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/taxes-and-fees.svg" alt="" class="sidebar-svg" />
             <span class="px-3 sidebar-span">Taxes and Fees</span>
           </div>
         </a>
+      </div>
+  }
+
+  if(permission.CanView==true && permission.PermissionName=="Orders")
+  {
+    <div class="sidebar-element" id="Orders">
         <a href="#" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/orders.svg" alt="" class="sidebar-svg" />
             <span class="px-3 sidebar-span">Orders</span>
           </div>
         </a>
+      </div>
+  }
 
-        <a href="#" class="text-decoration-none ">
+  if(permission.CanView==true && permission.PermissionName=="Customers")
+  {
+    <div class="sidebar-element" id="Customers">
+         <a href="#" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
             <img src="~/images/customers.svg" alt="" class="sidebar-svg" />
             <span class="px-3 sidebar-span">Customers</span>
           </div>
         </a>
+      </div>
+  }
+
+}    
+        
       </div>
     </div>
 
@@ -128,12 +175,15 @@
         </a>
       </div>
 
-          <a href="./Roles.html" class="text-decoration-none ">
+@if(userRole==1)
+{
+          <a  asp-controller="RolesAndPermission" asp-action="Index" class="text-decoration-none ">
             <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
               <img src="~/images/role-and-permission.svg" alt="" class="sidebar-svg" />
               <span class="px-3 sidebar-span">Role and Permission</span>
             </div>
           </a>
+        }
           <a href="./Menu.html" class="text-decoration-none ">
             <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
               <img src="~/images/dining-menu.png" alt="" class="sidebar-svg" />
@@ -181,9 +231,9 @@
           </div>
 
                         @{
-                            string profileImagePath = string.IsNullOrEmpty(@Model.ProfileImageURL)
+                            string profileImagePath = string.IsNullOrEmpty(@ProfileImageURL)
                             ? "/images/default-profile.png"
-                            : $"/images/profile-images/{@Model.ProfileImageURL}";
+                            : $"/images/profile-images/{@ProfileImageURL}";
                         }
                         @* <img src="@profileImagePath" class="object-fit-cover navbar-image profile-image-border" alt=""> *@
 
@@ -199,14 +249,14 @@
                   <div class="d-flex w-25">
 
                    <img  src="@profileImagePath"  alt="" class="profile-image ms-3" />
-                    <h6 class="mx-5 mt-3">@Model.UserName</h6>
+                    <h6 class="mx-5 mt-3">@username</h6>
                   </div>
                 </li>
-                <li><a class="dropdown-item" asp-controller="EditProfile" asp-action="Index"><img src="~/images/profile-icon.svg" alt="" class="dashboard-profile-svg">MyProfile</a></li>
-                <li><a class="dropdown-item"  asp-controller="ChangePassword" asp-action="Index"><img src="~/images/change-password.svg" alt="" class="dashboard-profile-svg"> ChangePassword</a></li>
+                <li><a class="dropdown-item" asp-controller="EditProfile" asp-action="Index"><img src="~/images/profile-icon.svg" alt="" class="dashboard-profile-svg"> <span class="ms-2">MyProfile</span></a></li>
+                <li><a class="dropdown-item"  asp-controller="ChangePassword" asp-action="Index"><img src="~/images/change-password.svg" alt="" class="dashboard-profile-svg"><span class="ms-2">ChangePassword</span></a></li>
                 <li>
                   <a class="dropdown-item"  data-bs-toggle="modal" id="logout"
-                      data-bs-target="#staticBackdrop"><img src="~/images/logout.svg" alt="" class="dashboard-profile-svg"> Logout</a>
+                      data-bs-target="#staticBackdrop"><img src="~/images/logout.svg" alt="" class="dashboard-profile-svg"><span class="ms-2">LogOut</span></a>
                 </li>
               </ul>
             </div>
@@ -224,3 +274,4 @@
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+

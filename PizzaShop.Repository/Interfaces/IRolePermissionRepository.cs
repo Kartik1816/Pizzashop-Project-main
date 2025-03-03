@@ -12,4 +12,6 @@ public interface IRolePermissionRepository
     public Task<Role> getRole(int roleId);
 
     public Task<IActionResult> savePermissions(List<SavePermissionModel> savePermissionModels);
+
+    public Task<List<RolePermissionModel>>getPermissionOfRole(int roleId);
 }

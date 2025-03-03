@@ -49,6 +49,18 @@ public class EditProfileRepository : IEditProfileRepository
             user.Address=editProfileViewModel.Address;
             user.ZipCode=editProfileViewModel.ZipCode;
 
+             if (editProfileViewModel.ProfileImage != null)
+            {
+                // store filename in db and save image in wwwroot/profile-images
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(editProfileViewModel.ProfileImage.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/profile-images", fileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    editProfileViewModel.ProfileImage.CopyTo(fileStream);
+                }
+                user.ProfileImage = fileName;
+            }
+
              _pizzaShopDbContext.SaveChanges();
             return new JsonResult(new{success=true,message="Profile Updated successfully"});
         }

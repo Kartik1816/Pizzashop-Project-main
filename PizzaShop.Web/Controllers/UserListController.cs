@@ -83,6 +83,10 @@ public class UserListController : Controller
     [Route("/UserList/EditUser/{id}")]
     public  async Task<JsonResult> EditUser(EditUserViewModel userViewModel)
     {
+        if(!ModelState.IsValid)
+        {
+            return Json(new { success = false, message = "Please enter correct data" });
+        }
         var userIdLoggedIn = _generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
         return await _userListService.editUserDataFromUserId(userIdLoggedIn,userViewModel);
     }
@@ -115,6 +119,11 @@ public class UserListController : Controller
         [Route("UserList/AddUser")]
         public async Task<JsonResult> AddUser(AddUserViewModel addUserViewModel)
         {
+            if(!ModelState.IsValid)
+            {
+                return Json(new { success = false, message = "Please enter correct data" });
+            }
+
             var userLoggedInId = _generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
 
             await _emailService.SendAddUserEmailAsync(addUserViewModel.Email, addUserViewModel.Password);

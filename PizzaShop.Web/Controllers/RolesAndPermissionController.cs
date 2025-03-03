@@ -68,5 +68,6 @@ public class RolesAndPermissionController : Controller
     public async Task<IActionResult> EditPermission([FromBody] List<SavePermissionModel> savePermissionModel)
     {
        return await _rolePermissionService.savePermissions(savePermissionModel);
+ 
     }
 }

@@ -31,4 +31,9 @@ public class RolePermissionService : IRolePermissionService
     {
         return await _rolePermissionRepository.savePermissions(savePermissionModels);
     }
+
+    public async Task<List<RolePermissionModel>>getPermissionOfRole(int roleId)
+    {
+        return await _rolePermissionRepository.getPermissionOfRole(roleId);
+    }
 }

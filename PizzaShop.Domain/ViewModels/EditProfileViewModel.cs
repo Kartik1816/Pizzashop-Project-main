@@ -1,10 +1,11 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace PizzaShop.Domain.ViewModels;
 
 public class EditProfileViewModel
 {
-     [Required]
+    [Required]
     public string FirstName { get; set; }
     public string? LastName { get; set; }
 
@@ -25,4 +26,6 @@ public class EditProfileViewModel
     public string? Role { get; set; }
 
     public string? Email { get; set; }
+
+    public IFormFile? ProfileImage { get; set; }
 }

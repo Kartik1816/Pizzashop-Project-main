@@ -373,6 +373,7 @@ td{
 }
 .default-pfp {
     width: 140px;
+    height: 140px;
     position: relative;
     top: -35px;
     border-radius: 50%;
@@ -405,4 +406,13 @@ td{
   .small-image {
     width: 20px;
     cursor: pointer;
+  }
+
+  .upload-camera{
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: -80px;
+    cursor: pointer !important;
   }

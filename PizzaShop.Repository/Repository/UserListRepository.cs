@@ -35,6 +35,15 @@ public class UserListRepository : IUserListRepository
             {
                 return new JsonResult(new { success = false, message = "User not found" });
             }
+            if(_pizzaShopDbContext.Users.Any(u=>u.Username==userViewModel.UserName && u.Id!=userViewModel.Id))
+            {
+                return new JsonResult(new { success = false, message = "Username already exists" });
+            }
+            if(_pizzaShopDbContext.Users.Any(u=>u.Email==userViewModel.Email && u.Id!=userViewModel.Id))
+            {
+                return new JsonResult(new { success = false, message = "Email already exists" });
+            }
+
             user.FirstName = userViewModel.FirstName;
             user.LastName = userViewModel.LastName;
             user.Email = userViewModel.Email;
@@ -48,6 +57,7 @@ public class UserListRepository : IUserListRepository
             user.CityId = userViewModel.CityId;
             user.UpdatedBy = userLoggedInId;
             user.UpdatedAt = DateTime.Now;
+            user.Username = userViewModel.UsernameRequestedUSer;
 
             if (userViewModel.ProfileImage != null)
             {
@@ -66,6 +76,14 @@ public class UserListRepository : IUserListRepository
 
      public  async Task<JsonResult> addUser(int userLoggedInId, AddUserViewModel addUserViewModel)
      {
+        if(_pizzaShopDbContext.Users.Any(u=>u.Username==addUserViewModel.UsernameRequestedUser))
+        {
+            return new JsonResult(new { success = false, message = "Username already exists" });
+        }
+        if(_pizzaShopDbContext.Users.Any(u=>u.Email==addUserViewModel.Email))
+        {
+            return new JsonResult(new { success = false, message = "Email already exists" });
+        }
         User user=new User
         {
             FirstName = addUserViewModel.FirstName,

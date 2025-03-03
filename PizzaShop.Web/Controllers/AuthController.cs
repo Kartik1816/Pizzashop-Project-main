@@ -11,10 +11,13 @@ public class AuthController : Controller
     private readonly IUserService _userService;
 
     private readonly IGenerateJwt _generateJwt;
-    public AuthController(IUserService userService,IGenerateJwt generateJwt)
+
+    private readonly IRolePermissionService _rolePermissionService;
+    public AuthController(IUserService userService,IGenerateJwt generateJwt,IRolePermissionService rolePermissionService)
     {
         _userService=userService;
         _generateJwt=generateJwt;
+        _rolePermissionService=rolePermissionService;
     }
     public IActionResult Index()
     {
@@ -38,6 +41,7 @@ public class AuthController : Controller
 
             if (user!=null)
             {
+
                 
                 if(user.IsDeleted==true)
                 {
@@ -52,6 +56,17 @@ public class AuthController : Controller
                 var roleid=user.RoleId;
                 var role = await _userService.getRoleName(roleid);
                 var token = _generateJwt.GenerateJwtToken(user, role);
+                HttpContext.Session.SetString("ImageURL",user.ProfileImage);
+                HttpContext.Session.SetString("UserName",user.Username);
+                HttpContext.Session.SetInt32("RoleId", roleid);
+                List<RolePermissionModel> rolePermissionModels = await _rolePermissionService.getPermissionOfRole(roleid);
+                var permissionsBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(rolePermissionModels);
+                HttpContext.Session.Set("Permissions", permissionsBytes);
+
+
+                //get Permissions of role from session 
+
+                
 
                 if(user.HasLoggedInBefore==false)
                 {
