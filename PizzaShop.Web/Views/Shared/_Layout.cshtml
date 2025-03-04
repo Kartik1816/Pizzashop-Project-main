@@ -85,10 +85,10 @@ var permissionsList = JsonConvert.DeserializeObject<List<RolePermissionModel>>(p
   if(permission.CanView==true && permission.PermissionName=="Menu")
   {
     <div class="sidebar-element" id="Menu">
-       <a href="#" class="text-decoration-none ">
+       <a asp-controller="Menu" asp-action="Index" class="text-decoration-none ">
           <div class="mt-3 mb-2 d-flex align-items-center justify-content-start ms-4">
-            <img src="~/images/dining-menu.png" alt="" class="sidebar-svg" />
-            <span class="px-3 sidebar-span">Menu</span>
+            <img src="~/images/dashboard.svg" alt="" class="sidebar-svg" id="Menu-svg" />
+            <span class="px-3 sidebar-span common-span" id="Menu-title">Menu</span>
           </div>
         </a>
       </div>

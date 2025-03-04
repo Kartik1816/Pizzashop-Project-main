@@ -1,6 +1,6 @@
 
 
-var controllers = ['Dashboard', 'UserList','RolesAndPermission']
+var controllers = ['Dashboard', 'UserList','RolesAndPermission','Menu']
 
 
 var url = window.location.pathname;

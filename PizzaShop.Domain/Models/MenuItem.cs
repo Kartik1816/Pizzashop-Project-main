@@ -19,6 +19,8 @@ public partial class MenuItem
 
     public string? Description { get; set; }
 
+    public string ItemType { get; set; } = null!;
+
     public string? ImageUrl { get; set; }
 
     public bool? DefaultTax { get; set; }

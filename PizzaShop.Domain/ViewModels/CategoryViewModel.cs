@@ -6,8 +6,19 @@ namespace PizzaShop.Domain.ViewModels;
 public class CategoryViewModel
 {
     public List<Category> Categories { get; set; }
-        [Required (ErrorMessage = "Category Name is required")]
+
+    [Required (ErrorMessage = "Category Name is required")]
     public string CategoryName { get; set; }
     public string? Description { get; set; }
+
+    public  List<MenuItem> MenuItems { get; set; }
+
+    public int PageIndex { get; set; }
+
+    public int TotalPages { get; set; }
+
+    public int TotalItems { get; set; }
+
+    public int PageSize { get; set; }
 
 }

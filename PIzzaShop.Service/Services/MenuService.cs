@@ -17,9 +17,33 @@ public class MenuService : IMenuService
     {
         return await _menuRepository.getCategories();
     }
+    public Task<List<MenuItem>> getItems(int categoryId)
+    {
+        return _menuRepository.getItems(categoryId);
+    }
+     public Task<List<MenuItem>> getItemsBySearch(int categoryId,string searchTerm)
+     {
+         return _menuRepository.getItemsBySearch(categoryId,searchTerm);
+     }
 
     public async Task<IActionResult> addCategory(Category category)
     {
         return await _menuRepository.addCategory(category);
     }
+
+    public async Task<IActionResult> updateCategory(Category category,int userId)
+    {
+        return await _menuRepository.updateCategory(category,userId);
+    }
+
+    public async Task<Category> getCategoryById(int id)
+    {
+        return await _menuRepository.getCategoryById(id);
+    }
+
+    public Task<JsonResult> deleteCategory(int categoryId)
+    {
+        return _menuRepository.deleteCategory(categoryId);
+    }
+
 }

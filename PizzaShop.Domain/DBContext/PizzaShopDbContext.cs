@@ -246,6 +246,9 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.IsDeleted)
                 .HasDefaultValue(false)
                 .HasColumnName("is_deleted");
+            entity.Property(e => e.ItemType)
+                .HasColumnType("character varying")
+                .HasColumnName("item_type");
             entity.Property(e => e.Name)
                 .HasMaxLength(50)
                 .HasColumnName("name");
