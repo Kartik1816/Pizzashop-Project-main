@@ -22,19 +22,22 @@ public class MenuController : Controller
   
     public async Task<IActionResult> Index()
     {
-        CategoryViewModel categoryViewModel = new CategoryViewModel();
+        CategoryViewModel categoryViewModel = new CategoryViewModel{};
         categoryViewModel.Categories = await _menuService.getCategories();
-        
-        categoryViewModel.MenuItems=await _menuService.getItems(categoryViewModel.Categories[3].Id);
+        categoryViewModel.MenuItems=await _menuService.getItems(categoryViewModel.Categories[0].Id);
+
         categoryViewModel.TotalItems=categoryViewModel.MenuItems.Count;
+        
         int allItemCount=categoryViewModel.MenuItems.Count;
-        // take 5 items
+        
         categoryViewModel.MenuItems=categoryViewModel.MenuItems.Take(5).ToList();
         
         categoryViewModel.PageIndex=1;
         categoryViewModel.PageSize=5;
         
         categoryViewModel.TotalPages=(int)Math.Ceiling((double)allItemCount/categoryViewModel.PageSize);
+
+        categoryViewModel.ModifierGroups= await _menuService.getModifierGroups();
         return View(categoryViewModel);
     }
 
@@ -46,7 +49,7 @@ public class MenuController : Controller
         CategoryViewModel categoryViewModel = new CategoryViewModel();
         categoryViewModel.Categories = await _menuService.getCategories();
         
-        categoryViewModel.MenuItems=await _menuService.getItemsBySearch(categoryViewModel.Categories[3].Id,searchTerm);
+        categoryViewModel.MenuItems=await _menuService.getItemsBySearch(categoryViewModel.Categories[0].Id,searchTerm);
         categoryViewModel.TotalItems=categoryViewModel.MenuItems.Count;
         int allItemCount=categoryViewModel.MenuItems.Count;
         categoryViewModel.MenuItems=categoryViewModel.MenuItems.Skip((PageIndex-1)*PageSize).Take(PageSize).ToList();
@@ -59,12 +62,30 @@ public class MenuController : Controller
 
 [HttpGet]
 
- public async Task<IActionResult> getMenuItemsBySearch(int PageIndex,int PageSize,string searchTerm=null)
+ public async Task<IActionResult> getMenuItemsBySearch(int PageIndex,int PageSize,int categoryId,string searchTerm=null)
     {
         CategoryViewModel categoryViewModel = new CategoryViewModel();
         categoryViewModel.Categories = await _menuService.getCategories();
         
-        categoryViewModel.MenuItems=await _menuService.getItemsBySearch(categoryViewModel.Categories[3].Id,searchTerm);
+        categoryViewModel.MenuItems=await _menuService.getItemsBySearch(categoryId,searchTerm);
+        categoryViewModel.TotalItems=categoryViewModel.MenuItems.Count;
+        int allItemCount=categoryViewModel.MenuItems.Count;
+        categoryViewModel.MenuItems=categoryViewModel.MenuItems.Skip((PageIndex-1)*PageSize).Take(PageSize).ToList();
+        categoryViewModel.PageIndex=PageIndex;
+        categoryViewModel.PageSize=PageSize;
+        
+        categoryViewModel.TotalPages=(int)Math.Ceiling((double)allItemCount/categoryViewModel.PageSize);
+        return PartialView("_Items",categoryViewModel);
+    }
+
+    [HttpGet]
+
+ public async Task<IActionResult> getMenuItemsFilterByCategory(int PageIndex,int PageSize,int categoryId,string searchTerm=null)
+    {
+        CategoryViewModel categoryViewModel = new CategoryViewModel();
+        categoryViewModel.Categories = await _menuService.getCategories();
+        
+        categoryViewModel.MenuItems=await _menuService.getItemsBySearch(categoryId,searchTerm);
         categoryViewModel.TotalItems=categoryViewModel.MenuItems.Count;
         int allItemCount=categoryViewModel.MenuItems.Count;
         categoryViewModel.MenuItems=categoryViewModel.MenuItems.Skip((PageIndex-1)*PageSize).Take(PageSize).ToList();
@@ -112,6 +133,11 @@ public class MenuController : Controller
 
         }
 
+    [HttpGet]
+    public async Task<IActionResult> AddItem([FromBody] List<string> selectedItem)
+    {
+        return Json(await _menuService.getModifierGroups());
+    }
   
 
 }

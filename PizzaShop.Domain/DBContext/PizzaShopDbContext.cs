@@ -32,6 +32,8 @@ public partial class PizzaShopDbContext : DbContext
 
     public virtual DbSet<ModifierGroup> ModifierGroups { get; set; }
 
+    public virtual DbSet<ModifierMapping> ModifierMappings { get; set; }
+
     public virtual DbSet<Order> Orders { get; set; }
 
     public virtual DbSet<OrderItem> OrderItems { get; set; }
@@ -347,23 +349,6 @@ public partial class PizzaShopDbContext : DbContext
                 .HasForeignKey(d => d.UpdatedBy)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("modifiers_updated_by_fkey");
-
-            entity.HasMany(d => d.Modifiergroups).WithMany(p => p.Modifiers)
-                .UsingEntity<Dictionary<string, object>>(
-                    "ModifierModifierGroup",
-                    r => r.HasOne<ModifierGroup>().WithMany()
-                        .HasForeignKey("ModifiergroupId")
-                        .HasConstraintName("modifier_modifier_group_modifiergroup_id_fkey"),
-                    l => l.HasOne<Modifier>().WithMany()
-                        .HasForeignKey("ModifierId")
-                        .HasConstraintName("modifier_modifier_group_modifier_id_fkey"),
-                    j =>
-                    {
-                        j.HasKey("ModifierId", "ModifiergroupId").HasName("modifier_modifier_group_pkey");
-                        j.ToTable("modifier_modifier_group");
-                        j.IndexerProperty<int>("ModifierId").HasColumnName("modifier_id");
-                        j.IndexerProperty<int>("ModifiergroupId").HasColumnName("modifiergroup_id");
-                    });
         });
 
         modelBuilder.Entity<ModifierGroup>(entity =>
@@ -418,6 +403,32 @@ public partial class PizzaShopDbContext : DbContext
                         j.IndexerProperty<int>("ModifiergroupId").HasColumnName("modifiergroup_id");
                         j.IndexerProperty<int>("Menuid").HasColumnName("menuid");
                     });
+        });
+
+        modelBuilder.Entity<ModifierMapping>(entity =>
+        {
+            entity.HasKey(e => new { e.ModifierId, e.ModifiergroupId }).HasName("modifier_mapping_pkey");
+
+            entity.ToTable("modifier_mapping");
+
+            entity.Property(e => e.ModifierId).HasColumnName("modifier_id");
+            entity.Property(e => e.ModifiergroupId).HasColumnName("modifiergroup_id");
+            entity.Property(e => e.CreatedAt)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("created_at");
+            entity.Property(e => e.UpdatedAt)
+                .HasDefaultValueSql("CURRENT_TIMESTAMP")
+                .HasColumnType("timestamp without time zone")
+                .HasColumnName("updated_at");
+
+            entity.HasOne(d => d.Modifier).WithMany(p => p.ModifierMappings)
+                .HasForeignKey(d => d.ModifierId)
+                .HasConstraintName("modifier_mapping_modifier_id_fkey");
+
+            entity.HasOne(d => d.Modifiergroup).WithMany(p => p.ModifierMappings)
+                .HasForeignKey(d => d.ModifiergroupId)
+                .HasConstraintName("modifier_mapping_modifiergroup_id_fkey");
         });
 
         modelBuilder.Entity<Order>(entity =>

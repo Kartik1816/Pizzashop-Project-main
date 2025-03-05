@@ -1,93 +1,96 @@
 @model PizzaShop.Domain.ViewModels.CategoryViewModel;
 
- <div class="add-user-back">
-        <div class="mt-3 me-3 ms-4 d-flex flex-column">
-          <div class="d-flex justify-content-between">
-            <h2>Menu</h2>
-          </div>
-          <div class="nav  shadow-lg mt-5 mx-2" id="nav-tab" role="tablist">
 
-            <button class="nav-link active text-black" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
-              aria-controls="nav-home" aria-selected="true"><img src="./images/menu-black.svg" alt=""
-                class="sidebar-svg"> Items</button>
-            <button class="nav-link text-black" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-              aria-controls="nav-profile" aria-selected="false"> <img src="./images/black-modifier.svg" alt=""
-                class="menu-page-svg"> Modifiers</button>
-          </div>
-          <div id="partialView">
-          <partial name="_CategoryItems" model="Model"/>
-          </div>
-        </div>
-      </div>
+<div class="add-user-back">
+  <div class="mt-3 me-3 ms-4 d-flex flex-column">
+    <div class="d-flex justify-content-between">
+      <h2>Menu</h2>
+    </div>
+    <div class="nav  shadow-lg mt-5 mx-2" id="nav-tab" role="tablist">
+
+      <button class="nav-link active text-black" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+        aria-controls="nav-home" aria-selected="true"><img src="./images/menu-black.svg" alt="" class="sidebar-svg">
+        Items</button>
+      <button class="nav-link text-black" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+        aria-controls="nav-profile" aria-selected="false"> <img src="./images/black-modifier.svg" alt=""
+          class="menu-page-svg"> Modifiers</button>
+    </div>
+    <div id="partialView">
+      <partial name="_CategoryItems" model="Model" />
+    </div>
+  </div>
+</div>
 
 
 <div class="modal fade" id="addCategory" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Add Category</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addCategoryForm">
+          <div class="d-flex flex-column">
+            <div class="form-floating my-2 mx-2">
+              <input type="text" class="form-control" id="category-name" asp-for="CategoryName" name="CategoryName"
+                placeholder="Pasta">
+              <label for="name">Name*</label>
+            </div>
+            <div class="form-floating my-2 mx-2">
+              <input type="text" class="form-control" asp-for="Description" name="Description"
+                placeholder="This is the description of pasta" id="category-description"></input>
+              <label for="description">Description*</label>
+            </div>
           </div>
-          <div class="modal-body">
-            <form id="addCategoryForm">
-              <div class="d-flex flex-column">
-                <div class="form-floating my-2 mx-2">
-                  <input type="text" class="form-control" id="category-name" asp-for="CategoryName" name="CategoryName" placeholder="Pasta">
-                  <label for="name">Name*</label>
-                </div>
-                <div class="form-floating my-2 mx-2">
-                  <input type="text" class="form-control" asp-for="Description" name="Description" placeholder="This is the description of pasta"
-                    id="category-description"></input>
-                  <label for="description">Description*</label>
-                </div>
-              </div>
-              <div class="modal-footer">
+          <div class="modal-footer">
             <button type="submit" class="btn btn-primary">AddCategory</button>
           </div>
-            </form>
+        </form>
 
-          </div>
-          
-        </div>
       </div>
+
     </div>
+  </div>
+</div>
 
 
 <div class="modal fade" id="editCategory" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Edit Category</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Edit Category</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="editCategoryForm">
+          <div class="d-flex flex-column">
+            <div class="form-floating my-2 mx-2">
+              <input type="text" class="form-control" id="edit-category-name" asp-for="CategoryName" name="CategoryName"
+                placeholder="Pasta">
+              <label for="name">Name*</label>
+            </div>
+            <div class="form-floating my-2 mx-2">
+              <input type="text" class="form-control" asp-for="Description" name="Description"
+                placeholder="This is the description of pasta" id="edit-category-description"></input>
+              <label for="description">Description*</label>
+            </div>
+            <span class="d-none" id="edit-category-id"></span>
           </div>
-          <div class="modal-body">
-            <form id="editCategoryForm">
-              <div class="d-flex flex-column">
-                <div class="form-floating my-2 mx-2">
-                  <input type="text" class="form-control" id="edit-category-name" asp-for="CategoryName" name="CategoryName" placeholder="Pasta">
-                  <label for="name">Name*</label>
-                </div>
-                <div class="form-floating my-2 mx-2">
-                  <input type="text" class="form-control"  asp-for="Description" name="Description" placeholder="This is the description of pasta"
-                    id="edit-category-description"></input>
-                  <label for="description">Description*</label>
-                </div>
-                <span class="d-none" id="edit-category-id"></span>
-              </div>
-              <div class="modal-footer">
+          <div class="modal-footer">
             <button type="submit" class="btn btn-primary">Save</button>
           </div>
-            </form>
+        </form>
 
-          </div>
-          
-        </div>
       </div>
-    </div>
 
-    <div class="modal fade" id="deleteModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="deleteModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -113,4 +116,332 @@
   </div>
 </div>
 
-       <script src="~/js/menu.js" asp-append-version="true"></script>
+
+<div class="modal fade" id="addItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog addItem-modal modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Add Item</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="addItem-Form">
+
+          <div class="row">
+            <div class="col-12 col-md-8">
+              <div class="row align-items-center">
+                <div class="form-floating col-12 col-md-6 p-1">
+                  <select class="form-select form-multi-select" id="CategorySelect">
+                    @* <option selected>Select Modifier Group(s)</option> *@
+                    @foreach (var category in Model.Categories)
+                    {
+                      <option value="@category.Id">@category.Name</option>
+                    }
+                  </select>
+                  <label class="" for="floatingSelect">Categories*</label>
+                </div>
+                <div class="form-floating col-12 col-md-6 p-1">
+                  <input type="text" class="form-control" name="category-name" id="category-name" required
+                    placeholder="name">
+                  <label for="category-name" class="">Name*</label>
+                </div>
+              </div>
+              <div class="row my-2 align-items-center">
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
+                    <option selected>ItemType</option>
+                    <option value="chef">Chef</option>
+                    <option value="admin">Admin</option>
+                    <option value="accountManager">Account Manager</option>
+                  </select>
+                  <label class="" for="floatingSelect">Item Type*</label>
+                </div>
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <label for="category-name" class="">Rate*</label>
+                </div>
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <label for="category-name" class="">Quantity*</label>
+                </div>
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
+                    <option selected>ItemType</option>
+                    <option value="chef">Chef</option>
+                    <option value="admin">Admin</option>
+                    <option value="accountManager">Account Manager</option>
+                  </select>
+                  <label class="" for="floatingSelect">Unit*</label>
+                </div>
+              </div>
+              <div class="row my-2 align-items-center">
+                <div class="form-floating col-6 col-md-3 p-1">
+                  <div class="form-check form-switch my-2">
+                    <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <label for="flexSwitchCheckChecked" class="mx-2 "> Available</label>
+                  </div>
+                </div>
+
+                <div class="form-floating col-6 col-md-3 p-1">
+                  <div class="form-check form-switch my-2">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
+                    <label for="flexSwitchCheckChecked1" class="mx-2"> DefaultTax</label>
+                  </div>
+                </div>
+
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <label for="category-name" class="">Tax Percentage</label>
+                </div>
+
+                <div class="form-floating col-12 col-md-3 p-1">
+                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <label for="category-name" class="">Short Code</label>
+                </div>
+              </div>
+              <div class="row my-2 align-items-center mx-2">
+                <div class="form-floating my-auto col-12 pt-2">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                  <label for="floatingTextarea2">Description</label>
+                </div>
+              </div>
+              <div class="row my-2 align-items-center">
+                <div class="col-12  row">
+                  <label for="upload-btn">Upload Image</label>
+                  <div class="file upload position-relative overflow-hidden btn-custom">
+                    <div class="d-flex gap-2 justify-content-center align-items-center" style="height: 100px;">
+                      <img src="./images/icons/cloud.svg" class="small-image" alt="upload">
+                      <span>Drag and Drop or Browse files</span>
+                      <p id="file-name"></p>
+                    </div>
+                    <input type="file" id="upload-btn" class="position-absolute file-input-btn" name="file"
+                      accept="image/*" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 item-modifier-bg p-3">
+              <div class="row align-items-center">
+                <div class=" col-12  p-1">
+
+                  <div class="custom-multi-select">
+                    <div class="selection-area">
+                      <div class="selected-tags">
+                        <!-- Selected tags will appear here -->
+                      </div>
+                      <input type="text" class="search-input" placeholder="Select options">
+                      <button class="clear-all">×</button>
+                    </div>
+                    <div class="dropdown-options">
+                      <select class="form-select d-none"  id="ModifierSelect" multiple>
+                      @foreach (var modifier in Model.ModifierGroups)
+                      {
+                        <option value="@modifier.Id">@modifier.Name</option>
+                      }
+                  </select>
+                    </div>
+                  </div>
+
+                 
+              
+
+                </div>
+                <div class=" col-12  p-1 mt-3">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-between">
+                      <div class="modifier-group-name">
+                        <span>Modifier Group Name</span>
+                      </div>
+                      <div>
+                        <a href="#"><button class="btn btn-light btn-sm">
+                            <i class="fas fa-trash"></i></button></a>
+                      </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between m-2">
+                      <div class="col-12 col-md-6 p-1 ">
+                        <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
+                          <option selected>0</option>
+                          <option value="chef">1</option>
+                          <option value="admin">2</option>
+                          <option value="accountManager">3</option>
+                        </select>
+
+                      </div>
+                      <div class="col-12 col-md-6 p-1">
+                        <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
+                          <option selected>0</option>
+                          <option value="chef">1</option>
+                          <option value="admin">2</option>
+                          <option value="accountManager">3</option>
+                        </select>
+
+                      </div>
+
+                    </div>
+
+                    <div class="d-flex justify-content-between m-2">
+                      <div class="">
+                        <ul>
+                          <li>Regular</li>
+                        </ul>
+                      </div>
+                      <div class="">
+                        <span>100</span>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+        <button type="submit" onclick="getSelectedValues()" class="btn btn-primary">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="~/js/menu.js" asp-append-version="true"></script>
+<script>
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const selectElement = document.getElementById('ModifierSelect');
+  const customMultiSelect = document.querySelector('.custom-multi-select');
+  const dropdownOptions = customMultiSelect.querySelector('.dropdown-options');
+  const selectedTagsContainer = customMultiSelect.querySelector('.selected-tags');
+  const searchInput = customMultiSelect.querySelector('.search-input');
+  const clearAllButton = customMultiSelect.querySelector('.clear-all');
+  const dropdownToggle = customMultiSelect.querySelector('.dropdown-toggle');
+
+  // Build the custom dropdown options from the <select> element
+  selectElement.querySelectorAll('option').forEach(option => {
+    const value = option.value;
+    const text = option.textContent;
+
+    // Create a custom option
+    const customOption = document.createElement('div');
+    customOption.className = 'option';
+    customOption.setAttribute('data-value', value);
+    customOption.innerHTML = `
+      <input type="checkbox" id=${value} onchange="getSelectedValues(id)">
+      <label for="custom-option-${value}">${text}</label>
+    `;
+
+    // Add the custom option to the dropdown
+    dropdownOptions.appendChild(customOption);
+
+    // Sync the selected state with the <select> element
+    const checkbox = customOption.querySelector('input[type="checkbox"]');
+    checkbox.addEventListener('change', () => {
+      if (checkbox.checked) {
+        option.selected = true; // Sync with <select>
+        addTag(value, text); // Add tag
+      } else {
+        option.selected = false; // Sync with <select>
+        removeTag(value); // Remove tag
+      }
+    });
+  });
+
+  // Function to add a tag
+  function addTag(value, text) {
+    const tag = document.createElement('div');
+    tag.className = 'tag';
+    tag.setAttribute('data-value', value);
+    tag.innerHTML = `
+      ${text}
+      <span class="tag-delete">×</span>
+    `;
+
+    // Add tag to the selected tags container
+    selectedTagsContainer.appendChild(tag);
+
+    // Remove tag when delete button is clicked
+    tag.querySelector('.tag-delete').addEventListener('click', () => {
+      tag.remove();
+      const option = selectElement.querySelector(`option[value="${value}"]`);
+      if (option) {
+        option.selected = false; // Sync with <select>
+      }
+      const checkbox = dropdownOptions.querySelector(`input[id="custom-option-${value}"]`);
+      if (checkbox) {
+        checkbox.checked = false; // Uncheck the checkbox
+      }
+    });
+  }
+
+  // Function to remove a tag
+  function removeTag(value) {
+    const tag = selectedTagsContainer.querySelector(`[data-value="${value}"]`);
+    if (tag) {
+      tag.remove();
+    }
+  }
+
+  // Clear all selected tags
+  clearAllButton.addEventListener('click', () => {
+    selectedTagsContainer.innerHTML = '';
+    selectElement.querySelectorAll('option').forEach(option => {
+      option.selected = false; // Unselect all options in <select>
+    });
+    dropdownOptions.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
+      checkbox.checked = false; // Uncheck all checkboxes
+    });
+  });
+
+  // Toggle dropdown visibility
+  searchInput.addEventListener('focus', () => {
+    dropdownOptions.style.display = 'block';
+  });
+
+  searchInput.addEventListener('blur', () => {
+    setTimeout(() => {
+      dropdownOptions.style.display = 'none';
+    }, 200);
+  });
+
+  dropdownToggle.addEventListener('click', () => {
+    dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
+  });
+});
+
+
+let selectElement=[];
+function getSelectedValues(id) {
+  //push only if checked
+
+  
+    selectElement.push(id);
+
+  //duplicate removal
+  selectElement = selectElement.filter((value, index) => selectElement.indexOf(value) === index);
+  console.log(selectElement);
+}
+
+$("addItem-Form").submit(function()
+{
+  var selectedItem=selectElement;
+
+  $.ajax({
+    type: "GET",
+    url: "/Menu/AddItem",
+    data: {selectedItem:selectedItem},
+    success: function(data){
+      console.log(data);
+    }
+  });
+});
+
+
+</script>

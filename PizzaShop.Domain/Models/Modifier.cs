@@ -29,11 +29,11 @@ public partial class Modifier
 
     public virtual User CreatedByNavigation { get; set; } = null!;
 
+    public virtual ICollection<ModifierMapping> ModifierMappings { get; set; } = new List<ModifierMapping>();
+
     public virtual ICollection<OrderModifier> OrderModifiers { get; set; } = new List<OrderModifier>();
 
     public virtual User UpdatedByNavigation { get; set; } = null!;
 
     public virtual ICollection<MenuItem> Items { get; set; } = new List<MenuItem>();
-
-    public virtual ICollection<ModifierGroup> Modifiergroups { get; set; } = new List<ModifierGroup>();
 }

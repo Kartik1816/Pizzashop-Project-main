@@ -46,8 +46,6 @@ $('#editCategoryForm').submit(function(e){
         type: 'POST',
         contentType: 'application/json',
         data: JSON.stringify({CategoryName: category, Description: description}),
-
-        //settimeout of 300ms and reload window after that
         
 
         success: function(data){
@@ -92,3 +90,7 @@ function openModel(id) {
         });
     });
   }
+
+  
+
+  

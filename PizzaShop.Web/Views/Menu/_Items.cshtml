@@ -147,13 +147,15 @@ function changeSize(pageSize) {
 
 $('#searchInput').keyup(function(){
 
+  let categoryId=$('#CurrentCategoryId').val();
+  
   clearTimeout($.data(this,'timer'));
   var searchTerm=$('#searchInput').val();
       console.log('rightButton clicked')
 
   $(this).data('timer',setTimeout(function(){
     
-  var nextpage=1
+      var nextpage=1
       var pagesize = @Model.PageSize
 
       $.ajax({
@@ -162,7 +164,8 @@ $('#searchInput').keyup(function(){
           data :{
               PageIndex: nextpage,
               PageSize: pagesize,
-              searchTerm:searchTerm
+              searchTerm:searchTerm,
+              categoryId:categoryId
           },
           success:function(data){ 
             console.log(data)
@@ -173,4 +176,6 @@ $('#searchInput').keyup(function(){
   },300));
       
 });
+
+
 </script>

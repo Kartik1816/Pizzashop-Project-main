@@ -15,4 +15,6 @@ public interface IMenuRepository
     public  Task<Category> getCategoryById(int id);
 
     public  Task<JsonResult> deleteCategory(int categoryId);
+
+    public Task<List<ModifierGroup>> getModifierGroups();
 }

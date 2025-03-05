@@ -34,6 +34,15 @@ public class MenuRepository : IMenuRepository
     {
         if(category != null)
         {
+            if(category.Name == null)
+            {
+                return new JsonResult ( new {success=false,message="Category name is required"});
+            }
+            string name=_pizzaShopDbContext.Categories.FirstOrDefault(c=>c.Name==category.Name)?.Name;
+            if(name != null)
+            {
+                return new JsonResult ( new {success=false,message="Category already exists"});
+            }
             _pizzaShopDbContext.Categories.Add(category);
             _pizzaShopDbContext.SaveChanges();
             return new JsonResult ( new {success=true,message="Category added successfully"});
@@ -49,6 +58,18 @@ public class MenuRepository : IMenuRepository
             if(category != null)
             {
                 Category cat = _pizzaShopDbContext.Categories.FirstOrDefault(c => c.Id == category.Id);
+                if(category.Name == null)
+                {
+                    return new JsonResult ( new {success=false,message="Category name is required"});
+                }
+                if(cat.Name != category.Name)
+                {
+                    string name=_pizzaShopDbContext.Categories.FirstOrDefault(c=>c.Name==category.Name)?.Name;
+                    if(name != null)
+                    {
+                        return new JsonResult ( new {success=false,message="Category already exists"});
+                    }
+                }
                 if(cat != null)
                 {
                     cat.Name = category.Name;
@@ -84,5 +105,10 @@ public class MenuRepository : IMenuRepository
             category.IsDeleted= true;
             _pizzaShopDbContext.SaveChanges();
             return new JsonResult(new { success = true, message = "Category deleted successfully" });
+     }
+
+     public async Task<List<ModifierGroup>> getModifierGroups()
+     {
+            return _pizzaShopDbContext.ModifierGroups.ToList();
      }
 }

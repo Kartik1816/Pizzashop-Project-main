@@ -21,4 +21,10 @@ public class CategoryViewModel
 
     public int PageSize { get; set; }
 
+    public List<Modifier> Modifiers { get; set; }
+
+    public List<ModifierGroup> ModifierGroups { get; set; }
+
+    public List<ModifierMapping> modifierMappings { get; set; }
+
 }

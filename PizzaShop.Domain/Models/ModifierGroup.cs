@@ -23,9 +23,9 @@ public partial class ModifierGroup
 
     public virtual User CreatedByNavigation { get; set; } = null!;
 
+    public virtual ICollection<ModifierMapping> ModifierMappings { get; set; } = new List<ModifierMapping>();
+
     public virtual User UpdatedByNavigation { get; set; } = null!;
 
     public virtual ICollection<MenuItem> Menus { get; set; } = new List<MenuItem>();
-
-    public virtual ICollection<Modifier> Modifiers { get; set; } = new List<Modifier>();
 }

@@ -46,4 +46,9 @@ public class MenuService : IMenuService
         return _menuRepository.deleteCategory(categoryId);
     }
 
+    public async Task<List<ModifierGroup>> getModifierGroups()
+    {
+        return await _menuRepository.getModifierGroups();
+    }
+
 }
