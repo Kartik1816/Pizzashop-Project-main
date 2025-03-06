@@ -43,5 +43,9 @@ public class AddUserViewModel
         public string UsernameRequestedUser { get; set; }
         public IFormFile? ProfileImage { get; set; }
 
-        public int RoleId { get; set; }      
+        public int RoleId { get; set; } 
+
+        public string selectedModifierGroups { get; set; }  
+
+           
 }

@@ -1,6 +1,7 @@
 
 using System.Threading.Tasks;
 using PizzaShop.Domain.DBContext;
+using PizzaShop.Domain.Models;
 using PizzaShop.Repository.Interfaces;
 using PizzaShop.Repository.Repository;
 using PIzzaShop.Service.Interfaces;
@@ -19,6 +20,11 @@ public class DashboardService : IDashboardService
     public async Task<string> getUsernameFromId(int userId)
     {
        return await _userRepository.getUserNameFromUserId(userId);
+    }
+
+    public async Task<User> getUserFromId(int userId)
+    {
+       return await _userRepository.getUserById(userId);
     }
     public async Task<string> getImageUrlFromId(int userId)
     {

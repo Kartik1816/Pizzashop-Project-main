@@ -40,7 +40,7 @@ $('#editCategoryForm').submit(function(e){
 
     console.log(id);
     let category = $('#edit-category-name').val();
-   let description = $('#edit-category-description').val();
+    let description = $('#edit-category-description').val();
     $.ajax({
         url: '/Menu/EditCategory/'+id,
         type: 'POST',

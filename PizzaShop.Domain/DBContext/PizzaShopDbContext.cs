@@ -26,6 +26,10 @@ public partial class PizzaShopDbContext : DbContext
 
     public virtual DbSet<Customer> Customers { get; set; }
 
+    public virtual DbSet<DemoPrimary> DemoPrimaries { get; set; }
+
+    public virtual DbSet<ItemModifierGroup> ItemModifierGroups { get; set; }
+
     public virtual DbSet<MenuItem> MenuItems { get; set; }
 
     public virtual DbSet<Modifier> Modifiers { get; set; }
@@ -220,6 +224,35 @@ public partial class PizzaShopDbContext : DbContext
                     });
         });
 
+        modelBuilder.Entity<DemoPrimary>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("Demo_primary_pkey");
+
+            entity.ToTable("Demo_primary");
+
+            entity.Property(e => e.Id)
+                .ValueGeneratedNever()
+                .HasColumnName("id");
+        });
+
+        modelBuilder.Entity<ItemModifierGroup>(entity =>
+        {
+            entity.HasKey(e => new { e.ModifiergroupId, e.Menuid }).HasName("item_modifier_group_pkey");
+
+            entity.ToTable("item_modifier_group");
+
+            entity.Property(e => e.ModifiergroupId).HasColumnName("modifiergroup_id");
+            entity.Property(e => e.Menuid).HasColumnName("menuid");
+
+            entity.HasOne(d => d.Menu).WithMany(p => p.ItemModifierGroups)
+                .HasForeignKey(d => d.Menuid)
+                .HasConstraintName("item_modifier_group_menuid_fkey");
+
+            entity.HasOne(d => d.Modifiergroup).WithMany(p => p.ItemModifierGroups)
+                .HasForeignKey(d => d.ModifiergroupId)
+                .HasConstraintName("item_modifier_group_modifiergroup_id_fkey");
+        });
+
         modelBuilder.Entity<MenuItem>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("menu_items_pkey");
@@ -261,7 +294,7 @@ public partial class PizzaShopDbContext : DbContext
                 .HasPrecision(10, 2)
                 .HasColumnName("rate");
             entity.Property(e => e.TaxPercent)
-                .HasPrecision(2, 2)
+                .HasPrecision(5, 2)
                 .HasColumnName("tax_percent");
             entity.Property(e => e.Unit)
                 .HasMaxLength(20)
@@ -386,23 +419,6 @@ public partial class PizzaShopDbContext : DbContext
                 .HasForeignKey(d => d.UpdatedBy)
                 .OnDelete(DeleteBehavior.ClientSetNull)
                 .HasConstraintName("modifier_groups_updated_by_fkey");
-
-            entity.HasMany(d => d.Menus).WithMany(p => p.Modifiergroups)
-                .UsingEntity<Dictionary<string, object>>(
-                    "ItemModifierGroup",
-                    r => r.HasOne<MenuItem>().WithMany()
-                        .HasForeignKey("Menuid")
-                        .HasConstraintName("item_modifier_group_menuid_fkey"),
-                    l => l.HasOne<ModifierGroup>().WithMany()
-                        .HasForeignKey("ModifiergroupId")
-                        .HasConstraintName("item_modifier_group_modifiergroup_id_fkey"),
-                    j =>
-                    {
-                        j.HasKey("ModifiergroupId", "Menuid").HasName("item_modifier_group_pkey");
-                        j.ToTable("item_modifier_group");
-                        j.IndexerProperty<int>("ModifiergroupId").HasColumnName("modifiergroup_id");
-                        j.IndexerProperty<int>("Menuid").HasColumnName("menuid");
-                    });
         });
 
         modelBuilder.Entity<ModifierMapping>(entity =>

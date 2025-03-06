@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PizzaShop.Domain.Models;
+using PizzaShop.Domain.ViewModels;
 
 namespace PIzzaShop.Service.Interfaces;
 
@@ -18,4 +19,12 @@ public interface IMenuService
     public Task<JsonResult> deleteCategory(int categoryId);
 
      public Task<List<ModifierGroup>> getModifierGroups();
+    public Task<List<ModifierGroup>> getModifierGroups(List<int> modifierGroupIds);
+    public Task<List<Modifier>> getModifiers(List<int> modifierGroupIds);
+
+    public Task<List<ModifierMapping>> getModifierMappings(List<int> modifierGroupIds);
+
+    public  Task<MenuItem> getMenuItemByName(string name);
+
+    public  Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId);
 }

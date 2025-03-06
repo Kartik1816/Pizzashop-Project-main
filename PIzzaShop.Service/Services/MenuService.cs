@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using PizzaShop.Domain.Models;
+using PizzaShop.Domain.ViewModels;
 using PizzaShop.Repository.Interfaces;
 using PIzzaShop.Service.Interfaces;
 
@@ -51,4 +52,26 @@ public class MenuService : IMenuService
         return await _menuRepository.getModifierGroups();
     }
 
+    public Task<List<ModifierGroup>> getModifierGroups(List<int> modifierGroupIds)
+    {
+        return _menuRepository.getModifierGroups(modifierGroupIds);
+    }
+    public Task<List<Modifier>> getModifiers(List<int> modifierGroupIds)
+    {
+        return _menuRepository.getModifiers(modifierGroupIds);
+    }
+
+    public  async Task<List<ModifierMapping>> getModifierMappings(List<int> modifierGroupIds)
+    {
+        return await _menuRepository.getModifierMappings(modifierGroupIds);
+    }
+     public async Task<MenuItem> getMenuItemByName(string name)
+    {
+        return await _menuRepository.getMenuItemByName(name);
+    }
+
+    public  async Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId)
+    {
+        return await _menuRepository.addItem(addMenuItemViewModel, userId);
+    }
 }

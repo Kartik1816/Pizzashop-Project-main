@@ -12,22 +12,28 @@ public class DashboardController : Controller
 
     private readonly IDashboardService _dashboardService;
 
-    public DashboardController(IGenerateJwt generateJwt, IDashboardService dashboardService)
+    private readonly IRolePermissionService _rolePermissionService;
+
+    public DashboardController(IGenerateJwt generateJwt, IDashboardService dashboardService,IRolePermissionService rolePermissionService)
     {
         _generateJwt=generateJwt;
         _dashboardService=dashboardService;
+        _rolePermissionService=rolePermissionService;
     }
     public async Task<IActionResult> Index()
     {
         var userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
-        var username=await _dashboardService.getUsernameFromId(userId);
-        var ImageUrL=await _dashboardService.getImageUrlFromId(userId);
+   
+        var user=await _dashboardService.getUserFromId(userId);
 
-        DashboardViewModel dashboardViewModel=new DashboardViewModel
-        {
-            UserName=username,
-            ProfileImageURL=ImageUrL
-        };
-        return View(dashboardViewModel);
+                HttpContext.Session.SetString("ImageURL",user.ProfileImage);
+                HttpContext.Session.SetString("UserName",user.Username);
+                HttpContext.Session.SetInt32("RoleId", user.RoleId);
+                List<RolePermissionModel> rolePermissionModels = await _rolePermissionService.getPermissionOfRole(user.RoleId);
+                var permissionsBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(rolePermissionModels);
+                HttpContext.Session.Set("Permissions", permissionsBytes);
+
+       
+        return View();
     }
 }

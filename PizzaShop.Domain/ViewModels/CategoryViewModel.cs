@@ -21,10 +21,15 @@ public class CategoryViewModel
 
     public int PageSize { get; set; }
 
-    public List<Modifier> Modifiers { get; set; }
+    public List<Modifier> SelectedModifiers { get; set; }
 
     public List<ModifierGroup> ModifierGroups { get; set; }
+    public List<ModifierGroup> SelectedModifierGroups { get; set; }
 
-    public List<ModifierMapping> modifierMappings { get; set; }
+    public List<ModifierMapping> SelectedModifierMappings { get; set; }
+
+    public AddMenuItemViewModel addMenuItemViewModel { get; set; }
+
+    
 
 }

@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using Org.BouncyCastle.Asn1.X509;
 using PizzaShop.Domain.Models;
 using PizzaShop.Domain.ViewModels;
@@ -134,10 +135,37 @@ public class MenuController : Controller
         }
 
     [HttpGet]
-    public async Task<IActionResult> AddItem([FromBody] List<string> selectedItem)
+    public async Task<IActionResult> selectModifier(string selectedItems)
     {
-        return Json(await _menuService.getModifierGroups());
+        if (selectedItems == "[]")
+        {
+            return PartialView("_Modifier", new CategoryViewModel());
+        }
+        
+        List<int> selectedItemsList = selectedItems.Trim('[', ']').Split(',').Select(int.Parse).ToList();
+        List<ModifierGroup> selectedModifierGroups = await _menuService.getModifierGroups(selectedItemsList);
+        List<Modifier> selectedModifiers = await _menuService.getModifiers(selectedItemsList);
+        List<ModifierMapping> selectedModifierMappings = await _menuService.getModifierMappings(selectedItemsList);
+
+        CategoryViewModel categoryViewModel = new CategoryViewModel
+        {
+            SelectedModifierGroups = selectedModifierGroups,
+            SelectedModifiers = selectedModifiers,
+            SelectedModifierMappings = selectedModifierMappings
+        };
+
+        return PartialView("_Modifier", categoryViewModel);
+
     }
-  
+    
+    [HttpPost]
+    public  async Task<IActionResult> AddItem([FromForm] AddMenuItemViewModel addMenuItemViewModel)
+    {
+        int userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
+        List<ModifierMinMaxModel> modifierMinMaxList = JsonConvert.DeserializeObject<List<ModifierMinMaxModel>>(addMenuItemViewModel.selectedModifierGroups);
+        string name=await _menuService.addItem(addMenuItemViewModel,userId);
+        MenuItem menuItem= await _menuService.getMenuItemByName(name);
+        return Json("asdfasd");
+    }
 
 }

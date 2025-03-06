@@ -1,0 +1,65 @@
+@model PizzaShop.Domain.ViewModels.CategoryViewModel
+@if (@Model.SelectedModifierGroups != null)
+{
+    @foreach (var selectedModifierGroup in @Model.SelectedModifierGroups)
+    {
+        <div class=" col-12  p-1 mt-3">
+            <div class="d-flex flex-column">
+                <div class="d-flex justify-content-between">
+                    <div class="modifier-group-name">
+                        <span>@selectedModifierGroup.Name</span>
+                    </div>
+                    <div>
+                        <a href="#"><button class="btn btn-light btn-sm">
+                                <i class="fas fa-trash" onclick="deleteItem(@selectedModifierGroup.Id)"></i></button></a>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between m-2">
+                    <div class="col-12 col-md-6 p-1 ">
+                        <select onchange="getMinimumValueList(@selectedModifierGroup.Id,this.value)" class="form-select"  aria-label="Floating label select example">
+                            <option selected value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-6 p-1">
+                        <select class="form-select" onchange="getMaximumValueList(@selectedModifierGroup.Id,this.value)"  aria-label="Floating label select example">
+                            <option selected value=0>0</option>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between m-2">
+                    
+                        <ul class="w-100">
+                            @{
+                                var selectedModifiers = @Model.SelectedModifierMappings.Where(x => x.ModifiergroupId ==
+                                selectedModifierGroup.Id).Select(x => x.Modifier).ToList();
+                            }
+                            @foreach (var modifier in @selectedModifiers)
+                            {
+                                <li class="d-flex justify-content-between ">
+                                    <div>
+                                    <p>@modifier.Name</p>
+                                    </div>
+                                    <div class="me-2">
+                                    <p>@modifier.Price</p>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    
+                </div>
+            </div>
+        </div>
+
+    }
+}
+

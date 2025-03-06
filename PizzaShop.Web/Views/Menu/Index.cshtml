@@ -132,7 +132,7 @@
             <div class="col-12 col-md-8">
               <div class="row align-items-center">
                 <div class="form-floating col-12 col-md-6 p-1">
-                  <select class="form-select form-multi-select" id="CategorySelect">
+                  <select class="form-select form-multi-select" asp-for=addMenuItemViewModel.CategoryId name="addMenuItemViewModel.CategoryId" id="CategorySelect">
                     @* <option selected>Select Modifier Group(s)</option> *@
                     @foreach (var category in Model.Categories)
                     {
@@ -142,35 +142,35 @@
                   <label class="" for="floatingSelect">Categories*</label>
                 </div>
                 <div class="form-floating col-12 col-md-6 p-1">
-                  <input type="text" class="form-control" name="category-name" id="category-name" required
-                    placeholder="name">
+                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.ItemName" name="addMenuItemViewModel.ItemName" >
                   <label for="category-name" class="">Name*</label>
+                  <span asp-validation-for="@Model.addMenuItemViewModel.ItemName" class="text-danger"></span>
                 </div>
               </div>
               <div class="row my-2 align-items-center">
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
-                    <option selected>ItemType</option>
-                    <option value="chef">Chef</option>
-                    <option value="admin">Admin</option>
+                  <select class="form-select" id="CategorySelect" asp-for=addMenuItemViewModel.ItemType name="addMenuItemViewModel.ItemType" aria-label="Floating label select example">
+                    <option selected>select ItemType</option>
+                    <option value="Veg">Veg</option>
+                    <option value="Non-Veg">Non-Veg</option>
                     <option value="accountManager">Account Manager</option>
                   </select>
                   <label class="" for="floatingSelect">Item Type*</label>
                 </div>
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.Rate" name="addMenuItemViewModel.Rate" id="Item-Rate"  placeholder="name">
                   <label for="category-name" class="">Rate*</label>
                 </div>
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.Quantity" name="addMenuItemViewModel.Quantity" id="Item-Quantity"  placeholder="name">
                   <label for="category-name" class="">Quantity*</label>
                 </div>
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
-                    <option selected>ItemType</option>
-                    <option value="chef">Chef</option>
-                    <option value="admin">Admin</option>
-                    <option value="accountManager">Account Manager</option>
+                  <select class="form-select" asp-for=addMenuItemViewModel.Unit name="addMenuItemViewModel.Unit" id="CategorySelect" aria-label="Floating label select example">
+                    <option selected>Select Unit</option>
+                    <option value="Plate">Plate</option>
+                    <option value="Cup">Cup</option>
+                    
                   </select>
                   <label class="" for="floatingSelect">Unit*</label>
                 </div>
@@ -178,32 +178,32 @@
               <div class="row my-2 align-items-center">
                 <div class="form-floating col-6 col-md-3 p-1">
                   <div class="form-check form-switch my-2">
-                    <input class="form-check-input " type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                    <input class="form-check-input " type="checkbox" role="switch" asp-for="@Model.addMenuItemViewModel.Availabe" name="addMenuItemViewModel.Availabe" id="flexSwitchCheckChecked" checked>
                     <label for="flexSwitchCheckChecked" class="mx-2 "> Available</label>
                   </div>
                 </div>
 
                 <div class="form-floating col-6 col-md-3 p-1">
                   <div class="form-check form-switch my-2">
-                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked1" checked>
+                    <input class="form-check-input" type="checkbox" asp-for="@Model.addMenuItemViewModel.DefaultTax" name="addMenuItemViewModel.DefaultTax" role="switch" id="DefaultTax" onchange="" checked >
                     <label for="flexSwitchCheckChecked1" class="mx-2"> DefaultTax</label>
                   </div>
                 </div>
 
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.TaxPercentage" name="addMenuItemViewModel.TaxPercentage" id="Tax-Percentage" >
                   <label for="category-name" class="">Tax Percentage</label>
                 </div>
 
                 <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" name="Rate" id="Item-Rate" required placeholder="name">
+                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.ShortCode" name="addMenuItemViewModel.ShortCode" id="Short-Code" required placeholder="name">
                   <label for="category-name" class="">Short Code</label>
                 </div>
               </div>
               <div class="row my-2 align-items-center mx-2">
                 <div class="form-floating my-auto col-12 pt-2">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
+                  <input class="form-control" asp-for="@Model.addMenuItemViewModel.Description" name="addMenuItemViewModel.Description" placeholder="Leave a comment here" id="item-description"
+                    style="height: 100px"></input>
                   <label for="floatingTextarea2">Description</label>
                 </div>
               </div>
@@ -216,7 +216,7 @@
                       <span>Drag and Drop or Browse files</span>
                       <p id="file-name"></p>
                     </div>
-                    <input type="file" id="upload-btn" class="position-absolute file-input-btn" name="file"
+                    <input type="file" id="upload-btn" asp-for="@Model.addMenuItemViewModel.ItemImage" name="addMenuItemViewModel.ItemImage" class="position-absolute file-input-btn" name="file"
                       accept="image/*" />
                   </div>
                 </div>
@@ -229,10 +229,10 @@
                   <div class="custom-multi-select">
                     <div class="selection-area">
                       <div class="selected-tags">
-                        <!-- Selected tags will appear here -->
+                        
                       </div>
                       <input type="text" class="search-input" placeholder="Select options">
-                      <button class="clear-all">×</button>
+                      <button class="clear-all"></button>
                     </div>
                     <div class="dropdown-options">
                       <select class="form-select d-none"  id="ModifierSelect" multiple>
@@ -248,70 +248,31 @@
               
 
                 </div>
-                <div class=" col-12  p-1 mt-3">
-                  <div class="d-flex flex-column">
-                    <div class="d-flex justify-content-between">
-                      <div class="modifier-group-name">
-                        <span>Modifier Group Name</span>
-                      </div>
-                      <div>
-                        <a href="#"><button class="btn btn-light btn-sm">
-                            <i class="fas fa-trash"></i></button></a>
-                      </div>
-                    </div>
+              <div id="partialviewstart"></div>
+              <partial name="_Modifier" model="Model" />
 
-                    <div class="d-flex justify-content-between m-2">
-                      <div class="col-12 col-md-6 p-1 ">
-                        <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
-                          <option selected>0</option>
-                          <option value="chef">1</option>
-                          <option value="admin">2</option>
-                          <option value="accountManager">3</option>
-                        </select>
-
-                      </div>
-                      <div class="col-12 col-md-6 p-1">
-                        <select class="form-select" id="CategorySelect" aria-label="Floating label select example">
-                          <option selected>0</option>
-                          <option value="chef">1</option>
-                          <option value="admin">2</option>
-                          <option value="accountManager">3</option>
-                        </select>
-
-                      </div>
-
-                    </div>
-
-                    <div class="d-flex justify-content-between m-2">
-                      <div class="">
-                        <ul>
-                          <li>Regular</li>
-                        </ul>
-                      </div>
-                      <div class="">
-                        <span>100</span>
-                      </div>
-
-
-                    </div>
-                  </div>
-
-                </div>
               </div>
             </div>
           </div>
-
+          <input id="min-value-modfier" asp-for="@Model.addMenuItemViewModel.minValue" hidden name="addMenuItemViewModel.minValue">
+          <input id="max-value-modfier" asp-for="@Model.addMenuItemViewModel.maxValue" hidden name="addMenuItemViewModel.maxValue">
+          <input id="selected-modifier-groups" asp-for="@Model.addMenuItemViewModel.selectedModifierGroups" hidden name="addMenuItemViewModel.selectedModifierGroups">
+      <div class="modal-footer">
+        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+        <button type="submit"  class="btn btn-primary">Yes</button>
+      </div>
         </form>
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-        <button type="submit" onclick="getSelectedValues()" class="btn btn-primary">Yes</button>
-      </div>
+      
     </div>
   </div>
 </div>
-
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
 <script src="~/js/menu.js" asp-append-version="true"></script>
 <script>
 
@@ -361,7 +322,7 @@
     tag.setAttribute('data-value', value);
     tag.innerHTML = `
       ${text}
-      <span class="tag-delete">×</span>
+      <span class="tag-delete"></span>
     `;
 
     // Add tag to the selected tags container
@@ -417,31 +378,116 @@
 });
 
 
+  function removeTag(value) {
+  const customMultiSelect = document.querySelector('.custom-multi-select');
+  const selectedTagsContainer = customMultiSelect.querySelector('.selected-tags');
+  const tag = selectedTagsContainer.querySelector(`[data-value="${value}"]`);
+    if (tag) {
+      tag.remove();
+    }
+  }
+
 let selectElement=[];
 function getSelectedValues(id) {
-  //push only if checked
-
-  
+  id = parseInt(id);
+  var checked = document.getElementById(id).checked
+  if(checked){
     selectElement.push(id);
-
-  //duplicate removal
-  selectElement = selectElement.filter((value, index) => selectElement.indexOf(value) === index);
+  }else{
+    selectElement = selectElement.filter(item => item !== id);
+  }
   console.log(selectElement);
-}
-
-$("addItem-Form").submit(function()
-{
-  var selectedItem=selectElement;
-
+  var selectedItemsString=JSON.stringify(selectElement);
   $.ajax({
     type: "GET",
-    url: "/Menu/AddItem",
-    data: {selectedItem:selectedItem},
+    url: "/Menu/selectModifier",
+    contentType: "application/json",
+    data: {selectedItems:selectedItemsString},
     success: function(data){
-      console.log(data);
+      $('#partialviewstart').html(data);
     }
   });
-});
+
+}
+
+let minValues=[];
+let maxValues=[];
 
 
+
+    function getMinimumValueList(id, value) {
+        minValues.push({ Id: id, Value: value });
+        var minimumValueJson = JSON.stringify(minValues);
+        $("#min-value-modfier").val(minimumValueJson);
+        
+    }
+
+ 
+
+function getMaximumValueList(id, value) {
+        maxValues.push({ Id: id, Value: value });
+        var maximumValueJson = JSON.stringify(maxValues);
+        $("#max-value-modfier").val(maximumValueJson);
+        console.log(maxValues);
+    }
+
+let modifierMaximumMinimumList=[];
+function modfierMaxMinList()
+{
+  var minVal;
+  var maxVal;
+    for(let i=0;i< selectElement.length;i++)
+    {
+      minVal=minValues.find(item => item.Id ==selectElement[i]);
+      maxVal=maxValues.find(item => item.Id ==selectElement[i]);
+    
+      modifierMaximumMinimumList.push({Id:selectElement[i],minValue: minVal.Value,maxValue: maxVal.Value})
+    }
+  return modifierMaximumMinimumList;
+}
+
+function deleteItem(id) {
+  selectElement = selectElement.filter(item => item !== id);
+  document.getElementById(id).checked = false;
+  removeTag(id)
+  var selectedItemsString=JSON.stringify(selectElement);
+  $.ajax({
+    type: "GET",
+    url: "/Menu/selectModifier",
+    contentType: "application/json",
+    data: {selectedItems:selectedItemsString},
+    success: function(data){
+      $('#partialviewstart').html(data);
+    }
+  });
+}
+
+
+$("#addItem-Form").submit(function(){
+    var modMaxMinList=modfierMaxMinList();
+    $("#selected-modifier-groups").val(JSON.stringify(modMaxMinList));
+    var addItemForm=$(this)[0];
+    var formData = new FormData(addItemForm);
+    console.log(formData);
+    $.ajax({
+        url: '/Menu/AddItem',
+        type: 'POST',
+        data: formData,
+        processData: false, 
+        contentType: false, 
+        success: function (data) {
+            if (data.success) {
+                toastr.success(data.message);
+                setTimeout(function () {
+                    window.location.href = '/Menu';
+                }, 1000);
+            } else {
+                toastr.error(data.message);
+            }
+        },
+        error: function (error) {
+            toastr.error('An error occurred while processing your request');
+        }
+    });
+  });
 </script>

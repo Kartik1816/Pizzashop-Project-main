@@ -43,13 +43,13 @@ public partial class MenuItem
 
     public virtual User CreatedByNavigation { get; set; } = null!;
 
+    public virtual ICollection<ItemModifierGroup> ItemModifierGroups { get; set; } = new List<ItemModifierGroup>();
+
     public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 
     public virtual User UpdatedByNavigation { get; set; } = null!;
 
     public virtual ICollection<Customer> Customers { get; set; } = new List<Customer>();
-
-    public virtual ICollection<ModifierGroup> Modifiergroups { get; set; } = new List<ModifierGroup>();
 
     public virtual ICollection<Modifier> Modifiers { get; set; } = new List<Modifier>();
 }

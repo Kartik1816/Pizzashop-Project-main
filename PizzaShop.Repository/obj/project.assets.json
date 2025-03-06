@@ -8625,11 +8625,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
+      "projectUniqueName": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
       "projectName": "PizzaShop.Repository",
-      "projectPath": "c:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
+      "projectPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\PizzaShop.Repository.csproj",
       "packagesPath": "C:\\Users\\pca158\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\obj\\",
+      "outputPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Repository\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pca158\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -8644,8 +8644,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "c:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Domain\\PizzaShop.Domain.csproj": {
-              "projectPath": "c:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Domain\\PizzaShop.Domain.csproj"
+            "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Domain\\PizzaShop.Domain.csproj": {
+              "projectPath": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Domain\\PizzaShop.Domain.csproj"
             }
           }
         }

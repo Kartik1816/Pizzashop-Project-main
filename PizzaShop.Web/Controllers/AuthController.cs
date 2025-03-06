@@ -56,12 +56,12 @@ public class AuthController : Controller
                 var roleid=user.RoleId;
                 var role = await _userService.getRoleName(roleid);
                 var token = _generateJwt.GenerateJwtToken(user, role);
-                HttpContext.Session.SetString("ImageURL",user.ProfileImage);
-                HttpContext.Session.SetString("UserName",user.Username);
-                HttpContext.Session.SetInt32("RoleId", roleid);
-                List<RolePermissionModel> rolePermissionModels = await _rolePermissionService.getPermissionOfRole(roleid);
-                var permissionsBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(rolePermissionModels);
-                HttpContext.Session.Set("Permissions", permissionsBytes);
+                // HttpContext.Session.SetString("ImageURL",user.ProfileImage);
+                // HttpContext.Session.SetString("UserName",user.Username);
+                // HttpContext.Session.SetInt32("RoleId", roleid);
+                // List<RolePermissionModel> rolePermissionModels = await _rolePermissionService.getPermissionOfRole(roleid);
+                // var permissionsBytes = System.Text.Json.JsonSerializer.SerializeToUtf8Bytes(rolePermissionModels);
+                // HttpContext.Session.Set("Permissions", permissionsBytes);
 
 
                 //get Permissions of role from session 
