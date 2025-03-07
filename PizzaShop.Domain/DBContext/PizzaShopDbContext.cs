@@ -241,8 +241,18 @@ public partial class PizzaShopDbContext : DbContext
 
             entity.ToTable("item_modifier_group");
 
+            entity.HasIndex(e => e.CreatedBy, "fki_created_by_fk");
+
+            entity.HasIndex(e => e.UpdatedBy, "fki_updated_by_fk");
+
             entity.Property(e => e.ModifiergroupId).HasColumnName("modifiergroup_id");
             entity.Property(e => e.Menuid).HasColumnName("menuid");
+            entity.Property(e => e.CreatedBy).HasColumnName("created_by");
+            entity.Property(e => e.UpdatedBy).HasColumnName("updated_by");
+
+            entity.HasOne(d => d.CreatedByNavigation).WithMany(p => p.ItemModifierGroupCreatedByNavigations)
+                .HasForeignKey(d => d.CreatedBy)
+                .HasConstraintName("created_by_fk");
 
             entity.HasOne(d => d.Menu).WithMany(p => p.ItemModifierGroups)
                 .HasForeignKey(d => d.Menuid)
@@ -251,6 +261,10 @@ public partial class PizzaShopDbContext : DbContext
             entity.HasOne(d => d.Modifiergroup).WithMany(p => p.ItemModifierGroups)
                 .HasForeignKey(d => d.ModifiergroupId)
                 .HasConstraintName("item_modifier_group_modifiergroup_id_fkey");
+
+            entity.HasOne(d => d.UpdatedByNavigation).WithMany(p => p.ItemModifierGroupUpdatedByNavigations)
+                .HasForeignKey(d => d.UpdatedBy)
+                .HasConstraintName("updated_by_fk");
         });
 
         modelBuilder.Entity<MenuItem>(entity =>
@@ -293,6 +307,9 @@ public partial class PizzaShopDbContext : DbContext
             entity.Property(e => e.Rate)
                 .HasPrecision(10, 2)
                 .HasColumnName("rate");
+            entity.Property(e => e.ShortCode)
+                .HasColumnType("character varying")
+                .HasColumnName("short_code");
             entity.Property(e => e.TaxPercent)
                 .HasPrecision(5, 2)
                 .HasColumnName("tax_percent");

@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using PizzaShop.Domain.DBContext;
 using PizzaShop.Domain.Models;
 using PizzaShop.Domain.ViewModels;
@@ -127,11 +128,7 @@ public class MenuRepository : IMenuRepository
            return _pizzaShopDbContext.ModifierMappings.Where(mp => modifierGroupIds.Contains(mp.ModifiergroupId)).ToList();
     }
 
-    public async Task<MenuItem> getMenuItemByName(string name)
-    {
-        return _pizzaShopDbContext.MenuItems.FirstOrDefault(i=>i.Name == name);
-    }
-
+  
     public async Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId)
     {
         MenuItem item= new MenuItem
@@ -145,60 +142,75 @@ public class MenuRepository : IMenuRepository
             Available = addMenuItemViewModel.Availabe,
             DefaultTax = addMenuItemViewModel.DefaultTax,
             TaxPercent = (int)addMenuItemViewModel.TaxPercentage,
-            
+            ShortCode=addMenuItemViewModel.ShortCode,
             Description = addMenuItemViewModel.Description,
             CreatedBy = userId,
             UpdatedBy = userId
         };
 
-        // if (addMenuItemViewModel.ItemImage!= null)
-        //     {
-        //         var fileName = Guid.NewGuid().ToString() + Path.GetExtension(addMenuItemViewModel.ItemImage);
-        //         var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/item-images", fileName);
-        //         using (var fileStream = new FileStream(path, FileMode.Create))
-        //         {
-        //             addMenuItemViewModel.Image.CopyTo(fileStream);
-        //         }
-        //         item.ImageUrl = fileName;
-        //     }
+        if (addMenuItemViewModel.ItemImage!= null)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(addMenuItemViewModel.ItemImage.Name);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images/item-images", fileName);
+                using (var fileStream = new FileStream(path, FileMode.Create))
+                {
+                    addMenuItemViewModel.ItemImage.CopyTo(fileStream);
+                }
+                item.ImageUrl = fileName;
+            }
 
         _pizzaShopDbContext.Add(item);
         _pizzaShopDbContext.SaveChanges();
         return item.Name;
     }
 
-    //  public IActionResult UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId)
-    //     {
-    //         if (userId == null)
-    //         {
-    //             return new JsonResult(new { success = false, message = "User not found" });
-    //         }
-    //         if (string.IsNullOrEmpty(addItemViewModel.selectedModifierGroups))
-    //         {
-    //             return new JsonResult(new { success = true, message = "Item added suceccefully" });
-    //         }
-    //         List<QuantityObject> maximumQuantities = JsonConvert.DeserializeObject<List<QuantityObject>>(addItemViewModel.MaximumQuantity);
-    //         List<QuantityObject> minimumQuantities = JsonConvert.DeserializeObject<List<QuantityObject>>(addItemViewModel.MinimumQuantity);
-    //         List<int> modifierGroupIds = JsonConvert.DeserializeObject<List<int>>(addItemViewModel.ModifierGroupIds);
-    //         var item = _context.Items.FirstOrDefault(i => i.Name == itemName);
-    //         if (item == null)
-    //         {
-    //             return new JsonResult(new { success = false, message = "Item not found" });
-    //         }
-    //         foreach (var modifierGroupId in modifierGroupIds)
-    //         {
-    //             var itemModifierMapping = new ItemModifiergroup
-    //             {
-    //                 ItemId = item.Id,
-    //                 ModifiergroupId = modifierGroupId,
-    //                 MaxValue = (short?)int.Parse(maximumQuantities.FirstOrDefault(m => int.Parse(m.Id) == modifierGroupId).Value ?? "0"),
-    //                 MinValue = (short?)int.Parse(minimumQuantities.FirstOrDefault(m => int.Parse(m.Id) == modifierGroupId).Value ?? "0"),
-    //                 CreatedBy = userId,
-    //                 UpdatedBy = userId
-    //             };
-    //             _context.ItemModifiergroups.Add(itemModifierMapping);
-    //             _context.SaveChanges();
-    //         }
-    //         return new JsonResult(new { success = true, message = "Item added successfully" });
-    //     }
+     public async Task<IActionResult> UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId,List<ModifierMinMaxModel> modifierMinMaxList)
+        {
+            if (userId == null)
+            {
+                return new JsonResult(new { success = false, message = "User not found" });
+            }
+            if (string.IsNullOrEmpty(addItemViewModel.selectedModifierGroups))
+            {
+                return new JsonResult(new { success = true, message = "Item added suceccefully" });
+            }
+         
+            var item = _pizzaShopDbContext.MenuItems.FirstOrDefault(i => i.Name == itemName);
+            if (item == null)
+            {
+                return new JsonResult(new { success = false, message = "Item not found" });
+            }
+            foreach (var modifierMinMax in modifierMinMaxList)
+            {
+                var itemModifierMapping = new ItemModifierGroup
+                {
+                    Menuid=item.Id,
+                    ModifiergroupId = modifierMinMax.Id,
+                    MaxValue =(short) modifierMinMax.MaxValue,
+                    MinValue = (short)modifierMinMax.MinValue,
+                    CreatedBy = userId,
+                    UpdatedBy = userId
+                };
+               _pizzaShopDbContext.ItemModifierGroups.Add(itemModifierMapping);
+               _pizzaShopDbContext.SaveChanges();
+            }
+            return new JsonResult(new { success = true, message = "Item added successfully" });
+        }
+        public async Task<IActionResult> changeAval(int id,int Availability)
+        {
+             MenuItem item= _pizzaShopDbContext.MenuItems.FirstOrDefault(i=>i.Id==id);
+            if(Availability==1)
+            {
+               item.Available=true;
+              
+            }
+            else
+            {
+                item.Available=false;
+            }
+             _pizzaShopDbContext.Update(item);
+            _pizzaShopDbContext.SaveChanges();
+            return  new JsonResult(new{message="Avalability change successfully"});
+        
+        }
 }

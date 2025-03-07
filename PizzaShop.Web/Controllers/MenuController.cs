@@ -137,6 +137,7 @@ public class MenuController : Controller
     [HttpGet]
     public async Task<IActionResult> selectModifier(string selectedItems)
     {
+       
         if (selectedItems == "[]")
         {
             return PartialView("_Modifier", new CategoryViewModel());
@@ -162,10 +163,19 @@ public class MenuController : Controller
     public  async Task<IActionResult> AddItem([FromForm] AddMenuItemViewModel addMenuItemViewModel)
     {
         int userId=_generateJwt.GetUserIdFromJwtToken(Request.Cookies["token"]);
-        List<ModifierMinMaxModel> modifierMinMaxList = JsonConvert.DeserializeObject<List<ModifierMinMaxModel>>(addMenuItemViewModel.selectedModifierGroups);
+        
         string name=await _menuService.addItem(addMenuItemViewModel,userId);
-        MenuItem menuItem= await _menuService.getMenuItemByName(name);
-        return Json("asdfasd");
+       
+
+        return await _menuService.UpdateItemModifierGroup(addMenuItemViewModel,name, userId);
+        
     }
+    public async Task<IActionResult> ChangeAvailability(int Id,int Availability)
+    {
+
+        return await _menuService.changeAval(Id,Availability);
+    }
+
+    
 
 }

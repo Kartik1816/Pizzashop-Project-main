@@ -10,15 +10,18 @@
                         <span>@selectedModifierGroup.Name</span>
                     </div>
                     <div>
-                        <a href="#"><button class="btn btn-light btn-sm">
-                                <i class="fas fa-trash" onclick="deleteItem(@selectedModifierGroup.Id)"></i></button></a>
+                        <button class="btn btn-light btn-sm" type="button">
+                                <i class="fas fa-trash" onclick="deleteItem(@selectedModifierGroup.Id)"></i></button>
                     </div>
                 </div>
-
+                @{
+                    var minValId="MinValue"+selectedModifierGroup.Id;
+                    var maxValId="MaxValue"+selectedModifierGroup.Id;
+                }
                 <div class="d-flex justify-content-between m-2">
                     <div class="col-12 col-md-6 p-1 ">
-                        <select onchange="getMinimumValueList(@selectedModifierGroup.Id,this.value)" class="form-select"  aria-label="Floating label select example">
-                            <option selected value=0>0</option>
+                        <select onchange="getMinimumValueList(@selectedModifierGroup.Id,this.value)" class="form-select" id="@minValId"  aria-label="Floating label select example">
+                            <option  value=0>0</option>
                             <option value=1>1</option>
                             <option value=2>2</option>
                             <option value=3>3</option>
@@ -26,8 +29,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 p-1">
-                        <select class="form-select" onchange="getMaximumValueList(@selectedModifierGroup.Id,this.value)"  aria-label="Floating label select example">
-                            <option selected value=0>0</option>
+                        <select class="form-select" onchange="getMaximumValueList(@selectedModifierGroup.Id,this.value)" id="@maxValId" aria-label="Floating label select example">
+                            <option value=0>0</option>
                             <option value=1>1</option>
                             <option value=2>2</option>
                             <option value=3>3</option>

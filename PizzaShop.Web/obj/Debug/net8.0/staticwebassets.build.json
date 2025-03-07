@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "9UePsIViyIRraD990ju8ZA7g3usVGuu6YetnA7/r8fc=",
+  "Hash": "IKAG8+Ctkd94cZsaAczRiYs+fpSFQg/1vPxflW6HJwg=",
   "Source": "PizzaShop.Web",
   "BasePath": "_content/PizzaShop.Web",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PizzaShop.Web.styles.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PizzaShop.Web.styles.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/PizzaShop.Web",
       "RelativePath": "PizzaShop.Web.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PizzaShop.Web.styles.css"
+      "OriginalItemSpec": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\bundle\\PizzaShop.Web.styles.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PizzaShop.Web.bundle.scp.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PizzaShop.Web.bundle.scp.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/PizzaShop.Web",
       "RelativePath": "PizzaShop.Web.bundle.scp.css",
       "AssetKind": "All",
@@ -52,10 +52,10 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PizzaShop.Web.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\PizzaShop.Web.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\css\\changePassword.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\css\\changePassword.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -74,7 +74,7 @@
       "OriginalItemSpec": "wwwroot\\css\\changePassword.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\css\\dashboard.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\css\\dashboard.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -93,7 +93,7 @@
       "OriginalItemSpec": "wwwroot\\css\\dashboard.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\css\\editProfile.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\css\\editProfile.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -112,7 +112,7 @@
       "OriginalItemSpec": "wwwroot\\css\\editProfile.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\css\\site.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -131,7 +131,7 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\css\\style.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\css\\style.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -150,7 +150,7 @@
       "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\favicon.ico",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -169,7 +169,7 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\black-modifier.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\black-modifier.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -188,7 +188,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\black-modifier.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\blue-modifier.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\blue-modifier.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -207,7 +207,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\blue-modifier.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\blue-six-dots.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\blue-six-dots.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -226,7 +226,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\blue-six-dots.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\border-all.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\border-all.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -245,7 +245,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\border-all.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\camera.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\camera.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -264,7 +264,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\camera.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\cash-coin.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\cash-coin.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -283,7 +283,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\cash-coin.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\change-password.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\change-password.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -302,7 +302,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\change-password.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\check-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\check-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -321,7 +321,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\check-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\checked-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\checked-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -340,7 +340,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\checked-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\clipboard-check.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\clipboard-check.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -359,7 +359,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\clipboard-check.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\clock-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\clock-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -378,7 +378,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\clock-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\clock-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\clock-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -397,7 +397,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\clock-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\cloud-upload-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\cloud-upload-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -416,7 +416,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\cloud-upload-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\customers.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\customers.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -435,7 +435,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\customers.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dashboard-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dashboard-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -454,7 +454,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dashboard-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dashboard-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dashboard-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -473,7 +473,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dashboard-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dashboard.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dashboard.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -492,7 +492,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dashboard.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dashboardActive.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dashboardActive.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -511,7 +511,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dashboardActive.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\data-graph.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\data-graph.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -530,7 +530,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\data-graph.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\Default_pfp.svg.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\Default_pfp.svg.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -549,7 +549,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\Default_pfp.svg.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\delete.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\delete.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -568,7 +568,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\delete.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dining-menu.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dining-menu.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -587,7 +587,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dining-menu.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dollar-filled.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dollar-filled.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -606,7 +606,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dollar-filled.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\dominos_background.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\dominos_background.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -625,7 +625,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\dominos_background.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\downward-arrow.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\downward-arrow.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -644,7 +644,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\downward-arrow.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\error-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\error-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -663,7 +663,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\error-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\eye.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\eye.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -682,7 +682,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\eye.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\favicon.ico",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\favicon.ico",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -701,7 +701,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\graph-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\graph-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -720,7 +720,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\graph-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\graph-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\graph-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -739,7 +739,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\graph-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\gray-six-dots.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\gray-six-dots.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -758,7 +758,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\gray-six-dots.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\header-logo.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\header-logo.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -777,7 +777,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\header-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\hero-image.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\hero-image.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -796,7 +796,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\hero-image.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\hide-password.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\hide-password.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -815,7 +815,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\hide-password.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\cloud.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\cloud.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -834,7 +834,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\cloud.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\customer.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\customer.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -853,7 +853,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\customer.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\dinner-table.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\dinner-table.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -872,7 +872,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\dinner-table.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\non-veg-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\non-veg-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -891,7 +891,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\non-veg-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\order-value.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\order-value.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -910,7 +910,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\order-value.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\total-orders.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\total-orders.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -929,7 +929,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\total-orders.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\total-sales.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\total-sales.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -948,7 +948,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\total-sales.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\veg-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\veg-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -967,7 +967,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\veg-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\vegan-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\vegan-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -986,7 +986,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\vegan-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\waiting-list.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\waiting-list.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1005,7 +1005,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\waiting-list.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\icons\\waiting-time.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\icons\\waiting-time.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1024,7 +1024,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\icons\\waiting-time.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\inbox-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\inbox-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1043,7 +1043,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\inbox-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\inbox-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\inbox-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1062,7 +1062,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\inbox-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\info-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\info-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1081,7 +1081,102 @@
       "OriginalItemSpec": "wwwroot\\Images\\info-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logo.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\item-images\\47ceacd8-6ddd-4808-9bb1-3756298ccf55.ItemImage",
+      "SourceId": "PizzaShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
+      "BasePath": "_content/PizzaShop.Web",
+      "RelativePath": "Images/item-images/47ceacd8-6ddd-4808-9bb1-3756298ccf55.ItemImage",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\item-images\\47ceacd8-6ddd-4808-9bb1-3756298ccf55.ItemImage"
+    },
+    {
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\item-images\\e18cb095-3254-4313-b6f8-b93236795abb.ItemImage",
+      "SourceId": "PizzaShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
+      "BasePath": "_content/PizzaShop.Web",
+      "RelativePath": "Images/item-images/e18cb095-3254-4313-b6f8-b93236795abb.ItemImage",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\item-images\\e18cb095-3254-4313-b6f8-b93236795abb.ItemImage"
+    },
+    {
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\item-images\\e4354c13-7779-4f74-9ba9-624107a76d8f.ItemImage",
+      "SourceId": "PizzaShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
+      "BasePath": "_content/PizzaShop.Web",
+      "RelativePath": "Images/item-images/e4354c13-7779-4f74-9ba9-624107a76d8f.ItemImage",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\item-images\\e4354c13-7779-4f74-9ba9-624107a76d8f.ItemImage"
+    },
+    {
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\item-images\\ebac2ca8-c05d-47d7-810d-ded428b0f7e2.ItemImage",
+      "SourceId": "PizzaShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
+      "BasePath": "_content/PizzaShop.Web",
+      "RelativePath": "Images/item-images/ebac2ca8-c05d-47d7-810d-ded428b0f7e2.ItemImage",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\item-images\\ebac2ca8-c05d-47d7-810d-ded428b0f7e2.ItemImage"
+    },
+    {
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\item-images\\f49e8c5c-0906-4ab3-b7fc-557d56338303.ItemImage",
+      "SourceId": "PizzaShop.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
+      "BasePath": "_content/PizzaShop.Web",
+      "RelativePath": "Images/item-images/f49e8c5c-0906-4ab3-b7fc-557d56338303.ItemImage",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\item-images\\f49e8c5c-0906-4ab3-b7fc-557d56338303.ItemImage"
+    },
+    {
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logo.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1100,7 +1195,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logo.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logos\\icons8-facebook-48.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logos\\icons8-facebook-48.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1119,7 +1214,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logos\\icons8-facebook-48.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logos\\icons8-github-48.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logos\\icons8-github-48.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1138,7 +1233,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logos\\icons8-github-48.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logos\\icons8-google-48.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logos\\icons8-google-48.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1157,7 +1252,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logos\\icons8-google-48.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logos\\pizzashop_logo.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logos\\pizzashop_logo.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1176,7 +1271,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logos\\pizzashop_logo.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\logout.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\logout.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1195,7 +1290,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\logout.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\maintenance-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\maintenance-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1214,7 +1309,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\maintenance-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\maintenance-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\maintenance-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1233,7 +1328,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\maintenance-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\menu-bar.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\menu-bar.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1252,7 +1347,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\menu-bar.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\menu-black.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\menu-black.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1271,7 +1366,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\menu-black.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\menu.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\menu.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1290,7 +1385,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\menu.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\mobile-header-logo.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\mobile-header-logo.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1309,7 +1404,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\mobile-header-logo.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\money-bag.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\money-bag.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1328,7 +1423,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\money-bag.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\new-product.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\new-product.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1347,7 +1442,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\new-product.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\notification-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\notification-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1366,7 +1461,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\notification-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\orders.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\orders.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1385,7 +1480,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\orders.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\people.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\people.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1404,7 +1499,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\people.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\person-gear.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\person-gear.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1423,7 +1518,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\person-gear.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\person-rolodex.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\person-rolodex.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1442,7 +1537,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\person-rolodex.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\person.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\person.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1461,7 +1556,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\person.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\pie-chart.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\pie-chart.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1480,7 +1575,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\pie-chart.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile_div_bg.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile_div_bg.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1499,7 +1594,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile_div_bg.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1518,7 +1613,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\00589e9a-1ea6-4c02-a1ed-61e9da9ddeb0.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\00589e9a-1ea6-4c02-a1ed-61e9da9ddeb0.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1537,7 +1632,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\00589e9a-1ea6-4c02-a1ed-61e9da9ddeb0.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\026ec7b0-1408-48f3-b22a-ed2a2d2457f7.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\026ec7b0-1408-48f3-b22a-ed2a2d2457f7.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1556,7 +1651,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\026ec7b0-1408-48f3-b22a-ed2a2d2457f7.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\030d5c90-21a1-4e41-9549-e4aebdab2e6e.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\030d5c90-21a1-4e41-9549-e4aebdab2e6e.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1575,7 +1670,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\030d5c90-21a1-4e41-9549-e4aebdab2e6e.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\0b71e037-ceeb-403e-b4cb-b54f9783fe6a.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\0b71e037-ceeb-403e-b4cb-b54f9783fe6a.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1594,7 +1689,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\0b71e037-ceeb-403e-b4cb-b54f9783fe6a.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\1023aba6-a262-40cb-9968-d7f7a71f2d93.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\1023aba6-a262-40cb-9968-d7f7a71f2d93.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1613,7 +1708,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\1023aba6-a262-40cb-9968-d7f7a71f2d93.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\11def472-926d-4960-ae1c-7eef75ceddca.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\11def472-926d-4960-ae1c-7eef75ceddca.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1632,7 +1727,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\11def472-926d-4960-ae1c-7eef75ceddca.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\1498adcf-e624-45d9-9f1e-637e635fc18c.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\1498adcf-e624-45d9-9f1e-637e635fc18c.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1651,7 +1746,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\1498adcf-e624-45d9-9f1e-637e635fc18c.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\17034c4f-6475-4531-a99e-1fe65d871e29.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\17034c4f-6475-4531-a99e-1fe65d871e29.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1670,7 +1765,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\17034c4f-6475-4531-a99e-1fe65d871e29.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\1aeab498-b4f4-40c1-be40-9ef7428eda9e.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\1aeab498-b4f4-40c1-be40-9ef7428eda9e.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1689,7 +1784,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\1aeab498-b4f4-40c1-be40-9ef7428eda9e.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\1b461bad-4add-49b5-bb65-0d55b056575d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\1b461bad-4add-49b5-bb65-0d55b056575d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1708,7 +1803,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\1b461bad-4add-49b5-bb65-0d55b056575d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\1be913bd-bb52-4646-aa21-3bdb57050adc.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\1be913bd-bb52-4646-aa21-3bdb57050adc.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1727,7 +1822,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\1be913bd-bb52-4646-aa21-3bdb57050adc.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\24306b6e-5534-4586-be1d-a343e5aecd9c.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\24306b6e-5534-4586-be1d-a343e5aecd9c.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1746,7 +1841,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\24306b6e-5534-4586-be1d-a343e5aecd9c.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\25d97d62-ec20-4679-83e0-519242f2e38f.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\25d97d62-ec20-4679-83e0-519242f2e38f.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1765,7 +1860,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\25d97d62-ec20-4679-83e0-519242f2e38f.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\2d190842-fa48-4cda-8cfb-d1f7543afec3.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\2d190842-fa48-4cda-8cfb-d1f7543afec3.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1784,7 +1879,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\2d190842-fa48-4cda-8cfb-d1f7543afec3.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\323414d1-9e6e-41cf-aaa1-f92e1faa7cb2.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\323414d1-9e6e-41cf-aaa1-f92e1faa7cb2.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1803,7 +1898,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\323414d1-9e6e-41cf-aaa1-f92e1faa7cb2.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\32d884f2-54f1-4606-bf2a-c20428d112d0.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\32d884f2-54f1-4606-bf2a-c20428d112d0.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1822,7 +1917,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\32d884f2-54f1-4606-bf2a-c20428d112d0.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\344c98b4-71f6-4872-b28b-30ee10f65c89.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\344c98b4-71f6-4872-b28b-30ee10f65c89.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1841,7 +1936,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\344c98b4-71f6-4872-b28b-30ee10f65c89.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\349e6f40-63af-4624-9831-2b0e0d33c8f5.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\349e6f40-63af-4624-9831-2b0e0d33c8f5.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1860,7 +1955,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\349e6f40-63af-4624-9831-2b0e0d33c8f5.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\38ea9b4c-9213-45f2-bcab-219eb4d63413.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\38ea9b4c-9213-45f2-bcab-219eb4d63413.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1879,7 +1974,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\38ea9b4c-9213-45f2-bcab-219eb4d63413.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\4b94f3b9-97e6-4037-928e-f39703827488.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\4b94f3b9-97e6-4037-928e-f39703827488.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1898,7 +1993,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\4b94f3b9-97e6-4037-928e-f39703827488.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\4d6658d1-d5a5-4493-a06e-5f8c929de76d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\4d6658d1-d5a5-4493-a06e-5f8c929de76d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1917,7 +2012,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\4d6658d1-d5a5-4493-a06e-5f8c929de76d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\550df36b-ba21-4398-a5b8-e1384be86d62.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\550df36b-ba21-4398-a5b8-e1384be86d62.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1936,7 +2031,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\550df36b-ba21-4398-a5b8-e1384be86d62.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\5a59888e-8457-4278-8848-2ebbc03e8b6b.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\5a59888e-8457-4278-8848-2ebbc03e8b6b.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1955,7 +2050,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\5a59888e-8457-4278-8848-2ebbc03e8b6b.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\5b581346-4317-4505-9455-921c91f2a980.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\5b581346-4317-4505-9455-921c91f2a980.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1974,7 +2069,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\5b581346-4317-4505-9455-921c91f2a980.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\8525f3c7-d7d5-4928-8bca-e0c9fbfa0d6e.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\8525f3c7-d7d5-4928-8bca-e0c9fbfa0d6e.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -1993,7 +2088,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\8525f3c7-d7d5-4928-8bca-e0c9fbfa0d6e.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\88504c62-7e46-4653-bc91-e8084d56487d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\88504c62-7e46-4653-bc91-e8084d56487d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2012,7 +2107,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\88504c62-7e46-4653-bc91-e8084d56487d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\8a938edd-6b22-4add-aa0e-717b625abc9d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\8a938edd-6b22-4add-aa0e-717b625abc9d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2031,7 +2126,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\8a938edd-6b22-4add-aa0e-717b625abc9d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\8d859e61-5e3b-46c5-9904-f1c137741470.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\8d859e61-5e3b-46c5-9904-f1c137741470.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2050,7 +2145,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\8d859e61-5e3b-46c5-9904-f1c137741470.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\97596849-1273-4deb-97d0-0c32f2a87b3d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\97596849-1273-4deb-97d0-0c32f2a87b3d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2069,7 +2164,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\97596849-1273-4deb-97d0-0c32f2a87b3d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\99d7197e-c30b-4650-a169-20f6ffd00b02.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\99d7197e-c30b-4650-a169-20f6ffd00b02.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2088,7 +2183,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\99d7197e-c30b-4650-a169-20f6ffd00b02.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\9a71e02e-4c4f-4600-949d-2b62011972ad.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\9a71e02e-4c4f-4600-949d-2b62011972ad.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2107,7 +2202,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\9a71e02e-4c4f-4600-949d-2b62011972ad.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\9d2832b8-c7f1-4678-bc39-8da1c2a9af38.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\9d2832b8-c7f1-4678-bc39-8da1c2a9af38.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2126,7 +2221,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\9d2832b8-c7f1-4678-bc39-8da1c2a9af38.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\9d9b8c2c-eb35-4651-8e99-3ebd77892465.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\9d9b8c2c-eb35-4651-8e99-3ebd77892465.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2145,7 +2240,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\9d9b8c2c-eb35-4651-8e99-3ebd77892465.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\9e4c05e8-018c-4344-9e0e-f3b1dbd55dca.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\9e4c05e8-018c-4344-9e0e-f3b1dbd55dca.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2164,7 +2259,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\9e4c05e8-018c-4344-9e0e-f3b1dbd55dca.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\ad713f7b-b08b-48b7-bfe5-bf9ace3bbc91.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\ad713f7b-b08b-48b7-bfe5-bf9ace3bbc91.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2183,7 +2278,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\ad713f7b-b08b-48b7-bfe5-bf9ace3bbc91.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\c46e47a2-2369-4a34-9d55-ddb6a886cba0.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\c46e47a2-2369-4a34-9d55-ddb6a886cba0.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2202,7 +2297,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\c46e47a2-2369-4a34-9d55-ddb6a886cba0.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\cb425a02-05bc-4f93-afd2-ef378e36acd7.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\cb425a02-05bc-4f93-afd2-ef378e36acd7.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2221,7 +2316,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\cb425a02-05bc-4f93-afd2-ef378e36acd7.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\cf144523-9c4e-4af9-b655-47929d04c94b.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\cf144523-9c4e-4af9-b655-47929d04c94b.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2240,7 +2335,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\cf144523-9c4e-4af9-b655-47929d04c94b.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\d7d668e0-26aa-4f41-a864-62d3da3002b6.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\d7d668e0-26aa-4f41-a864-62d3da3002b6.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2259,7 +2354,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\d7d668e0-26aa-4f41-a864-62d3da3002b6.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\dab52458-c9d3-4c6d-a305-800bbbfd8c08.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\dab52458-c9d3-4c6d-a305-800bbbfd8c08.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2278,7 +2373,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\dab52458-c9d3-4c6d-a305-800bbbfd8c08.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\dca7dfba-dc8c-4a75-ac03-6be9987a6923.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\dca7dfba-dc8c-4a75-ac03-6be9987a6923.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2297,7 +2392,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\dca7dfba-dc8c-4a75-ac03-6be9987a6923.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\e2d79caa-ca0f-4b60-b7f2-96672c49b8ff.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\e2d79caa-ca0f-4b60-b7f2-96672c49b8ff.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2316,7 +2411,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\e2d79caa-ca0f-4b60-b7f2-96672c49b8ff.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\e60b33c6-e22e-43a8-8ce6-5adb795efc43.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\e60b33c6-e22e-43a8-8ce6-5adb795efc43.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2335,7 +2430,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\e60b33c6-e22e-43a8-8ce6-5adb795efc43.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\ec90a155-9235-4362-8243-aeaab6e6026d.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\ec90a155-9235-4362-8243-aeaab6e6026d.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2354,7 +2449,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\ec90a155-9235-4362-8243-aeaab6e6026d.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\ecd82ae6-2fc4-4f81-a656-e5491786f53c.jpg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\ecd82ae6-2fc4-4f81-a656-e5491786f53c.jpg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2373,7 +2468,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\ecd82ae6-2fc4-4f81-a656-e5491786f53c.jpg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\f3df5cf8-a732-42f0-a258-3017cae3088c.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\f3df5cf8-a732-42f0-a258-3017cae3088c.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2392,7 +2487,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\f3df5cf8-a732-42f0-a258-3017cae3088c.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\f5282ae6-bc9e-4a42-ba07-8fc2a76c608b.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\f5282ae6-bc9e-4a42-ba07-8fc2a76c608b.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2411,7 +2506,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\f5282ae6-bc9e-4a42-ba07-8fc2a76c608b.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile-images\\faee9f63-6517-4275-86a3-d61605c5e781.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile-images\\faee9f63-6517-4275-86a3-d61605c5e781.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2430,7 +2525,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile-images\\faee9f63-6517-4275-86a3-d61605c5e781.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\profile.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\profile.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2449,7 +2544,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\profile.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\qr-code.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\qr-code.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2468,7 +2563,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\qr-code.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\QR.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\QR.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2487,7 +2582,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\QR.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\radio-checked-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\radio-checked-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2506,7 +2601,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\radio-checked-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\role-and-permission.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\role-and-permission.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2525,7 +2620,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\role-and-permission.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\role-and-permissionActive.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\role-and-permissionActive.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2544,7 +2639,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\role-and-permissionActive.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\search-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\search-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2563,7 +2658,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\search-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\select-downward.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\select-downward.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2582,7 +2677,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\select-downward.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\setting-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\setting-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2601,7 +2696,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\setting-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\setting-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\setting-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2620,7 +2715,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\setting-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\show-password.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\show-password.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2639,7 +2734,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\show-password.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\square-fill.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\square-fill.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2658,7 +2753,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\square-fill.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\star.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\star.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2677,7 +2772,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\star.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\success-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\success-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2696,7 +2791,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\success-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\table-and-section.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\table-and-section.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2715,7 +2810,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\table-and-section.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\taxes-and-fees.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\taxes-and-fees.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2734,7 +2829,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\taxes-and-fees.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\toppng.com-warning-icon-2400x2400.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\toppng.com-warning-icon-2400x2400.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2753,7 +2848,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\toppng.com-warning-icon-2400x2400.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\total-product.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\total-product.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2772,7 +2867,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\total-product.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\transperent-pizza.png",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\transperent-pizza.png",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2791,7 +2886,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\transperent-pizza.png"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\user-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\user-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2810,7 +2905,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\user-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\user-default.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\user-default.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2829,7 +2924,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\user-default.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\userds-active.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\userds-active.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2848,7 +2943,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\userds-active.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\users.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\users.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2867,7 +2962,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\users.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\usersActive.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\usersActive.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2886,7 +2981,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\usersActive.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\warning-icon.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\warning-icon.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2905,7 +3000,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\warning-icon.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\Images\\warning.svg",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\Images\\warning.svg",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2924,7 +3019,7 @@
       "OriginalItemSpec": "wwwroot\\Images\\warning.svg"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\addUser.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\addUser.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2943,7 +3038,7 @@
       "OriginalItemSpec": "wwwroot\\js\\addUser.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\changePassword.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\changePassword.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2962,7 +3057,7 @@
       "OriginalItemSpec": "wwwroot\\js\\changePassword.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\custom.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\custom.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -2981,7 +3076,7 @@
       "OriginalItemSpec": "wwwroot\\js\\custom.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\dashboard.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\dashboard.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3000,7 +3095,7 @@
       "OriginalItemSpec": "wwwroot\\js\\dashboard.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\editProfile.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\editProfile.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3019,7 +3114,7 @@
       "OriginalItemSpec": "wwwroot\\js\\editProfile.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\editUser.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\editUser.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3038,7 +3133,7 @@
       "OriginalItemSpec": "wwwroot\\js\\editUser.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\forgotPassword.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\forgotPassword.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3057,7 +3152,7 @@
       "OriginalItemSpec": "wwwroot\\js\\forgotPassword.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\login.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\login.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3076,7 +3171,7 @@
       "OriginalItemSpec": "wwwroot\\js\\login.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\menu.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\menu.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3095,7 +3190,7 @@
       "OriginalItemSpec": "wwwroot\\js\\menu.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\permission.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\permission.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3114,7 +3209,7 @@
       "OriginalItemSpec": "wwwroot\\js\\permission.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\resetPassword.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\resetPassword.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3133,7 +3228,7 @@
       "OriginalItemSpec": "wwwroot\\js\\resetPassword.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\sidebar.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\sidebar.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3152,7 +3247,7 @@
       "OriginalItemSpec": "wwwroot\\js\\sidebar.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\site.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3171,7 +3266,7 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\js\\userList.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\js\\userList.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3190,7 +3285,7 @@
       "OriginalItemSpec": "wwwroot\\js\\userList.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3209,7 +3304,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3228,7 +3323,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3247,7 +3342,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3266,7 +3361,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3285,7 +3380,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3304,7 +3399,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3323,7 +3418,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3342,7 +3437,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3361,7 +3456,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3380,7 +3475,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3399,7 +3494,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3418,7 +3513,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3437,7 +3532,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3456,7 +3551,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3475,7 +3570,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3494,7 +3589,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3513,7 +3608,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3532,7 +3627,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3551,7 +3646,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3570,7 +3665,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3589,7 +3684,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3608,7 +3703,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3627,7 +3722,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3646,7 +3741,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3665,7 +3760,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3684,7 +3779,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3703,7 +3798,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3722,7 +3817,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3741,7 +3836,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3760,7 +3855,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3779,7 +3874,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3798,7 +3893,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3817,7 +3912,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3836,7 +3931,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3855,7 +3950,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3874,7 +3969,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3893,7 +3988,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3912,7 +4007,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3931,7 +4026,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3950,7 +4045,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3969,7 +4064,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -3988,7 +4083,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4007,7 +4102,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4026,7 +4121,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4045,7 +4140,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4064,7 +4159,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4083,7 +4178,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4102,7 +4197,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4121,7 +4216,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4140,7 +4235,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4159,7 +4254,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4178,7 +4273,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4197,7 +4292,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4216,7 +4311,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4235,7 +4330,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4254,7 +4349,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4273,7 +4368,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\select2.min.css",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\select2.min.css",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",
@@ -4292,7 +4387,7 @@
       "OriginalItemSpec": "wwwroot\\lib\\select2.min.css"
     },
     {
-      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\lib\\select2.min.js",
+      "Identity": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PIzzaShop.Web\\wwwroot\\lib\\select2.min.js",
       "SourceId": "PizzaShop.Web",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\pca158\\Desktop\\Pizzashop_Folder\\PizzaShop.Web\\wwwroot\\",

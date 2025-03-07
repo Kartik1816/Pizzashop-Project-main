@@ -30,6 +30,5 @@ public class CategoryViewModel
 
     public AddMenuItemViewModel addMenuItemViewModel { get; set; }
 
-    
-
+    public List<ModifierMinMaxModel> modifierMinMaxModels{ get; set; }
 }

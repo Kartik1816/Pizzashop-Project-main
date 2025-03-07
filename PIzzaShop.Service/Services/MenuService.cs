@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using PizzaShop.Domain.Models;
 using PizzaShop.Domain.ViewModels;
 using PizzaShop.Repository.Interfaces;
@@ -65,13 +66,19 @@ public class MenuService : IMenuService
     {
         return await _menuRepository.getModifierMappings(modifierGroupIds);
     }
-     public async Task<MenuItem> getMenuItemByName(string name)
-    {
-        return await _menuRepository.getMenuItemByName(name);
-    }
+ 
 
     public  async Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId)
     {
         return await _menuRepository.addItem(addMenuItemViewModel, userId);
     }
+     public async Task<IActionResult> UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId)
+     {
+        List<ModifierMinMaxModel> modifierMinMaxList = JsonConvert.DeserializeObject<List<ModifierMinMaxModel>>(addItemViewModel.selectedModifierGroups);
+        return await _menuRepository.UpdateItemModifierGroup(addItemViewModel,itemName,userId,modifierMinMaxList);
+     }
+     public async Task<IActionResult> changeAval(int id,int Availability)
+     {
+        return await _menuRepository.changeAval(id,Availability);
+     }
 }

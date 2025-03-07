@@ -8,9 +8,9 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\P
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.AssemblyInfoInputs.cache
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.AssemblyInfo.cs
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.csproj.CoreCompileInputs.cache
+C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.sourcelink.json
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaSho.44FF4720.Up2Date
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\refint\PizzaShop.Repository.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.pdb
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\ref\PizzaShop.Repository.dll
-C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Repository\obj\Debug\net8.0\PizzaShop.Repository.sourcelink.json

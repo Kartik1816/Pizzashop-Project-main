@@ -7,9 +7,9 @@ C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\Pizza
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.AssemblyInfoInputs.cache
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.AssemblyInfo.cs
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.sourcelink.json
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\refint\PizzaShop.Domain.dll
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.pdb
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.genruntimeconfig.cache
 C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\ref\PizzaShop.Domain.dll
-C:\Users\pca158\Desktop\Pizzashop_Folder\PizzaShop.Domain\obj\Debug\net8.0\PizzaShop.Domain.sourcelink.json

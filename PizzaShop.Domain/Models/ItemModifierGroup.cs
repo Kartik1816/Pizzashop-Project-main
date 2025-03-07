@@ -13,7 +13,15 @@ public partial class ItemModifierGroup
 
     public short? MaxValue { get; set; }
 
+    public int? CreatedBy { get; set; }
+
+    public int? UpdatedBy { get; set; }
+
+    public virtual User? CreatedByNavigation { get; set; }
+
     public virtual MenuItem Menu { get; set; } = null!;
 
     public virtual ModifierGroup Modifiergroup { get; set; } = null!;
+
+    public virtual User? UpdatedByNavigation { get; set; }
 }

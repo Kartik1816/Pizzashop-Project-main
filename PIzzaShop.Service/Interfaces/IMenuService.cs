@@ -24,7 +24,8 @@ public interface IMenuService
 
     public Task<List<ModifierMapping>> getModifierMappings(List<int> modifierGroupIds);
 
-    public  Task<MenuItem> getMenuItemByName(string name);
 
     public  Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId);
+    public  Task<IActionResult> UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId);
+    public Task<IActionResult> changeAval(int id,int Availability);
 }

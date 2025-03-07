@@ -116,158 +116,9 @@
   </div>
 </div>
 
-
-<div class="modal fade" id="addItem" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-  aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog addItem-modal modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel">Add Item</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <form id="addItem-Form">
-
-          <div class="row">
-            <div class="col-12 col-md-8">
-              <div class="row align-items-center">
-                <div class="form-floating col-12 col-md-6 p-1">
-                  <select class="form-select form-multi-select" asp-for=addMenuItemViewModel.CategoryId name="addMenuItemViewModel.CategoryId" id="CategorySelect">
-                    @* <option selected>Select Modifier Group(s)</option> *@
-                    @foreach (var category in Model.Categories)
-                    {
-                      <option value="@category.Id">@category.Name</option>
-                    }
-                  </select>
-                  <label class="" for="floatingSelect">Categories*</label>
-                </div>
-                <div class="form-floating col-12 col-md-6 p-1">
-                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.ItemName" name="addMenuItemViewModel.ItemName" >
-                  <label for="category-name" class="">Name*</label>
-                  <span asp-validation-for="@Model.addMenuItemViewModel.ItemName" class="text-danger"></span>
-                </div>
-              </div>
-              <div class="row my-2 align-items-center">
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <select class="form-select" id="CategorySelect" asp-for=addMenuItemViewModel.ItemType name="addMenuItemViewModel.ItemType" aria-label="Floating label select example">
-                    <option selected>select ItemType</option>
-                    <option value="Veg">Veg</option>
-                    <option value="Non-Veg">Non-Veg</option>
-                    <option value="accountManager">Account Manager</option>
-                  </select>
-                  <label class="" for="floatingSelect">Item Type*</label>
-                </div>
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.Rate" name="addMenuItemViewModel.Rate" id="Item-Rate"  placeholder="name">
-                  <label for="category-name" class="">Rate*</label>
-                </div>
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.Quantity" name="addMenuItemViewModel.Quantity" id="Item-Quantity"  placeholder="name">
-                  <label for="category-name" class="">Quantity*</label>
-                </div>
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <select class="form-select" asp-for=addMenuItemViewModel.Unit name="addMenuItemViewModel.Unit" id="CategorySelect" aria-label="Floating label select example">
-                    <option selected>Select Unit</option>
-                    <option value="Plate">Plate</option>
-                    <option value="Cup">Cup</option>
-                    
-                  </select>
-                  <label class="" for="floatingSelect">Unit*</label>
-                </div>
-              </div>
-              <div class="row my-2 align-items-center">
-                <div class="form-floating col-6 col-md-3 p-1">
-                  <div class="form-check form-switch my-2">
-                    <input class="form-check-input " type="checkbox" role="switch" asp-for="@Model.addMenuItemViewModel.Availabe" name="addMenuItemViewModel.Availabe" id="flexSwitchCheckChecked" checked>
-                    <label for="flexSwitchCheckChecked" class="mx-2 "> Available</label>
-                  </div>
-                </div>
-
-                <div class="form-floating col-6 col-md-3 p-1">
-                  <div class="form-check form-switch my-2">
-                    <input class="form-check-input" type="checkbox" asp-for="@Model.addMenuItemViewModel.DefaultTax" name="addMenuItemViewModel.DefaultTax" role="switch" id="DefaultTax" onchange="" checked >
-                    <label for="flexSwitchCheckChecked1" class="mx-2"> DefaultTax</label>
-                  </div>
-                </div>
-
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.TaxPercentage" name="addMenuItemViewModel.TaxPercentage" id="Tax-Percentage" >
-                  <label for="category-name" class="">Tax Percentage</label>
-                </div>
-
-                <div class="form-floating col-12 col-md-3 p-1">
-                  <input type="text" class="form-control" asp-for="@Model.addMenuItemViewModel.ShortCode" name="addMenuItemViewModel.ShortCode" id="Short-Code" required placeholder="name">
-                  <label for="category-name" class="">Short Code</label>
-                </div>
-              </div>
-              <div class="row my-2 align-items-center mx-2">
-                <div class="form-floating my-auto col-12 pt-2">
-                  <input class="form-control" asp-for="@Model.addMenuItemViewModel.Description" name="addMenuItemViewModel.Description" placeholder="Leave a comment here" id="item-description"
-                    style="height: 100px"></input>
-                  <label for="floatingTextarea2">Description</label>
-                </div>
-              </div>
-              <div class="row my-2 align-items-center">
-                <div class="col-12  row">
-                  <label for="upload-btn">Upload Image</label>
-                  <div class="file upload position-relative overflow-hidden btn-custom">
-                    <div class="d-flex gap-2 justify-content-center align-items-center" style="height: 100px;">
-                      <img src="./images/icons/cloud.svg" class="small-image" alt="upload">
-                      <span>Drag and Drop or Browse files</span>
-                      <p id="file-name"></p>
-                    </div>
-                    <input type="file" id="upload-btn" asp-for="@Model.addMenuItemViewModel.ItemImage" name="addMenuItemViewModel.ItemImage" class="position-absolute file-input-btn" name="file"
-                      accept="image/*" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-4 item-modifier-bg p-3">
-              <div class="row align-items-center">
-                <div class=" col-12  p-1">
-
-                  <div class="custom-multi-select">
-                    <div class="selection-area">
-                      <div class="selected-tags">
-                        
-                      </div>
-                      <input type="text" class="search-input" placeholder="Select options">
-                      <button class="clear-all"></button>
-                    </div>
-                    <div class="dropdown-options">
-                      <select class="form-select d-none"  id="ModifierSelect" multiple>
-                      @foreach (var modifier in Model.ModifierGroups)
-                      {
-                        <option value="@modifier.Id">@modifier.Name</option>
-                      }
-                  </select>
-                    </div>
-                  </div>
-
-                 
-              
-
-                </div>
-              <div id="partialviewstart"></div>
-              <partial name="_Modifier" model="Model" />
-
-              </div>
-            </div>
-          </div>
-          <input id="min-value-modfier" asp-for="@Model.addMenuItemViewModel.minValue" hidden name="addMenuItemViewModel.minValue">
-          <input id="max-value-modfier" asp-for="@Model.addMenuItemViewModel.maxValue" hidden name="addMenuItemViewModel.maxValue">
-          <input id="selected-modifier-groups" asp-for="@Model.addMenuItemViewModel.selectedModifierGroups" hidden name="addMenuItemViewModel.selectedModifierGroups">
-      <div class="modal-footer">
-        <button type="button"  class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-        <button type="submit"  class="btn btn-primary">Yes</button>
-      </div>
-        </form>
-
-      </div>
-      
-    </div>
-  </div>
-</div>
+<div id="partial-addItem-modal">
+  <partial name="_ItemModal" model="@Model"/>
+ </div>
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
@@ -393,11 +244,17 @@ function getSelectedValues(id) {
   var checked = document.getElementById(id).checked
   if(checked){
     selectElement.push(id);
+    modifierMaximumMinimumList.push({Id:id,minValue:0,maxValue:0})
   }else{
     selectElement = selectElement.filter(item => item !== id);
+    modifierMaximumMinimumList = modifierMaximumMinimumList.filter(item=> item.Id !== id);
   }
+  
   console.log(selectElement);
   var selectedItemsString=JSON.stringify(selectElement);
+  var modMaxMinList=modfierMaxMinList();
+    $("#selected-modifier-groups").val(JSON.stringify(modMaxMinList));
+     console.log( $("#selected-modifier-groups").val())
   $.ajax({
     type: "GET",
     url: "/Menu/selectModifier",
@@ -405,6 +262,12 @@ function getSelectedValues(id) {
     data: {selectedItems:selectedItemsString},
     success: function(data){
       $('#partialviewstart').html(data);
+      modifierMaximumMinimumList.forEach(obj => {
+        var minSelect = document.getElementById(`MinValue${obj.Id}`);
+        var maxSelect = document.getElementById(`MaxValue${obj.Id}`);
+        if (minSelect) minSelect.value = obj.minValue;
+        if (maxSelect) maxSelect.value = obj.maxValue;
+      });
     }
   });
 
@@ -414,40 +277,27 @@ let minValues=[];
 let maxValues=[];
 
 
-
-    function getMinimumValueList(id, value) {
-        minValues.push({ Id: id, Value: value });
-        var minimumValueJson = JSON.stringify(minValues);
-        $("#min-value-modfier").val(minimumValueJson);
-        
-    }
+function getMinimumValueList(id, value) {
+  let defaultMinMod=modifierMaximumMinimumList.find(item => item.Id ==id);
+  defaultMinMod.minValue=value;
+}
 
  
-
 function getMaximumValueList(id, value) {
-        maxValues.push({ Id: id, Value: value });
-        var maximumValueJson = JSON.stringify(maxValues);
-        $("#max-value-modfier").val(maximumValueJson);
-        console.log(maxValues);
-    }
+  let defaultMaxMod=modifierMaximumMinimumList.find(item => item.Id ==id);
+      defaultMaxMod.maxValue=value;
+      console.log(modifierMaximumMinimumList);
+}
 
 let modifierMaximumMinimumList=[];
 function modfierMaxMinList()
 {
-  var minVal;
-  var maxVal;
-    for(let i=0;i< selectElement.length;i++)
-    {
-      minVal=minValues.find(item => item.Id ==selectElement[i]);
-      maxVal=maxValues.find(item => item.Id ==selectElement[i]);
-    
-      modifierMaximumMinimumList.push({Id:selectElement[i],minValue: minVal.Value,maxValue: maxVal.Value})
-    }
   return modifierMaximumMinimumList;
 }
 
 function deleteItem(id) {
   selectElement = selectElement.filter(item => item !== id);
+  modifierMaximumMinimumList = modifierMaximumMinimumList.filter(item=> item.Id !== id);
   document.getElementById(id).checked = false;
   removeTag(id)
   var selectedItemsString=JSON.stringify(selectElement);
@@ -458,16 +308,24 @@ function deleteItem(id) {
     data: {selectedItems:selectedItemsString},
     success: function(data){
       $('#partialviewstart').html(data);
+      modifierMaximumMinimumList.forEach(obj => {
+        var minSelect = document.getElementById(`MinValue${obj.Id}`);
+        var maxSelect = document.getElementById(`MaxValue${obj.Id}`);
+        if (minSelect) minSelect.value = obj.minValue;
+        if (maxSelect) maxSelect.value = obj.maxValue;
+      });
     }
   });
 }
 
 
-$("#addItem-Form").submit(function(){
+$("#addItem-Form").submit(function(e){
+    e.preventDefault();
     var modMaxMinList=modfierMaxMinList();
     $("#selected-modifier-groups").val(JSON.stringify(modMaxMinList));
     var addItemForm=$(this)[0];
     var formData = new FormData(addItemForm);
+    console.log( $("#selected-modifier-groups").val())
     console.log(formData);
     $.ajax({
         url: '/Menu/AddItem',
@@ -490,4 +348,5 @@ $("#addItem-Form").submit(function(){
         }
     });
   });
+
 </script>

@@ -65,6 +65,10 @@ public partial class User
 
     public virtual ICollection<User> InverseUpdatedByNavigation { get; set; } = new List<User>();
 
+    public virtual ICollection<ItemModifierGroup> ItemModifierGroupCreatedByNavigations { get; set; } = new List<ItemModifierGroup>();
+
+    public virtual ICollection<ItemModifierGroup> ItemModifierGroupUpdatedByNavigations { get; set; } = new List<ItemModifierGroup>();
+
     public virtual ICollection<MenuItem> MenuItemCreatedByNavigations { get; set; } = new List<MenuItem>();
 
     public virtual ICollection<MenuItem> MenuItemUpdatedByNavigations { get; set; } = new List<MenuItem>();

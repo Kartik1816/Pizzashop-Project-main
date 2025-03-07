@@ -39,6 +39,8 @@ public partial class MenuItem
 
     public int UpdatedBy { get; set; }
 
+    public string? ShortCode { get; set; }
+
     public virtual Category Category { get; set; } = null!;
 
     public virtual User CreatedByNavigation { get; set; } = null!;
