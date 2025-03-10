@@ -1,3 +1,4 @@
+using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -37,24 +38,42 @@ public class UserListController : Controller
 
 
     [HttpGet]
-    public async Task<IActionResult> FindUsers(int NextPage,int PageSize,string searchTerm=null)
-    { 
-       List<User> users= await _userListService.getTotalUsersInTable(searchTerm);
-       int userCount=users.Count();
+public async Task<IActionResult> FindUsers(int NextPage, int PageSize, string searchTerm = null, int SortUsers = 0)
+{
+    // Fetch all users based on the search term
+    List<User> users = await _userListService.getTotalUsersInTable(searchTerm);
+    int userCount = users.Count();
 
-       List<User> userToReturn = users.Skip((NextPage-1)*PageSize).Take(PageSize).ToList();
-      
-        var totalPages=(int)Math.Ceiling((double)userCount/PageSize);
-        UserListViewModel userListViewModel=new UserListViewModel
-        {
-            users=userToReturn,
-            PageIndex=NextPage,
-            PageSize=PageSize,
-            TotalUsers=userCount,
-            TotalPages=totalPages
-        };
-       return PartialView("_UserList",userListViewModel);
+    // Apply pagination
+    var paginatedUsers = users.Skip((NextPage - 1) * PageSize).Take(PageSize);
+
+    // Apply sorting
+    List<User> userToReturn;
+    if (SortUsers == 0)
+    {
+        userToReturn = paginatedUsers.OrderBy(u => u.FirstName).ToList(); // Sort by Name (ascending)
     }
+    else
+    {
+        userToReturn = paginatedUsers.OrderByDescending(u => u.FirstName).ToList(); // Sort by Name (descending)
+    }
+
+    // Calculate total pages
+    var totalPages = (int)Math.Ceiling((double)userCount / PageSize);
+
+    // Create the view model
+    UserListViewModel userListViewModel = new UserListViewModel
+    {
+        users = userToReturn,
+        PageIndex = NextPage,
+        PageSize = PageSize,
+        TotalUsers = userCount,
+        TotalPages = totalPages
+    };
+
+    // Return the partial view with the view model
+    return PartialView("_UserList", userListViewModel);
+}
 
     [HttpGet]
     [Route("/UserList/EditUser/{id}")]

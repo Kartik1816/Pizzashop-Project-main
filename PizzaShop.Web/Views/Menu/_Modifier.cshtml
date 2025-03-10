@@ -1,3 +1,4 @@
+@using PizzaShop.Domain.ViewModels
 @model PizzaShop.Domain.ViewModels.CategoryViewModel
 @if (@Model.SelectedModifierGroups != null)
 {
@@ -11,17 +12,18 @@
                     </div>
                     <div>
                         <button class="btn btn-light btn-sm" type="button">
-                                <i class="fas fa-trash" onclick="deleteItem(@selectedModifierGroup.Id)"></i></button>
+                            <i class="fas fa-trash" onclick="deleteItem(@selectedModifierGroup.Id)"></i></button>
                     </div>
                 </div>
                 @{
-                    var minValId="MinValue"+selectedModifierGroup.Id;
-                    var maxValId="MaxValue"+selectedModifierGroup.Id;
+                    var minValId = "MinValue" + selectedModifierGroup.Id;
+                    var maxValId = "MaxValue" + selectedModifierGroup.Id;
                 }
                 <div class="d-flex justify-content-between m-2">
                     <div class="col-12 col-md-6 p-1 ">
-                        <select onchange="getMinimumValueList(@selectedModifierGroup.Id,this.value)" class="form-select" id="@minValId"  aria-label="Floating label select example">
-                            <option  value=0>0</option>
+                        <select onchange="getMinimumValueList(@selectedModifierGroup.Id,this.value)" class="form-select"
+                            id="@minValId" aria-label="Floating label select example">
+                            <option value=0>0</option>
                             <option value=1>1</option>
                             <option value=2>2</option>
                             <option value=3>3</option>
@@ -29,7 +31,8 @@
                         </select>
                     </div>
                     <div class="col-12 col-md-6 p-1">
-                        <select class="form-select" onchange="getMaximumValueList(@selectedModifierGroup.Id,this.value)" id="@maxValId" aria-label="Floating label select example">
+                        <select class="form-select" onchange="getMaximumValueList(@selectedModifierGroup.Id,this.value)"
+                            id="@maxValId" aria-label="Floating label select example">
                             <option value=0>0</option>
                             <option value=1>1</option>
                             <option value=2>2</option>
@@ -40,29 +43,73 @@
                 </div>
 
                 <div class="d-flex justify-content-between m-2">
-                    
-                        <ul class="w-100">
-                            @{
-                                var selectedModifiers = @Model.SelectedModifierMappings.Where(x => x.ModifiergroupId ==
-                                selectedModifierGroup.Id).Select(x => x.Modifier).ToList();
-                            }
-                            @foreach (var modifier in @selectedModifiers)
-                            {
-                                <li class="d-flex justify-content-between ">
-                                    <div>
+
+                    <ul class="w-100">
+                        @{
+                            var selectedModifiers = @Model.SelectedModifierMappings.Where(m => m.ModifiergroupId ==
+                            selectedModifierGroup.Id).Select(m => m.Modifier).ToList();
+                        }
+                        @foreach (var modifier in selectedModifiers)
+                        {
+                            <li class="d-flex justify-content-between ">
+                                <div>
                                     <p>@modifier.Name</p>
-                                    </div>
-                                    <div class="me-2">
+                                </div>
+                                <div class="me-2">
                                     <p>@modifier.Price</p>
-                                    </div>
-                                </li>
-                            }
-                        </ul>
-                    
+                                </div>
+                            </li>
+                        }
+                    </ul>
+
                 </div>
             </div>
         </div>
 
     }
 }
+@{
+    List<int> modifierGroupIds = new List<int>();
+    List<string> modifierGroupNames = new List<string>();
+    List<ModifierMinMaxModel> modifiersMinMax= new List<ModifierMinMaxModel>(); 
+    if (Model.SelectedModifierGroups != null)
+    {
+        modifierGroupIds = Model.SelectedModifierGroups.Select(m => m.Id).ToList();
+        modifierGroupNames = Model.SelectedModifierGroups.Select(m => m.Name).ToList();
+    }
+    if(Model.addMenuItemViewModel?.modifierMinMaxModels != null)
+    {
+      modifiersMinMax=Model.addMenuItemViewModel.modifierMinMaxModels;
+    }
+}
 
+<script>
+function bindEditChanges() {
+        modifierMaximumMinimumList = @Html.Raw(Json.Serialize(modifiersMinMax));
+        @* console.log(modifierMaximumMinimumList) *@
+        const customMultiSelect = document.querySelector('.custom-multi-select');
+        const selectedTagsContainer = customMultiSelect.querySelector('.selected-tags');
+
+        var modifierGroupIds = @Html.Raw(Json.Serialize(modifierGroupIds));
+        var modifierGroupNames = @Html.Raw(Json.Serialize(modifierGroupNames));
+        for (var i = 0; i < modifierGroupIds.length; i++) {
+            console.log(document.getElementById(modifierGroupIds[i]).checked);
+            document.getElementById(modifierGroupIds[i]).checked = true;
+
+            const tag = document.createElement('div');
+            tag.className = 'tag';
+            tag.setAttribute('data-value', modifierGroupIds[i]);
+            tag.innerHTML = `${modifierGroupNames[i]} <span class="tag-delete"></span>`;
+            selectedTagsContainer.appendChild(tag);
+        }
+
+        @* modifierMaximumMinimumList.forEach(obj => {
+        var minSelect = document.getElementById(`MinValue${obj.Id}`);
+        var maxSelect = document.getElementById(`MaxValue${obj.Id}`);
+        if (minSelect) minSelect.value = obj.minValue;
+        if (maxSelect) maxSelect.value = obj.maxValue;
+      }); *@
+
+
+    }
+</script>

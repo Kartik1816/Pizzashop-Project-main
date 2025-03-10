@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.JsonPatch.Internal;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using Org.BouncyCastle.Asn1.X509;
@@ -142,8 +143,8 @@ public class MenuController : Controller
         {
             return PartialView("_Modifier", new CategoryViewModel());
         }
-        
-        List<int> selectedItemsList = selectedItems.Trim('[', ']').Split(',').Select(int.Parse).ToList();
+        List<ModifierMinMaxModel> modifierMinMaxList = JsonConvert.DeserializeObject<List<ModifierMinMaxModel>>(selectedItems);
+        List<int> selectedItemsList = modifierMinMaxList.Select(m=>m.Id).ToList();
         List<ModifierGroup> selectedModifierGroups = await _menuService.getModifierGroups(selectedItemsList);
         List<Modifier> selectedModifiers = await _menuService.getModifiers(selectedItemsList);
         List<ModifierMapping> selectedModifierMappings = await _menuService.getModifierMappings(selectedItemsList);
@@ -166,7 +167,6 @@ public class MenuController : Controller
         
         string name=await _menuService.addItem(addMenuItemViewModel,userId);
        
-
         return await _menuService.UpdateItemModifierGroup(addMenuItemViewModel,name, userId);
         
     }
@@ -175,7 +175,27 @@ public class MenuController : Controller
 
         return await _menuService.changeAval(Id,Availability);
     }
-
+    [HttpGet]
+    public async Task<IActionResult>EditMenuItem(string id)
+    {
+        int itemId = int.Parse(id);
+       AddMenuItemViewModel  addMenuItemViewModel=await _menuService.editItem(itemId);
+       var modifiergrps=await _menuService.getModifierGroups();
+       var selectedModifierGrps= await _menuService.getSelectedModifierGroups(itemId);
+       var selectedModifierMappings=await _menuService.getSelectedModifierMappings(itemId);
+       var selectedModifiers= await _menuService.getSelectedModifiers(itemId);
+       var Categories= await _menuService.getCategories();
+       CategoryViewModel categoryViewModel=new CategoryViewModel
+       {
+        Categories=Categories,
+        ModifierGroups=modifiergrps,
+        SelectedModifierGroups=selectedModifierGrps,
+        SelectedModifierMappings=selectedModifierMappings,
+        SelectedModifiers=selectedModifiers,
+        addMenuItemViewModel=addMenuItemViewModel
+       };
+       return PartialView("_ItemModal",categoryViewModel);
+    }
     
 
 }

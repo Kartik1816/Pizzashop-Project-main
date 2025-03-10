@@ -1,3 +1,4 @@
+@using PizzaShop.Domain.ViewModels
 @model PizzaShop.Domain.ViewModels.CategoryViewModel;
 
 
@@ -124,10 +125,11 @@
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
     }
 }
+
 <script src="~/js/menu.js" asp-append-version="true"></script>
 <script>
 
-  document.addEventListener('DOMContentLoaded', function () {
+  function getmodifiergroupList() {
   const selectElement = document.getElementById('ModifierSelect');
   const customMultiSelect = document.querySelector('.custom-multi-select');
   const dropdownOptions = customMultiSelect.querySelector('.dropdown-options');
@@ -136,12 +138,11 @@
   const clearAllButton = customMultiSelect.querySelector('.clear-all');
   const dropdownToggle = customMultiSelect.querySelector('.dropdown-toggle');
 
-  // Build the custom dropdown options from the <select> element
+  
   selectElement.querySelectorAll('option').forEach(option => {
     const value = option.value;
     const text = option.textContent;
 
-    // Create a custom option
     const customOption = document.createElement('div');
     customOption.className = 'option';
     customOption.setAttribute('data-value', value);
@@ -150,23 +151,23 @@
       <label for="custom-option-${value}">${text}</label>
     `;
 
-    // Add the custom option to the dropdown
+ 
     dropdownOptions.appendChild(customOption);
 
-    // Sync the selected state with the <select> element
+
     const checkbox = customOption.querySelector('input[type="checkbox"]');
     checkbox.addEventListener('change', () => {
       if (checkbox.checked) {
-        option.selected = true; // Sync with <select>
-        addTag(value, text); // Add tag
+        option.selected = true; 
+        addTag(value, text); 
       } else {
-        option.selected = false; // Sync with <select>
-        removeTag(value); // Remove tag
+        option.selected = false; 
+        removeTag(value); 
       }
     });
   });
 
-  // Function to add a tag
+
   function addTag(value, text) {
     const tag = document.createElement('div');
     tag.className = 'tag';
@@ -176,24 +177,24 @@
       <span class="tag-delete"></span>
     `;
 
-    // Add tag to the selected tags container
+    
     selectedTagsContainer.appendChild(tag);
 
-    // Remove tag when delete button is clicked
+    
     tag.querySelector('.tag-delete').addEventListener('click', () => {
       tag.remove();
       const option = selectElement.querySelector(`option[value="${value}"]`);
       if (option) {
-        option.selected = false; // Sync with <select>
+        option.selected = false;
       }
       const checkbox = dropdownOptions.querySelector(`input[id="custom-option-${value}"]`);
       if (checkbox) {
-        checkbox.checked = false; // Uncheck the checkbox
+        checkbox.checked = false; 
       }
     });
   }
 
-  // Function to remove a tag
+ 
   function removeTag(value) {
     const tag = selectedTagsContainer.querySelector(`[data-value="${value}"]`);
     if (tag) {
@@ -201,18 +202,18 @@
     }
   }
 
-  // Clear all selected tags
+ 
   clearAllButton.addEventListener('click', () => {
     selectedTagsContainer.innerHTML = '';
     selectElement.querySelectorAll('option').forEach(option => {
-      option.selected = false; // Unselect all options in <select>
+      option.selected = false; 
     });
     dropdownOptions.querySelectorAll('input[type="checkbox"]').forEach(checkbox => {
-      checkbox.checked = false; // Uncheck all checkboxes
+      checkbox.checked = false; 
     });
   });
 
-  // Toggle dropdown visibility
+ 
   searchInput.addEventListener('focus', () => {
     dropdownOptions.style.display = 'block';
   });
@@ -223,38 +224,36 @@
     }, 200);
   });
 
-  dropdownToggle.addEventListener('click', () => {
+  @* dropdownToggle.addEventListener('click', () => {
     dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
-  });
-});
+  }); *@
+  
+}
 
 
   function removeTag(value) {
-  const customMultiSelect = document.querySelector('.custom-multi-select');
-  const selectedTagsContainer = customMultiSelect.querySelector('.selected-tags');
-  const tag = selectedTagsContainer.querySelector(`[data-value="${value}"]`);
-    if (tag) {
-      tag.remove();
-    }
+    const customMultiSelect = document.querySelector('.custom-multi-select');
+    const selectedTagsContainer = customMultiSelect.querySelector('.selected-tags');
+    const tag = selectedTagsContainer.querySelector(`[data-value="${value}"]`);
+      if (tag) {
+        tag.remove();
+      }
   }
 
-let selectElement=[];
 function getSelectedValues(id) {
   id = parseInt(id);
+  console.log(id);
+  debugger
   var checked = document.getElementById(id).checked
   if(checked){
-    selectElement.push(id);
     modifierMaximumMinimumList.push({Id:id,minValue:0,maxValue:0})
   }else{
-    selectElement = selectElement.filter(item => item !== id);
-    modifierMaximumMinimumList = modifierMaximumMinimumList.filter(item=> item.Id !== id);
+    modifierMaximumMinimumList = modifierMaximumMinimumList.filter(item=> item.id != id);
+    console.log(modifierMaximumMinimumList)
   }
-  
-  console.log(selectElement);
-  var selectedItemsString=JSON.stringify(selectElement);
+   console.log(modifierMaximumMinimumList)
+  var selectedItemsString=JSON.stringify(modifierMaximumMinimumList);
   var modMaxMinList=modfierMaxMinList();
-    $("#selected-modifier-groups").val(JSON.stringify(modMaxMinList));
-     console.log( $("#selected-modifier-groups").val())
   $.ajax({
     type: "GET",
     url: "/Menu/selectModifier",
@@ -296,11 +295,10 @@ function modfierMaxMinList()
 }
 
 function deleteItem(id) {
-  selectElement = selectElement.filter(item => item !== id);
   modifierMaximumMinimumList = modifierMaximumMinimumList.filter(item=> item.Id !== id);
   document.getElementById(id).checked = false;
   removeTag(id)
-  var selectedItemsString=JSON.stringify(selectElement);
+  var selectedItemsString=JSON.stringify(modifierMaximumMinimumList);
   $.ajax({
     type: "GET",
     url: "/Menu/selectModifier",
@@ -348,5 +346,34 @@ $("#addItem-Form").submit(function(e){
         }
     });
   });
+
+
+ function editMenuItem(id)
+{
+  
+  console.log(id);
+  id=JSON.stringify(id);
+  $.ajax({
+    url:'Menu/EditMenuItem',
+    method:'GET',
+    contentType:'application/json',
+    data:{id:id},
+    success:function(data)
+    {
+       $("#partial-addItem-modal").html(data);
+       getmodifiergroupList();
+       bindEditChanges();
+       console.log(modifierMaximumMinimumList)
+       $("#addItem").modal('show');
+    },
+    error:function(data)
+    {
+      $("#partial-addItem-modal").html(data);
+      $("#addItem").modal('show');
+      console.log("aksjdasd");
+    }
+
+  });
+}
 
 </script>

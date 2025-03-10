@@ -36,11 +36,11 @@ public class AddMenuItemViewModel
 
     public IFormFile? ItemImage { get; set; }
 
-    public string ImageUrl { get; set; }
+    public string? ImageUrl { get; set; }
     public string selectedModifierGroups { get; set; }
 
     public string maxValue { get; set; }
     public string minValue { get; set; }
     
-
+    public List<ModifierMinMaxModel>? modifierMinMaxModels{ get; set; }
 }

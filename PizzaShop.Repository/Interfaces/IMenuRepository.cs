@@ -29,4 +29,11 @@ public interface IMenuRepository
      public  Task<IActionResult> UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId,List<ModifierMinMaxModel> modifierMinMaxModels);
 
      public Task<IActionResult> changeAval(int id,int Availability);
+
+     public Task<MenuItem> getItemById(int id);
+     public  Task<List<ModifierGroup>> getSelectedModifierGroups(int id);
+     public  Task<List<ModifierMapping>> getSelectedModifierMappings(int id);
+     public  Task<List<Modifier>> getSelectedModifiers(int id);
+     
+     public Task<List<ModifierMinMaxModel>> getMinMaxMod(int id);
 }

@@ -45,7 +45,6 @@ public class AddUserViewModel
 
         public int RoleId { get; set; } 
 
-        public string selectedModifierGroups { get; set; }  
 
            
 }

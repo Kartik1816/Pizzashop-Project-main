@@ -28,4 +28,8 @@ public interface IMenuService
     public  Task<string> addItem(AddMenuItemViewModel addMenuItemViewModel,int userId);
     public  Task<IActionResult> UpdateItemModifierGroup(AddMenuItemViewModel addItemViewModel, string itemName, int userId);
     public Task<IActionResult> changeAval(int id,int Availability);
+    public  Task<AddMenuItemViewModel> editItem(int id);
+     public  Task<List<ModifierGroup>> getSelectedModifierGroups(int id);
+     public  Task<List<ModifierMapping>> getSelectedModifierMappings(int id);
+     public  Task<List<Modifier>> getSelectedModifiers(int id);
 }

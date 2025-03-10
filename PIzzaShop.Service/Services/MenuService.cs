@@ -81,4 +81,37 @@ public class MenuService : IMenuService
      {
         return await _menuRepository.changeAval(id,Availability);
      }
+     public async Task<AddMenuItemViewModel> editItem(int id)
+     {
+        MenuItem item=await _menuRepository.getItemById(id);
+
+        AddMenuItemViewModel menuItemViewModel=new  AddMenuItemViewModel
+        {
+            CategoryId=item.CategoryId,
+            ItemName=item.Name,
+            ItemType=item.ItemType,
+            Rate=(double)item.Rate,
+            Quantity=(int)item.Quantity,
+            Unit=item.Unit,
+            Availabe= (bool)item.Available,
+            DefaultTax= (bool)item.DefaultTax,
+            ShortCode=item.ShortCode,
+            Description=item.Description,
+            modifierMinMaxModels=await _menuRepository.getMinMaxMod(id)
+        };
+        return menuItemViewModel;
+     }
+
+     public async Task<List<ModifierGroup>> getSelectedModifierGroups(int id)
+     {
+        return await _menuRepository.getSelectedModifierGroups(id);
+     }
+     public async Task<List<ModifierMapping>> getSelectedModifierMappings(int id)
+     {
+        return await _menuRepository.getSelectedModifierMappings(id);
+     }
+     public  async Task<List<Modifier>> getSelectedModifiers(int id)
+     {
+        return await _menuRepository.getSelectedModifiers(id);
+     }
 }
